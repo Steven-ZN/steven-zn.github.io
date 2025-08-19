@@ -1,0 +1,12 @@
+<div class="feature__wrapper">
+{% for f in page.feature_row %}
+<div class="feature__item">
+<div class="archive__item">
+{% if f.image_path %}<img src="{{ f.image_path }}" alt="{{ f.alt }}" />{% endif %}
+<h3>{{ f.title }}</h3>
+<p>{{ f.excerpt }}</p>
+{% if f.url %}<a class="btn btn--primary" href="{{ f.url }}">{{ f.btn_label }}</a>{% endif %}
+</div>
+</div>
+{% endfor %}
+</div>
