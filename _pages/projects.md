@@ -3,32 +3,50 @@ permalink: /projects/
 title: "Projects"
 layout: single
 classes: wide
+author_profile: true
 ---
 
+## Featured Projects
 
-<div class="grid-cards">
-<a class="card" id="wsis" href="#wsis">
-<h3>WSIS: Dual‑Stage Active Learning</h3>
-<p>CAM → pseudo masks, HSV as stability module, Mean Teacher for consistency.</p>
-<span>PyTorch · Medical Imaging · Segmentation</span>
-</a>
-<a class="card" id="phdtracking" href="#phdtracking">
-<h3>PhDTracking.com</h3>
-<p>Search + shortlist + outreach CRM; scraping jobs and faculty pages.</p>
-<span>Django · Postgres · Scrapy</span>
-</a>
-<a class="card" href="#diffusion">
-<h3>VAE + Diffusion Experiments</h3>
-<p>BUSI unconditional synthesis; ablations on conditioning and metrics.</p>
-<span>Generative · Research</span>
-</a>
+<div class="grid__wrapper">
+
+  <!-- WSIS -->
+  <div class="archive__item" style="border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1); overflow:hidden;">
+    <a href="/projects/wsis/" class="archive__item-teaser">
+      <img src="/images/projects/wsis.jpg" alt="WSIS Project" style="object-fit:cover; height:200px; width:100%;">
+    </a>
+    <div class="archive__item-body" style="padding:1rem;">
+      <h3 class="archive__item-title"><a href="/projects/wsis/">WSIS: Dual-Stage Active Learning</a></h3>
+      <p>Weakly supervised segmentation pipeline: CAM → pseudo masks, HSV as stability module, Mean Teacher for consistency.</p>
+      <p><span class="badge">PyTorch</span> <span class="badge">Medical Imaging</span> <span class="badge">Segmentation</span></p>
+      <a href="/projects/wsis/" class="btn btn--primary">Read More →</a>
+    </div>
+  </div>
+
+  <!-- PhDTracking -->
+  <div class="archive__item" style="border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1); overflow:hidden;">
+    <a href="/projects/phdtracking/" class="archive__item-teaser">
+      <img src="/images/projects/phdtracking.jpg" alt="PhDTracking" style="object-fit:cover; height:200px; width:100%;">
+    </a>
+    <div class="archive__item-body" style="padding:1rem;">
+      <h3 class="archive__item-title"><a href="/projects/phdtracking/">PhDTracking.com</a></h3>
+      <p>A platform to scrape faculty pages and PhD job boards, with search + shortlist + outreach CRM features.</p>
+      <p><span class="badge">Django</span> <span class="badge">Postgres</span> <span class="badge">Scrapy</span></p>
+      <a href="/projects/phdtracking/" class="btn btn--primary">Read More →</a>
+    </div>
+  </div>
+
+  <!-- Diffusion -->
+  <div class="archive__item" style="border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1); overflow:hidden;">
+    <a href="/projects/diffusion/" class="archive__item-teaser">
+      <img src="/images/projects/diffusion.jpg" alt="Diffusion Experiments" style="object-fit:cover; height:200px; width:100%;">
+    </a>
+    <div class="archive__item-body" style="padding:1rem;">
+      <h3 class="archive__item-title"><a href="/projects/diffusion/">VAE + Diffusion Experiments</a></h3>
+      <p>BUSI dataset unconditional synthesis; ablations on conditioning, evaluation metrics, and robustness.</p>
+      <p><span class="badge">Generative</span> <span class="badge">Research</span></p>
+      <a href="/projects/diffusion/" class="btn btn--primary">Read More →</a>
+    </div>
+  </div>
+
 </div>
-
-
-### Highlight: WSIS
-- AMR 分类 → CAM → 伪掩码
-- HSV 不是“质量提升器”，而是**稳定器**（stabilizer）
-- 多轮主动学习 + Mean Teacher 一致性
-
-
-> 可把每个项目拆到独立页面（`_pages/xxx.md`），此页做卡片导航。
