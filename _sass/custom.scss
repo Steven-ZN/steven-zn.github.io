@@ -25,10 +25,13 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 页眉按钮更显眼
 .btn--primary { border-radius: .75rem; padding: .55rem 1rem; }
 
-// 头像完整显示不裁剪，修复远离变白问题
+// 头像完整显示不裁剪，修复远离变白问题 - 强化版本
+.author__avatar,
 .author__avatar img {
-  width: 200px !important;
+  width: 250px !important;
   height: auto !important;
+  max-width: 250px !important;
+  max-height: none !important;
   object-fit: contain !important;
   border-radius: 8px !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
@@ -41,11 +44,24 @@ transition: transform .2s ease, box-shadow .2s ease;
   -ms-filter: none !important;
   -o-filter: none !important;
   transform: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
+// 覆盖所有可能的悬停和焦点状态
+.author__avatar:hover,
+.author__avatar:focus,
+.author__avatar:active,
 .author__avatar img:hover,
 .author__avatar img:focus,
-.author__avatar img:active {
+.author__avatar img:active,
+.author__avatar:hover img,
+.author__avatar:focus img,
+.author__avatar:active img {
   filter: none !important;
   transform: none !important;
   opacity: 1 !important;
@@ -53,15 +69,30 @@ transition: transform .2s ease, box-shadow .2s ease;
   -moz-filter: none !important;
   -ms-filter: none !important;
   -o-filter: none !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
-// 覆盖主题默认的头像样式
-.author__avatar {
-  filter: none !important;
+// 额外覆盖可能的父容器样式
+.sidebar .author__avatar,
+.sidebar .author__avatar img {
+  width: 250px !important;
+  height: auto !important;
 }
 
-.author__avatar:hover {
+// 防止任何父容器的悬停效果影响头像
+.sidebar:hover .author__avatar,
+.sidebar:hover .author__avatar img,
+.author__content:hover .author__avatar,
+.author__content:hover .author__avatar img {
   filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 // 主页动画效果
