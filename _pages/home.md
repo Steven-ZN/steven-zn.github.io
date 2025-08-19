@@ -9,6 +9,12 @@ classes: wide
 <div class="home-section">
 <p><strong>Computer Science @ Kean University</strong><br>
 Research in <strong>Weakly Supervised Segmentation</strong>, <strong>Active Learning</strong>, and <strong>LLMs</strong>.</p>
+
+<div class="cv-download">
+<a href="/assets/documents/Nuojunxi Zhang_CV.pdf" class="cv-download-btn" target="_blank">
+<i class="fas fa-download"></i>Download CV
+</a>
+</div>
 </div>
 
 <div class="home-section research-highlights">

@@ -183,3 +183,33 @@ transition: transform .2s ease, box-shadow .2s ease;
 nav.pagination {
   display: none !important;
 }
+
+// CV下载按钮样式
+.cv-download {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.cv-download-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  color: white;
+  text-decoration: none;
+}
+
+.cv-download-btn i {
+  margin-right: 0.5rem;
+}

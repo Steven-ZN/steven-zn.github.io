@@ -26,7 +26,7 @@ toc: true
 - First-author paper under review at IEEE-BIBM 2025, supervised by Prof. Kuan Huang
 - Appointed as research assistant under NSF funding, contributing to project design, experimentation, and publication
 
-### Research Participant — Medfusion Fake Image Generator
+### Research Associate — Medfusion Fake Image Generator
 **Kean University** | *Sept 2024 – Dec 2024*
 
 - Developed a synthetic medical image pipeline using Variational Autoencoders (VAE) and Diffusion Models to augment breast ultrasound datasets for weakly supervised segmentation
@@ -40,7 +40,7 @@ toc: true
 - Participated in a SPF-funded initiative focused on raw image denoising using Bayer pattern modeling
 - Worked on latent space extensions and codebase adaptation based on a prior CVPR 2022 Workshop project developed by a former lab member under the same advisor
 
-### Research Participant — Parkinson's Rehabilitation Interface
+### Research Developer — Parkinson's Rehabilitation Interface
 **Wenzhou-Kean University** | *Feb 2023 – June 2023*
 
 - Developed a program that captures patients' hand movements and provides real-time feedback for rehabilitation assessment
