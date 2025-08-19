@@ -6,16 +6,16 @@ author_profile: true
 toc: true
 ---
 
-## Journal Papers (Under Review)
+## Conference Papers (Under Review)
 
 **Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**  
 *Nuojunxi Zhang* (First Author), Kuan Huang (Advisor)  
-*IEEE-BIBM 2025*  
+*IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*  
 **Status:** Under Review
 
 ---
 
-## Conference Papers & Presentations
+## Conference Presentations
 
 **Poster: Medical Computer Vision for Parkinson's Rehabilitation**  
 *Nuojunxi Zhang* (Presenter)  
