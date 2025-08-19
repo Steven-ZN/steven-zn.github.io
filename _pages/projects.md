@@ -49,17 +49,9 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 
 <p>Simulating human-like personality in LLMs using MBTI framework with sophisticated style control mechanisms.</p>
 
-<p><strong>Key Features:</strong></p>
-<ul>
-<li>16 MBTI personality type simulation with 87% classification accuracy</li>
-<li>Advanced prompt engineering and response filtering for consistency</li>
-<li>Comprehensive evaluation framework with human preference studies</li>
-<li>78% user preference for personality-matched interactions</li>
-</ul>
-
 <p><strong>Applications</strong>: Psychology studies, Human-AI interaction research, Personalized content generation<br>
 <strong>Technologies</strong>: Transformers, PyTorch, Natural Language Processing<br>
-<strong>Innovation</strong>: First systematic MBTI-based personality modeling for language models</p>
+<strong>Innovation</strong>: Systematic MBTI-based personality modeling for language models</p>
 
 <div class="project-buttons">
 <a href="https://github.com/Steven-ZN/MBTI-LLM" class="btn btn--primary btn--large">Explore on GitHub</a>
@@ -83,8 +75,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 <li><strong>Clinical Validation</strong>: High acceptance rate from radiologist evaluation</li>
 </ul>
 
-<p><strong>Research Impact</strong>: 15% improvement in weak supervision scenarios, 40% reduction in labeling requirements<br>
-<strong>Technologies</strong>: Diffusion Models, VAE, PyTorch, Medical Image Processing<br>
+<p><strong>Technologies</strong>: Diffusion Models, VAE, PyTorch, Medical Image Processing<br>
 <strong>Period</strong>: September 2024 - December 2024</p>
 
 <div class="project-buttons">

@@ -41,9 +41,9 @@ Built synthetic medical image pipeline using VAE + Diffusion for weak supervisio
     <span class="badge">Generative AI</span> <span class="badge">Diffusion</span>
   </div>
   <div class="project-card">
-    <h3><a href="/projects/#echomind">EchoMind</a></h3>
-    <p>Personality-consistent LLM agents with episodic memory and adaptive learning mechanisms.</p>
-    <span class="badge">LLM</span> <span class="badge">Memory Systems</span>
+    <h3><a href="/projects/#mbti-llm">MBTI-LLM</a></h3>
+    <p>Personality-controlled text generation using MBTI framework for human-like AI interactions.</p>
+    <span class="badge">LLM</span> <span class="badge">Personality AI</span>
   </div>
 </div>
 </div>
