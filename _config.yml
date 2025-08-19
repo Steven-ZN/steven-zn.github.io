@@ -27,9 +27,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/your-link"
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=YOURID"
+    - label: "Download CV"
+      icon: "fas fa-download"
+      url: "/assets/documents/Nuojunxi Zhang_CV.pdf"
 
 # 导航
 collections:
