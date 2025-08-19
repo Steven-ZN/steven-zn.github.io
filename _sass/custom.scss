@@ -27,20 +27,21 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 // 头像完整显示不裁剪
 .author__avatar img {
-  width: 140px;
+  width: 180px;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  filter: none;
-  transition: none;
+  image-rendering: auto;
+  filter: none !important;
+  transition: none !important;
+  opacity: 1 !important;
 }
 
 .author__avatar img:hover {
-  filter: none;
-  transform: none;
+  filter: none !important;
+  transform: none !important;
+  opacity: 1 !important;
 }
 
 // 主页动画效果

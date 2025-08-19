@@ -201,19 +201,154 @@ Turn your AirPods into a posture coach on macOS - innovative health monitoring s
 
 ## Utility & Enhancement Tools
 
-<div class="utility-tools">
+<div class="project-grid">
 
-**MagicSub: AI-Powered Subtitle Translation**  
-Advanced subtitle translation system powered by AI for content localization.  
-[View Project](https://github.com/Steven-ZN/MagicSub){: .btn .btn--light}
+<div class="project-card">
+<h3>MagicSub: AI-Powered Subtitle Translation</h3>
 
-**WeChatBot: Enhanced Windows Support**  
-Enhanced WeChat bot with support for English Windows systems and Python 12 compatibility.  
-[View Project](https://github.com/Steven-ZN/WeChatBot_WXAUTO_SE){: .btn .btn--light}
+Advanced subtitle translation system leveraging state-of-the-art language models for accurate content localization across multiple languages.
 
-**GetQzonehistory: QQ Space Data Export**  
-QQ Space history export tool for data backup and migration solutions.  
-[View Project](https://github.com/Steven-ZN/GetQzonehistory){: .btn .btn--light}
+**Core Capabilities:**
+- Multi-language subtitle translation with context awareness
+- Batch processing for large video libraries
+- Customizable translation models and quality settings
+- Support for multiple subtitle formats (SRT, VTT, ASS)
+
+**Technical Features:**
+- Integration with leading translation APIs
+- Advanced timing synchronization algorithms
+- Quality assurance through back-translation validation
+- User-friendly GUI with drag-and-drop functionality
+
+**Applications**: Content creators, Educational platforms, Media companies, International distribution
+
+<a href="https://github.com/Steven-ZN/MagicSub" class="btn btn--warning">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>WeChatBot: Enhanced Windows Support</h3>
+
+Comprehensive WeChat automation bot with enhanced cross-platform compatibility and extended functionality for Windows environments.
+
+**Enhanced Features:**
+- Full support for English Windows systems (resolving encoding issues)
+- Python 12 compatibility with updated dependencies
+- Advanced message processing and auto-response capabilities
+- Flexible plugin architecture for custom functionality
+
+**Technical Improvements:**
+- Robust character encoding handling for international systems
+- Modern Python compatibility (3.8-3.12)
+- Enhanced error handling and logging systems
+- Cross-platform file path management
+
+**Use Cases**: Business automation, Customer service, Social media management, Personal productivity
+
+<a href="https://github.com/Steven-ZN/WeChatBot_WXAUTO_SE" class="btn btn--warning">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>GetQzonehistory: QQ Space Data Export</h3>
+
+Comprehensive data export tool for QQ Space content with advanced parsing and backup capabilities for personal data management.
+
+**Export Capabilities:**
+- Complete post history with metadata extraction
+- Photo albums with original quality preservation
+- Comment threads and social interaction data
+- Timeline reconstruction with chronological ordering
+
+**Technical Features:**
+- Robust HTML parsing with error recovery
+- Rate limiting to respect platform policies
+- Data integrity verification and validation
+- Multiple export formats (JSON, CSV, HTML)
+
+**Data Management**: Personal archiving, Digital legacy preservation, Content migration, Research applications
+
+<a href="https://github.com/Steven-ZN/GetQzonehistory" class="btn btn--warning">View Project</a>
+</div>
+
+</div>
+
+---
+
+## Machine Learning & Data Science Projects
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Diabetes Prediction: Multi-Algorithm Comparison Study</h3>
+
+Comprehensive machine learning study comparing 10+ algorithms for diabetes prediction with extensive feature engineering and model evaluation.
+
+**Algorithms Implemented:**
+- Support Vector Machines (SVM) with multiple kernels
+- Stochastic Gradient Descent with various optimizers
+- Ensemble methods (Random Forest, XGBoost)
+- Neural networks (MLPClassifier with multiple architectures)
+- Traditional methods (Logistic Regression, Naive Bayes, KNN)
+
+**Research Contributions:**
+- Systematic comparison of algorithm performance on medical data
+- Feature importance analysis and selection strategies
+- Cross-validation and hyperparameter optimization
+- Statistical significance testing of model differences
+
+**Performance Metrics**: Accuracy, Precision, Recall, F1-Score, AUC-ROC analysis across all models
+
+**Technologies**: Python, Scikit-learn, XGBoost, Pandas, NumPy, Matplotlib
+
+<a href="#" class="btn btn--info">Private Repository</a>
+</div>
+
+<div class="project-card">
+<h3>Advanced Computer Vision Pipeline</h3>
+
+End-to-end computer vision pipeline for medical image analysis with state-of-the-art deep learning architectures.
+
+**Pipeline Components:**
+- Multi-stage image preprocessing and augmentation
+- Custom CNN architectures for medical image classification
+- Transfer learning with pre-trained models (ResNet, EfficientNet)
+- Advanced data augmentation techniques for medical imaging
+
+**Technical Innovations:**
+- Custom loss functions for imbalanced medical datasets
+- Attention mechanisms for region-of-interest detection
+- Multi-scale feature extraction and fusion
+- Uncertainty quantification for clinical decision support
+
+**Research Impact**: Applied to breast ultrasound analysis, achieving state-of-the-art performance on multiple benchmarks
+
+**Technologies**: PyTorch, OpenCV, PIL, Albumentations, TensorBoard
+
+<a href="https://github.com/Steven-ZN" class="btn btn--info">Related Work</a>
+</div>
+
+<div class="project-card">
+<h3>Natural Language Processing Research Suite</h3>
+
+Comprehensive NLP research platform exploring advanced language understanding and generation techniques.
+
+**Research Areas:**
+- Transformer-based architectures for domain-specific tasks
+- Fine-tuning strategies for limited-resource scenarios
+- Multi-modal learning combining text and visual information
+- Evaluation frameworks for language model performance
+
+**Technical Components:**
+- Custom tokenization and preprocessing pipelines
+- Distributed training infrastructure for large models
+- Advanced evaluation metrics and benchmark implementations
+- Model compression and optimization techniques
+
+**Applications**: Medical text analysis, Scientific literature processing, Conversational AI systems
+
+**Technologies**: Transformers, Hugging Face, PyTorch, NLTK, spaCy
+
+<a href="https://github.com/Steven-ZN" class="btn btn--info">Explore Research</a>
+</div>
 
 </div>
 
