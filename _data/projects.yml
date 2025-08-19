@@ -2,23 +2,23 @@ featured:
   - image_path: /images/projects/dsalnet.jpg
     alt: "DSAL-Net"
     title: "DSAL-Net: Dual-Stage Active Learning for Weakly Supervised Segmentation"
-    excerpt: "Novel active learning framework for medical image segmentation with CAM filtering, HSV stabilization, and Mean Teacher consistency. First-author paper under review at IEEE-BIBM 2025."
+    excerpt: "Implementation of my paper 'Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation' (Coming Soon)."
     url: "https://github.com/Steven-ZN/DSAL-Net"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 
   - image_path: /images/projects/echomind.jpg
     alt: "EchoMind"
-    title: "EchoMind: Personality-Consistent Memory Systems for LLMs"
-    excerpt: "Framework for building true personality mirrors on open-source LLMs with episodic, procedural, and belief memory stores combined with LoRA/Prefix style adapters."
+    title: "EchoMind: True Personality Mirrors on Open-Source LLMs"
+    excerpt: "EchoMind is a framework for building true personality mirrors on top of open-source LLMs. It combines memory stores (episodic, procedural, belief) with style adapters (LoRA/Prefix + classifier-guided)."
     url: "https://github.com/Steven-ZN/EchoMind"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 
   - image_path: /images/projects/medfusion.jpg
     alt: "Medfusion"
-    title: "Medfusion: Synthetic Medical Image Generation"
-    excerpt: "Advanced VAEs and Diffusion Models for realistic medical imaging synthesis. Optimized for tumor-inclusive outputs with 512x512 resolution and distribution control."
+    title: "Medfusion Fake Image Generator"
+    excerpt: "Medfusion Fake Image Generator transforms synthetic medical imaging with advanced VAEs and Diffusion Models, optimized for realistic, tumor-inclusive outputs. Featuring 512x512 resolution, distribution control & evaluation."
     url: "https://github.com/Steven-ZN/Medfusion_Fake_Image"
     btn_label: "GitHub"
     btn_class: "btn--primary"
@@ -26,41 +26,74 @@ featured:
 research:
   - image_path: /images/projects/mbti-llm.jpg
     alt: "MBTI-LLM"
-    title: "MBTI-LLM: Personality-Controlled Text Generation"
-    excerpt: "MBTI-driven style control system to simulate human-like personality traits in large language model outputs for consistent character modeling."
+    title: "MBTI-LLM: Simulating Human-like Personality in LLMs"
+    excerpt: "Simulating Human-like Personality in LLMs with MBTI & Style Control"
     url: "https://github.com/Steven-ZN/MBTI-LLM"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 
   - image_path: /images/projects/positronic.jpg
     alt: "positronic-brain"
-    title: "positronic-brain: Law-Constrained AI Agents"
-    excerpt: "Experimental implementation of Asimov's Three Laws of Robotics at the code level for LLMs and autonomous agents, ensuring safe AI behavior by design."
+    title: "positronic-brain: Asimov's Three Laws Implementation"
+    excerpt: "An experimental repository dedicated to implementing a code-level representation of Asimov's Three Laws of Robotics within modern AI systems—particularly large language models (LLMs) and autonomous agents."
     url: "https://github.com/Steven-ZN/positronic-brain"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/handsense.jpg
+    alt: "HandSense-360"
+    title: "HandSense-360: Real-time Gesture Tracking"
+    excerpt: "It delivers real-time gesture tracking, precision metrics, and seamless external integration, making it ideal for advanced control systems and healthcare innovations."
+    url: "https://github.com/Steven-ZN/HandSense-360"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 
 applications:
   - image_path: /images/projects/deepteacher.jpg
     alt: "DeepTeacher"
-    title: "DeepTeacher: AI-Powered Learning Assistant"
-    excerpt: "Local learning assistance tool combining llava-phi3:3.8b and DeepSeek-R1 models with real-time screen capture, image understanding, and intelligent feedback."
+    title: "DeepTeacher: Local Learning Assistant"
+    excerpt: "一个基于llava-phi3:3.8b和DeepSeek-R1模型的本地自动学习辅助工具，结合实时截屏、图像理解、语言反馈。"
     url: "https://github.com/Steven-ZN/DeepTeacher"
-    btn_label: "GitHub"
-    btn_class: "btn--primary"
-
-  - image_path: /images/projects/handsense.jpg
-    alt: "HandSense-360"
-    title: "HandSense-360: Real-time Gesture Recognition"
-    excerpt: "Computer vision system delivering real-time gesture tracking and precision metrics using MediaPipe, designed for control systems and healthcare applications."
-    url: "https://github.com/Steven-ZN/HandSense-360"
     btn_label: "GitHub"
     btn_class: "btn--primary"
 
   - image_path: /images/projects/deepplaylist.jpg
     alt: "DeepPlaylist"
-    title: "DeepPlaylist: Intelligent Music Classification"
-    excerpt: "Automated playlist classification system using DeepSeek API and QQ Music integration for language and mood-based music categorization."
+    title: "DeepPlaylist: Auto Music Classification"
+    excerpt: "DeepPlaylist 可以实现基于DeepSeek 和 QQ 音乐 API 的自动歌单分类。默认分类方式是语种_歌曲情绪。通过修改提示词或变量名也可以自定义分类方式。"
     url: "https://github.com/Steven-ZN/DeepPlaylist"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/airposture.jpg
+    alt: "AirPosture"
+    title: "AirPosture: Turn your AirPods into a posture coach"
+    excerpt: "Turn your AirPods into a posture coach on macOS"
+    url: "https://github.com/Steven-ZN/AirPosture"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+tools:
+  - image_path: /images/projects/magicsub.jpg
+    alt: "MagicSub"
+    title: "MagicSub: AI-Powered Subtitle Translator"
+    excerpt: "AI-Powered Subtitle Translator"
+    url: "https://github.com/Steven-ZN/MagicSub"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/wechatbot.jpg
+    alt: "WeChatBot"
+    title: "WeChatBot: Enhanced Windows Support"
+    excerpt: "新增对英文windows系统的支持（解决bat编码问题）以及对python12的支持"
+    url: "https://github.com/Steven-ZN/WeChatBot_WXAUTO_SE"
+    btn_label: "GitHub"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/qzone.jpg
+    alt: "GetQzonehistory"
+    title: "GetQzonehistory: QQ Space History Exporter"
+    excerpt: "获取QQ空间发布的历史说说"
+    url: "https://github.com/Steven-ZN/GetQzonehistory"
     btn_label: "GitHub"
     btn_class: "btn--primary"

@@ -60,18 +60,28 @@ NSF-funded dual-stage active learning segmentation with 68.25% IoU and 79.39% DS
 </div>
 <div class="research-item">
 <strong>Vision-AI Lab, WKU (Sep 2023–May 2024)</strong><br>
-SPF-funded raw image denoising research and Bayer pattern modeling for computational photography.
+SPF-funded initiative on raw image denoising using Bayer pattern modeling and latent space extensions.
 </div>
 <div class="research-item">
 <strong>Computer Club VP (Jan 2024–Jun 2024)</strong><br>
 Led strategic initiatives that increased active membership by 30% and organized technical workshops.
+</div>
+<div class="research-item">
+<strong>College Assistant, WKU (Aug 2022–May 2024)</strong><br>
+Assisted faculty with event coordination and streamlined departmental scheduling workflows.
 </div>
 </div>
 
 <div class="home-section contact-info">
 <h2>Get In Touch</h2>
 <p>
-<a href="mailto:zhangnu@kean.edu">zhangnu@kean.edu</a> | <a href="mailto:zhangnuojunxi@gmail.com">zhangnuojunxi@gmail.com</a><br>
+<span class="email-popup">
+  <a href="mailto:zhangnu@kean.edu">Email</a>
+  <div class="email-dropdown">
+    <a href="mailto:zhangnu@kean.edu">zhangnu@kean.edu (Academic)</a>
+    <a href="mailto:zhangnuojunxi@gmail.com">zhangnuojunxi@gmail.com (General)</a>
+  </div>
+</span> | 
 Union, NJ | <a href="https://github.com/Steven-ZN">GitHub</a> | <a href="https://linkedin.com/in/your-link">LinkedIn</a>
 </p>
 </div>  

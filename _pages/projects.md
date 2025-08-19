@@ -26,6 +26,12 @@ My research projects span multiple areas of AI and computer science, with a focu
 
 ---
 
+## Utility Tools
+
+{% include feature_row id="tools" %}
+
+---
+
 ## Technical Focus Areas
 
 - **Medical AI**: Weakly supervised learning, active learning, synthetic data generation

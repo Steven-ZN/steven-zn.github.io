@@ -27,11 +27,20 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 // 头像完整显示不裁剪
 .author__avatar img {
-  width: 110px;
+  width: 140px;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: none;
+  transition: none;
+}
+
+.author__avatar img:hover {
+  filter: none;
+  transform: none;
 }
 
 // 主页动画效果
@@ -125,4 +134,52 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 .contact-info a:hover {
   opacity: 0.8;
+}
+
+// 邮箱选择弹窗样式
+.email-popup {
+  position: relative;
+  display: inline-block;
+}
+
+.email-dropdown {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-bottom: 0.5rem;
+  min-width: 250px;
+  z-index: 1000;
+}
+
+.email-dropdown a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.email-dropdown a:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.email-popup:hover .email-dropdown {
+  display: block;
+}
+
+// 隐藏页面导航按钮
+.page__meta,
+.page__content .page__meta,
+.page__related,
+.taxonomy__section,
+nav.pagination {
+  display: none !important;
 }
