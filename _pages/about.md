@@ -5,10 +5,17 @@ layout: single
 ---
 
 
-**Steven Zhang** — CS (Kean), research in Computer Vision, WSIS, and AL.
+**Steven Zhang** 
+
+## About Me
+I am a CS undergraduate at **Kean University** (expected May 2026),  
+Dean’s List (2024–2025, GPA 3.91).  
+
+My research focuses on **medical image segmentation**,  
+**weakly supervised learning**, and **AI for healthcare applications**.
 
 
-- GPA 3.91 (Dean's Honor List)
+- GPA 3.91 (2024.9-2025.6，Dean's Honor List)
 - First‑author submission to BMVC/BIBM 2025
 - RA experience under NSF funding
 
