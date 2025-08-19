@@ -19,7 +19,7 @@ Completed dual-stage active learning research resulting in first-author IEEE-BIB
 </div>
 <div class="research-item">
 <strong>NSF-Funded Research Assistant (June 2025–Present)</strong><br>
-Currently developing advanced tumor segmentation algorithms targeting a high-impact journal publication with novel weakly supervised learning approaches.
+Currently developing advanced tumor segmentation algorithms targeting a journal publication with novel weakly supervised learning approaches.
 </div>
 <div class="research-item">
 <strong>Medfusion Fake Image Generator (2024)</strong><br>

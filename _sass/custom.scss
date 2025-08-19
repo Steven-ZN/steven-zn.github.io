@@ -163,6 +163,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 .home-section {
   animation: fadeInUp 0.6s ease-out;
+  margin: 1rem 0;
 }
 
 .home-section:nth-child(2) { animation-delay: 0.1s; }
@@ -173,19 +174,20 @@ transition: transform .2s ease, box-shadow .2s ease;
 .research-highlights {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
+  padding: 1.2rem;
+  margin: 1rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .research-highlights h2 {
   color: #2c3e50;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.3em;
 }
 
 .research-item {
-  margin-bottom: 1rem;
-  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
   background: rgba(255,255,255,0.7);
   border-radius: 8px;
   border-left: 4px solid #3498db;
@@ -196,12 +198,16 @@ transition: transform .2s ease, box-shadow .2s ease;
   transform: translateX(5px);
 }
 
+.research-item:last-child {
+  margin-bottom: 0;
+}
+
 // 项目卡片增强
 .project-card {
   background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 12px;
-  padding: 1.2rem;
-  margin: 0.8rem 0;
+  padding: 0.9rem;
+  margin: 0.6rem 0;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   border: 1px solid rgba(0,0,0,0.05);
@@ -210,6 +216,16 @@ transition: transform .2s ease, box-shadow .2s ease;
 .project-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1em;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
 }
 
 .badge {
