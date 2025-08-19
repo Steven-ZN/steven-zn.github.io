@@ -5,7 +5,8 @@ title: "Steven Zhang"
 author_profile: true
 ---
 
-欢迎来到我的个人网站  
-我是一名研究弱监督分割、主动学习与大语言模型的计算机视觉研究者。
+I'm **Nuojunxi (Steven) Zhang**.  
+CS @ Kean University • Research in Weakly Supervised Segmentation, Active Learning, and LLMs.
+
 
 [Projects](/projects/)  •  [Blog](/blog/)  •  [About](/about/)  •  [Contact](/contact/)
