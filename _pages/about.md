@@ -8,7 +8,7 @@ toc: true
 
 ## About Me
 
-I am a Computer Science undergraduate at **Kean University** (expected May 2026) with a strong focus on machine learning and medical imaging research. Currently maintaining a 3.91 GPA and recognized on the Dean's Honor List.
+I am a Computer Science undergraduate at **Kean University** (expected May 2026) with a strong focus on machine learning and medical imaging research. Achieved a 3.91 GPA during the 2024-2025 academic year and recognized on the Dean's Honor List.
 
 My research interests lie at the intersection of **computer vision**, **weakly supervised learning**, and **healthcare AI applications**. I'm particularly passionate about developing efficient learning algorithms that can work with limited labeled data - a critical challenge in medical imaging.
 
@@ -16,8 +16,8 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 
 **Bachelor of Science in Computer Science**  
 *Kean University* | Expected May 2026  
-- GPA: 3.91/4.0 (Dean's Honor List 2024-2025)
-- Relevant Coursework: Machine Learning, Computer Vision, Data Structures, Database Systems
+- GPA: 3.91/4.0 for 2024-2025 academic year (Dean's Honor List)
+- Two years at Wenzhou-Kean University (2022-2024) as part of joint program
 
 ## Research Experience
 
