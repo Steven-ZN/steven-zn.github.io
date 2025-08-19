@@ -2,7 +2,7 @@
 permalink: /projects/
 title: "Projects & Research"
 layout: single
-classes: wide
+classes: wide projects-page
 author_profile: true
 toc: true
 ---

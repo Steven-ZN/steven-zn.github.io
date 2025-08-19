@@ -28,7 +28,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 头像完整显示不裁剪，修复远离变白问题 - 强化版本
 .author__avatar,
 .author__avatar img {
-  width: 250px !important;
+  width: 167px !important;
   height: auto !important;
   max-width: 250px !important;
   max-height: none !important;
@@ -81,7 +81,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 额外覆盖可能的父容器样式
 .sidebar .author__avatar,
 .sidebar .author__avatar img {
-  width: 250px !important;
+  width: 167px !important;
   height: auto !important;
 }
 
@@ -93,6 +93,60 @@ transition: transform .2s ease, box-shadow .2s ease;
   filter: none !important;
   opacity: 1 !important;
   transform: none !important;
+}
+
+// 邮箱复制优化 - 显示可选择的文本
+.author__urls .email-text {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 2px;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  cursor: text;
+  font-family: monospace;
+}
+
+// Projects页面排版优化
+.projects-page {
+  font-size: 0.9em;
+}
+
+.projects-page .project-card {
+  font-size: 0.85em;
+}
+
+.projects-page .project-card h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.8rem;
+}
+
+.projects-page .project-card p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.projects-page .project-card ul {
+  font-size: 0.9em;
+  margin-bottom: 0.8rem;
+}
+
+.projects-page .project-card li {
+  margin-bottom: 0.3rem;
+}
+
+// 项目按钮右对齐
+.project-buttons {
+  text-align: right !important;
+  margin-top: 1rem;
+}
+
+.project-card .btn {
+  font-size: 0.8em;
+  padding: 0.4rem 0.8rem;
 }
 
 // 主页动画效果
