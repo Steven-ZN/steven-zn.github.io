@@ -1,0 +1,74 @@
+featured:
+  - image_path: /images/projects/dsalnet.jpg
+    alt: "DSAL-Net"
+    title: "DSAL-Net: Dual-Stage Active Learning for Weakly Supervised Segmentation"
+    excerpt: "CAM→pseudo masks, HSV stabilizer, Mean Teacher consistency; paper impl (coming soon)."
+    url: /projects/dsal-net/
+    btn_label: "Details"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/echomind.jpg
+    alt: "EchoMind"
+    title: "EchoMind: True Personality Mirrors on OSS LLMs"
+    excerpt: "Episodic/Procedural/Belief memory + LoRA/Prefix style adapters; personality-consistent agents."
+    url: /projects/echomind/
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/medfusion.jpg
+    alt: "Medfusion Fake Image"
+    title: "Medfusion Fake Image: VAE + Diffusion for Medical Synthesis"
+    excerpt: "512×512 synthetic imaging with tumor-inclusive outputs; distribution control & eval."
+    url: /projects/medfusion/
+    btn_label: "Tech Notes"
+    btn_class: "btn--primary"
+
+llm:
+  - image_path: /images/projects/mbti-llm.jpg
+    alt: "MBTI-LLM"
+    title: "MBTI-LLM: Personality-Controlled Generation"
+    excerpt: "MBTI-driven style control to simulate human-like personality in LLM outputs."
+    url: /projects/mbti-llm/
+    btn_label: "Demo & Paper"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/deepteacher.jpg
+    alt: "DeepTeacher"
+    title: "DeepTeacher: Local Learning Assistant"
+    excerpt: "llava-phi3 + DeepSeek-R1; realtime screen capture, vision understanding, and feedback."
+    url: /projects/deepteacher/
+    btn_label: "How it Works"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/positronic.jpg
+    alt: "positronic-brain"
+    title: "positronic-brain: Law-Constrained Agents"
+    excerpt: "Asimov-inspired code-level constraints for LLM agents; safe behaviors by design."
+    url: /projects/positronic-brain/
+    btn_label: "Spec"
+    btn_class: "btn--primary"
+
+medcv:
+  - image_path: /images/projects/handsense.jpg
+    alt: "HandSense-360"
+    title: "HandSense-360: Real-time Gesture Tracking"
+    excerpt: "Mediapipe + vision stack; control systems & healthcare integrations."
+    url: /projects/handsense-360/
+    btn_label: "Video"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/airposture.jpg
+    alt: "AirPosture"
+    title: "AirPosture: AirPods as Posture Coach"
+    excerpt: "Leverages AirPods sensors to monitor and coach posture on macOS."
+    url: /projects/airposture/
+    btn_label: "Overview"
+    btn_class: "btn--primary"
+
+  - image_path: /images/projects/deepplaylist.jpg
+    alt: "DeepPlaylist"
+    title: "DeepPlaylist: Auto Playlist Classifier"
+    excerpt: "DeepSeek + QQ Music API; language × mood classification with promptable rules."
+    url: /projects/deepplaylist/
+    btn_label: "Try It"
+    btn_class: "btn--primary"
