@@ -41,9 +41,10 @@ permalink: /:categories/:title/
 
 # 插件（GitHub Pages 白名单）
 plugins:
-- jekyll-feed
-- jekyll-sitemap
-- jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme   # ← 关键：启用 remote_theme
 
 
 # SEO
