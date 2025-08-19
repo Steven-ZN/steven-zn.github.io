@@ -13,6 +13,7 @@ author_profile: true
 ## Get In Touch
 
 **Email:** [zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)  
+**University Email:** [zhangnu@kean.edu](mailto:zhangnu@kean.edu)  
 **Phone:** 929-988-2116  
 **Location:** Union, New Jersey, USA
 
@@ -55,6 +56,6 @@ I typically respond to emails within 24-48 hours. For urgent matters, please men
 
 <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
 <h3>Quick Contact Form</h3>
-<p><em>For the fastest response, please email me directly at <strong>zhangnuojunxi@gmail.com</strong></em></p>
+<p><em>For academic inquiries, use <strong>zhangnu@kean.edu</strong>. For general contact, email <strong>zhangnuojunxi@gmail.com</strong></em></p>
 <p>Include your affiliation, research interests, and purpose of contact in your message.</p>
 </div>

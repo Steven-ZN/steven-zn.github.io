@@ -16,7 +16,7 @@ toc: true
 - Responsibilities include algorithm development, experimental design, and manuscript preparation
 - Working on cutting-edge weakly supervised learning techniques for medical imaging applications
 
-### Research Assistant — Dual-Stage Active Learning Segmentation
+### Research Assistant — Dual-Stage Active Learning Segmentation (NSF-Funded)
 **Kean University** | *Dec 2024 – May 2025*
 
 - Designed a dual-stage active learning framework to improve weakly supervised tumor segmentation using image-level labels in BUS ultrasound datasets
@@ -33,7 +33,7 @@ toc: true
 - Training a latent VAE embedder and conditional diffusion model on BUSI dataset
 - Designed experiments using diffusion-generated images and weak labels to evaluate their impact on downstream segmentation performance
 
-### Research Assistant — Vision-AI Lab
+### Research Assistant — Vision-AI Lab (SPF-Funded)
 **Wenzhou-Kean University** | *Sep 2023 – May 2024*
 
 - Joined Prof. Gupta's Vision-AI Lab to support projects in computer vision and medical imaging

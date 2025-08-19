@@ -7,8 +7,8 @@ classes: wide
 ---
 
 <div class="home-section">
-**Computer Science @ Kean University**  
-Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs**.  
+<p><strong>Computer Science @ Kean University</strong><br>
+Research in <strong>Weakly Supervised Segmentation</strong>, <strong>Active Learning</strong>, and <strong>LLMs</strong>.</p>
 </div>
 
 <div class="home-section research-highlights">
@@ -18,8 +18,8 @@ Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs*
 First-author paper on tumor segmentation with CAM filtering, HSV stabilization, and Mean Teacher consistency.
 </div>
 <div class="research-item">
-<strong>NSF-Funded Research Assistant (2025–present)</strong><br>
-Developing ultrasound segmentation methods for journal publication.
+<strong>NSF-Funded Research Assistant (June 2025–Present)</strong><br>
+Contributing to tumor segmentation research with algorithm development and manuscript preparation.
 </div>
 <div class="research-item">
 <strong>Medfusion Fake Image Generator (2024)</strong><br>
@@ -51,23 +51,27 @@ Built synthetic medical image pipeline using VAE + Diffusion for weak supervisio
 <div class="home-section">
 <h2>Experience</h2>
 <div class="research-item">
-<strong>Research Assistant, Kean University (2025–Present)</strong><br>
+<strong>Research Assistant, Kean University (June 2025–Present)</strong><br>
 NSF-funded tumor segmentation project with focus on weakly supervised learning methods.
 </div>
 <div class="research-item">
-<strong>Vision-AI Lab, WKU (2023–2024)</strong><br>
-Raw image denoising research and Bayer pattern modeling for computational photography.
+<strong>Research Assistant, Kean University (Dec 2024–May 2025)</strong><br>
+NSF-funded dual-stage active learning segmentation with 68.25% IoU and 79.39% DSC achievements.
 </div>
 <div class="research-item">
-<strong>Computer Club VP (2024)</strong><br>
-Led initiatives that increased active membership by 30% and organized technical workshops.
+<strong>Vision-AI Lab, WKU (Sep 2023–May 2024)</strong><br>
+SPF-funded raw image denoising research and Bayer pattern modeling for computational photography.
+</div>
+<div class="research-item">
+<strong>Computer Club VP (Jan 2024–Jun 2024)</strong><br>
+Led strategic initiatives that increased active membership by 30% and organized technical workshops.
 </div>
 </div>
 
 <div class="home-section contact-info">
 <h2>Get In Touch</h2>
 <p>
-<a href="mailto:zhangnuojunxi@gmail.com">zhangnuojunxi@gmail.com</a><br>
+<a href="mailto:zhangnu@kean.edu">zhangnu@kean.edu</a> | <a href="mailto:zhangnuojunxi@gmail.com">zhangnuojunxi@gmail.com</a><br>
 Union, NJ | <a href="https://github.com/Steven-ZN">GitHub</a> | <a href="https://linkedin.com/in/your-link">LinkedIn</a>
 </p>
 </div>  
