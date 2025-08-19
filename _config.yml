@@ -28,8 +28,9 @@ author:
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/your-link"
     - label: "Download CV"
-      icon: "fas fa-download"
+      icon: "fas fa-download" 
       url: "/assets/documents/Nuojunxi Zhang_CV.pdf"
+      target: "_blank"
 
 # 导航
 collections:
