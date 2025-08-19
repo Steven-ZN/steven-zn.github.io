@@ -1,0 +1,12 @@
+---
+# 该 Front Matter 不能删
+---
+
+
+// 载入主题核心样式
+@import "minimal-mistakes/skins/air"; // 与 _config.yml 的 skin 对应
+@import "minimal-mistakes";
+
+
+// 自定义增强（避免风格过于单调）
+@import "custom";
