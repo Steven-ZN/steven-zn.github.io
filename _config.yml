@@ -88,5 +88,5 @@ sass:
   style: compressed
 
 # 站点图标
-# favicon: /images/favicon.ico
+favicon: /images/favicon.svg
 # Force rebuild 2025年08月19日 18:50:15
