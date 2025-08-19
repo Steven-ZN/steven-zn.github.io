@@ -1,0 +1,17 @@
+title: Steven ZN
+description: Personal website & CV
+url: "https://steven-zn.github.io"   # 你的网站域名
+baseurl: ""                           # 用户主页必须留空
+theme: minima                         # 先用官方主题，省事
+timezone: America/New_York
+
+# 站点导航（minima 支持）
+minima:
+  skin: auto
+  social_links:
+    github: Steven-ZN
+    linkedin: YOUR-LINKEDIN-USERNAME
+
+# Markdown/高亮（可选）
+markdown: kramdown
+highlighter: rouge
