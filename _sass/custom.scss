@@ -25,23 +25,43 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 页眉按钮更显眼
 .btn--primary { border-radius: .75rem; padding: .55rem 1rem; }
 
-// 头像完整显示不裁剪
+// 头像完整显示不裁剪，修复远离变白问题
 .author__avatar img {
-  width: 180px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  image-rendering: auto;
+  width: 200px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  image-rendering: auto !important;
   filter: none !important;
   transition: none !important;
   opacity: 1 !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -ms-filter: none !important;
+  -o-filter: none !important;
+  transform: none !important;
 }
 
-.author__avatar img:hover {
+.author__avatar img:hover,
+.author__avatar img:focus,
+.author__avatar img:active {
   filter: none !important;
   transform: none !important;
   opacity: 1 !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -ms-filter: none !important;
+  -o-filter: none !important;
+}
+
+// 覆盖主题默认的头像样式
+.author__avatar {
+  filter: none !important;
+}
+
+.author__avatar:hover {
+  filter: none !important;
 }
 
 // 主页动画效果

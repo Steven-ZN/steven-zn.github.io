@@ -7,7 +7,7 @@ author_profile: true
 toc: true
 ---
 
-Welcome to my comprehensive project portfolio! Here you'll find detailed information about my research and development work across medical AI, natural language processing, computer vision, and practical applications. Each project represents a unique contribution with open-source implementations.
+Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning. Each project represents a unique contribution with open-source implementations focused on advancing artificial intelligence.
 
 ---
 
@@ -15,9 +15,9 @@ Welcome to my comprehensive project portfolio! Here you'll find detailed informa
 
 <div class="project-showcase">
 
-### DSAL-Net: Dual-Stage Active Learning for Medical Segmentation
-
 <div class="project-card featured-project">
+
+<h3>DSAL-Net: Dual-Stage Active Learning for Medical Segmentation</h3>
 
 **Research Focus**: Weakly Supervised Learning, Medical Imaging, Active Learning
 
@@ -39,9 +39,9 @@ DSAL-Net introduces a novel dual-stage active learning framework specifically de
 
 </div>
 
-### EchoMind: True Personality Mirrors for LLMs
-
 <div class="project-card featured-project">
+
+<h3>EchoMind: True Personality Mirrors for LLMs</h3>
 
 **Research Focus**: Large Language Models, Memory Systems, Personality AI
 
@@ -63,9 +63,9 @@ EchoMind is a groundbreaking framework that creates consistent personality mirro
 
 </div>
 
-### Medfusion: Advanced Medical Image Generation
-
 <div class="project-card featured-project">
+
+<h3>Medfusion: Advanced Medical Image Generation</h3>
 
 **Research Focus**: Generative AI, Medical Imaging, Synthetic Data
 
@@ -147,7 +147,7 @@ Advanced computer vision system for healthcare and control applications.
 
 ---
 
-## Applications & Tools
+## AI Applications & Tools
 
 <div class="project-grid">
 
@@ -184,26 +184,6 @@ Automatic playlist classification system based on DeepSeek and QQ Music API with
 </div>
 
 <div class="project-card">
-<h3>AirPosture: Posture Coaching Innovation</h3>
-
-Turn your AirPods into a posture coach on macOS - innovative health monitoring solution.
-
-**Innovation**: Creative use of AirPods sensors for health monitoring  
-**Platform**: macOS-specific implementation  
-**Impact**: Accessible health technology using existing devices
-
-<a href="https://github.com/Steven-ZN/AirPosture" class="btn btn--success">View Project</a>
-</div>
-
-</div>
-
----
-
-## Utility & Enhancement Tools
-
-<div class="project-grid">
-
-<div class="project-card">
 <h3>MagicSub: AI-Powered Subtitle Translation</h3>
 
 Advanced subtitle translation system leveraging state-of-the-art language models for accurate content localization across multiple languages.
@@ -222,51 +202,7 @@ Advanced subtitle translation system leveraging state-of-the-art language models
 
 **Applications**: Content creators, Educational platforms, Media companies, International distribution
 
-<a href="https://github.com/Steven-ZN/MagicSub" class="btn btn--warning">View Project</a>
-</div>
-
-<div class="project-card">
-<h3>WeChatBot: Enhanced Windows Support</h3>
-
-Comprehensive WeChat automation bot with enhanced cross-platform compatibility and extended functionality for Windows environments.
-
-**Enhanced Features:**
-- Full support for English Windows systems (resolving encoding issues)
-- Python 12 compatibility with updated dependencies
-- Advanced message processing and auto-response capabilities
-- Flexible plugin architecture for custom functionality
-
-**Technical Improvements:**
-- Robust character encoding handling for international systems
-- Modern Python compatibility (3.8-3.12)
-- Enhanced error handling and logging systems
-- Cross-platform file path management
-
-**Use Cases**: Business automation, Customer service, Social media management, Personal productivity
-
-<a href="https://github.com/Steven-ZN/WeChatBot_WXAUTO_SE" class="btn btn--warning">View Project</a>
-</div>
-
-<div class="project-card">
-<h3>GetQzonehistory: QQ Space Data Export</h3>
-
-Comprehensive data export tool for QQ Space content with advanced parsing and backup capabilities for personal data management.
-
-**Export Capabilities:**
-- Complete post history with metadata extraction
-- Photo albums with original quality preservation
-- Comment threads and social interaction data
-- Timeline reconstruction with chronological ordering
-
-**Technical Features:**
-- Robust HTML parsing with error recovery
-- Rate limiting to respect platform policies
-- Data integrity verification and validation
-- Multiple export formats (JSON, CSV, HTML)
-
-**Data Management**: Personal archiving, Digital legacy preservation, Content migration, Research applications
-
-<a href="https://github.com/Steven-ZN/GetQzonehistory" class="btn btn--warning">View Project</a>
+<a href="https://github.com/Steven-ZN/MagicSub" class="btn btn--success">View Project</a>
 </div>
 
 </div>
@@ -363,10 +299,10 @@ Comprehensive NLP research platform exploring advanced language understanding an
 - **Research Areas**: Weakly Supervised Learning, Active Learning, Personality AI
 
 ### Open Source Contribution
-- **Total Repositories**: 15+ active projects
+- **Total Repositories**: 12+ AI-focused projects
 - **Research Papers**: 1 first-author submission under review
-- **Technologies**: Medical AI, LLMs, Computer vision, Practical applications
-- **Impact**: Projects used in academic research and real-world applications
+- **Technologies**: Medical AI, LLMs, Computer vision, Machine learning
+- **Impact**: Projects used in academic research and real-world AI applications
 
 ### Research Philosophy
 I believe in making AI research **accessible**, **reproducible**, and **beneficial** for society. All my projects include comprehensive documentation, clear implementation details, and extensive usage examples. My work spans from theoretical research to practical applications, always with a focus on real-world impact.
