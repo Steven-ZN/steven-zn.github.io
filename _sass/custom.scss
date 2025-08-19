@@ -24,3 +24,11 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 // 页眉按钮更显眼
 .btn--primary { border-radius: .75rem; padding: .55rem 1rem; }
+
+// 头像裁剪为正圆
+.author__avatar img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
