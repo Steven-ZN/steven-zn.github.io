@@ -1,348 +1,68 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Github, Mail, Phone, MapPin, Download, ArrowRight, BookOpen, Cpu, Brain, Sparkles, Shield, MemoryStick as Memory, Command, Building2 } from "lucide-react";
+name: Build and Deploy Jekyll to GitHub Pages
 
-// Single-file React site for a personal landing page that showcases EchoMind & MBTI-LLM,
-// with an interactive, modern, aesthetic UI. Tailwind classes assumed available.
-// All content is inline so the user can copy into a Next.js/React app as a page component.
 
-const Tag = ({ children }: { children: React.ReactNode }) => (
-  <span className="inline-flex items-center rounded-full border border-slate-300/60 bg-white/60 px-3 py-1 text-xs text-slate-700 backdrop-blur-sm dark:border-slate-700/60 dark:bg-slate-900/40 dark:text-slate-200">
-    {children}
-  </span>
-);
+on:
+push:
+branches: ["main"]
+workflow_dispatch:
 
-const Section = ({ id, title, subtitle, children }: { id?: string; title: string; subtitle?: string; children: React.ReactNode }) => (
-  <section id={id} className="mx-auto w-full max-w-6xl px-4 py-16">
-    <motion.h2
-      className="mb-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4 }}
-    >
-      {title}
-    </motion.h2>
-    {subtitle && (
-      <motion.p
-        className="mb-8 max-w-3xl text-sm text-slate-600 dark:text-slate-300"
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.05 }}
-      >
-        {subtitle}
-      </motion.p>
-    )}
-    <div className="grid gap-6">{children}</div>
-  </section>
-);
 
-const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <motion.div
-    className={`rounded-2xl border border-slate-200/60 bg-white/70 p-6 shadow-sm backdrop-blur-sm dark:border-slate-800/60 dark:bg-slate-900/40 ${className}`}
-    initial={{ opacity: 0, y: 8 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.35 }}
-  >
-    {children}
-  </motion.div>
-);
+permissions:
+contents: read
+pages: write
+id-token: write
 
-const Pill = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
-  <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-800 dark:bg-slate-800 dark:text-slate-200">
-    {icon}
-    <span>{label}</span>
-  </div>
-);
 
-export default function Page() {
-  const cv = {
-    name: "Nuojunxi Zhang",
-    location: "Union, NJ",
-    email: "zhangnuojunxi@gmail.com",
-    phone: "929-988-2116",
-    education: {
-      school: "Kean University",
-      degree: "BS in Computer Science",
-      period: "Sept 2022 – May 2026 (Expected)",
-      notes: "Dean’s Honor List (2024–2025, GPA 3.91)",
-    },
-    publications: [
-      {
-        title:
-          "Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation",
-        venue: "IEEE-BIBM 2025 (under review)",
-        role: "First Author",
-      },
-      {
-        title: "Medical Computer Vision for Parkinson’s Rehabilitation (Poster)",
-        venue: "WKU Research Day, Apr 2023",
-        role: "Presenter",
-      },
-    ],
-    experience: [
-      {
-        role: "NSF-Funded Research Assistant — Tumor Segmentation",
-        org: "Kean University",
-        time: "June 2025 – Present",
-        points: [
-          "Algorithm development, experimental design, and manuscript preparation on ultrasound segmentation.",
-        ],
-      },
-      {
-        role: "Research Assistant — Dual-Stage Active Learning Segmentation",
-        org: "Kean University",
-        time: "Dec 2024 – May 2025",
-        points: [
-          "Designed weakly supervised pipeline: CAM filtering (HSV constraints) + SAM pseudo labels + Mean Teacher.",
-          "BUSI dataset: 68.25% IoU / 79.39% DSC (internal exp).",
-        ],
-      },
-      {
-        role: "Research Participant — Medfusion Fake Image Generator",
-        org: "Kean University",
-        time: "Sept 2024 – Dec 2024",
-        points: [
-          "VAE + diffusion augmentation for ultrasound segmentation; latent embedder + conditional diffusion.",
-        ],
-      },
-    ],
-    skills: [
-      "Java",
-      "Python",
-      "C#",
-      "SQL",
-      "MATLAB",
-      "PyTorch",
-      "TensorFlow",
-      "Git",
-      "Linux",
-      "System Testing",
-      "Technical Writing",
-    ],
-  } as const;
+concurrency:
+group: "pages"
+cancel-in-progress: false
 
-  const projects = [
-    {
-      name: "EchoMind",
-      tagline: "Persona Mirror — memory-driven, prompt-light human simulation",
-      bullets: [
-        "Memory Fabric: episodic, procedural, semantic, belief stores with retrieval & consolidation.",
-        "Style Kernel: LoRA/Prefix adapters + classifier-guided decoding (no fragile long prompts).",
-        "Planner→Retriever→Renderer→Verifier pipeline; drift detection & write-back memory.",
-      ],
-      ctas: [
-        { label: "GitHub", href: "https://github.com/your-username/echomind", icon: <Github size={16} /> },
-      ],
-      tags: ["Ollama", "LoRA", "Retrieval", "Agents", "Framer Motion"],
-      icon: <Brain className="h-5 w-5" />,
-    },
-    {
-      name: "MBTI-LLM",
-      tagline: "Rule + scoring + re-ranking for persona-stable outputs over open LLMs",
-      bullets: [
-        "Trait→Behavior mapping (tone, structure, lexicon) and candidate re-ranking by style score.",
-        "Supports ENTJ / INFP / ISTP; ready to extend to Big Five continuous traits.",
-        "Fast local runs with Ollama; simple API for apps and games.",
-      ],
-      ctas: [
-        { label: "GitHub", href: "https://github.com/Steven-ZN/MBTI-LLM", icon: <Github size={16} /> },
-      ],
-      tags: ["Ollama", "Re-ranking", "Style Scorer", "MBTI"],
-      icon: <Cpu className="h-5 w-5" />,
-    },
-  ] as const;
 
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900 dark:from-slate-950 dark:to-slate-900 dark:text-slate-100">
-      {/* Nav */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/60 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:border-slate-800/60 dark:bg-slate-900/50">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-          <div className="flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900">
-              <Sparkles size={16} />
-            </div>
-            <span className="text-sm font-semibold tracking-wide">EchoMind</span>
-          </div>
-          <nav className="hidden gap-6 text-sm md:flex">
-            <a className="hover:opacity-80" href="#projects">Projects</a>
-            <a className="hover:opacity-80" href="#cv">CV</a>
-            <a className="hover:opacity-80" href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- name: Checkout
+uses: actions/checkout@v4
 
-      {/* Hero */}
-      <section className="relative mx-auto max-w-6xl px-4 py-16">
-        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
-            Persona Mirrors for Real Human-Like Agents
-          </h1>
-          <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
-            Memory-driven, prompt-light architecture to simulate stable personality, values, and decision styles over
-            open LLMs. Designed for research, games, assistants, and HCI experiments.
-          </p>
-          <div className="mt-6 flex flex-wrap items-center gap-2">
-            <Tag>Memory Fabric</Tag>
-            <Tag>Style Kernel</Tag>
-            <Tag>Planner→Retriever→Renderer→Verifier</Tag>
-            <Tag>Ollama Ready</Tag>
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow hover:opacity-90 dark:bg-white dark:text-slate-900"
-            >
-              Explore Projects <ArrowRight size={16} />
-            </a>
-            <a
-              href="#cv"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800"
-            >
-              View CV <BookOpen size={16} />
-            </a>
-          </div>
-        </motion.div>
-        {/* Soft gradient blob */}
-        <div className="pointer-events-none absolute inset-x-0 -top-16 -z-10 mx-auto h-64 max-w-5xl rounded-[48px] bg-gradient-to-r from-indigo-200/40 via-fuchsia-200/30 to-rose-200/40 blur-3xl dark:from-indigo-900/20 dark:via-fuchsia-900/10 dark:to-rose-900/20" />
-      </section>
 
-      {/* Projects */}
-      <Section id="projects" title="Projects" subtitle="Selected work blending research & engineering.">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {projects.map((p) => (
-            <Card key={p.name}>
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  {p.icon}
-                  <h3 className="text-lg font-semibold">{p.name}</h3>
-                </div>
-                <div className="flex gap-2">
-                  {p.ctas.map((c) => (
-                    <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-lg border border-slate-300 px-3 py-1.5 text-xs hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">
-                      {c.icon}
-                      <span>{c.label}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
-              <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{p.tagline}</p>
-              <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-200">
-                {p.bullets.map((b) => (
-                  <li key={b}>{b}</li>
-                ))}
-              </ul>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.tags.map((t) => (
-                  <Pill key={t} icon={<Command size={14} />} label={t} />
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
-      </Section>
+- name: Setup Ruby
+uses: ruby/setup-ruby@v1
+with:
+ruby-version: '3.2'
+bundler-cache: true
 
-      {/* CV */}
-      <Section id="cv" title="Curriculum Vitae" subtitle="Snapshot of education, publications, experience, and skills.">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <Card className="lg:col-span-2">
-            <div className="flex flex-wrap items-center gap-3">
-              <h3 className="text-lg font-semibold">{cv.name}</h3>
-              <div className="flex flex-wrap items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-                <span className="inline-flex items-center gap-1"><MapPin size={14} /> {cv.location}</span>
-                <span className="inline-flex items-center gap-1"><Mail size={14} /> {cv.email}</span>
-                <span className="inline-flex items-center gap-1"><Phone size={14} /> {cv.phone}</span>
-              </div>
-            </div>
-            <div className="mt-5 grid gap-6 md:grid-cols-2">
-              <div>
-                <h4 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-500">Education</h4>
-                <div className="rounded-xl border border-slate-200/70 p-3 dark:border-slate-800/60">
-                  <div className="font-medium">{cv.education.school}</div>
-                  <div className="text-sm text-slate-600 dark:text-slate-300">{cv.education.degree}</div>
-                  <div className="text-xs text-slate-500">{cv.education.period}</div>
-                  <div className="mt-1 text-xs text-emerald-700 dark:text-emerald-400">{cv.education.notes}</div>
-                </div>
 
-                <h4 className="mt-6 mb-1 text-sm font-semibold uppercase tracking-wider text-slate-500">Publications</h4>
-                <ul className="space-y-2">
-                  {cv.publications.map((p) => (
-                    <li key={p.title} className="rounded-xl border border-slate-200/70 p-3 text-sm dark:border-slate-800/60">
-                      <div className="font-medium">{p.title}</div>
-                      <div className="text-xs text-slate-600 dark:text-slate-300">{p.venue} • {p.role}</div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+- name: Install dependencies
+run: |
+bundle init || true
+echo 'source "https://rubygems.org"' > Gemfile
+echo 'gem "jekyll"' >> Gemfile
+echo 'gem "webrick"' >> Gemfile
+echo 'gem "jekyll-feed"' >> Gemfile
+echo 'gem "jekyll-sitemap"' >> Gemfile
+echo 'gem "jekyll-seo-tag"' >> Gemfile
+echo 'gem "minimal-mistakes-jekyll"' >> Gemfile
+bundle install
 
-              <div>
-                <h4 className="mb-1 text-sm font-semibold uppercase tracking-wider text-slate-500">Experience</h4>
-                <ul className="space-y-3">
-                  {cv.experience.map((e) => (
-                    <li key={e.role} className="rounded-xl border border-slate-200/70 p-3 dark:border-slate-800/60">
-                      <div className="flex items-center justify-between gap-2">
-                        <div className="font-medium">{e.role}</div>
-                        <div className="text-xs text-slate-500">{e.time}</div>
-                      </div>
-                      <div className="text-xs text-slate-600 dark:text-slate-300">{e.org}</div>
-                      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
-                        {e.points.map((pt) => (
-                          <li key={pt}>{pt}</li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </Card>
 
-          <Card>
-            <h4 className="mb-2 text-sm font-semibold uppercase tracking-wider text-slate-500">Skills</h4>
-            <div className="flex flex-wrap gap-2">
-              {cv.skills.map((s) => (
-                <Tag key={s}>{s}</Tag>
-              ))}
-            </div>
-            <div className="mt-6">
-              <a
-                href="#"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:opacity-90 dark:bg-white dark:text-slate-900"
-              >
-                <Download size={16} /> Download PDF
-              </a>
-              <p className="mt-2 text-xs text-slate-500">Upload your CV to your repo and point this button to it.</p>
-            </div>
-            <div className="mt-6 space-y-2 text-xs text-slate-600 dark:text-slate-300">
-              <p className="inline-flex items-center gap-2"><Shield size={14} /> Safety-first research mindset for medical imaging.</p>
-              <p className="inline-flex items-center gap-2"><Building2 size={14} /> Kean University — Vision & Medical AI.</p>
-            </div>
-          </Card>
-        </div>
-      </Section>
+- name: Build site
+run: bundle exec jekyll build --trace --verbose
 
-      {/* Contact */}
-      <Section id="contact" title="Contact" subtitle="Open for research collaborations and engineering projects.">
-        <Card>
-          <div className="grid gap-4 md:grid-cols-3">
-            <a href="mailto:zhangnuojunxi@gmail.com" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-medium hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">
-              <Mail size={16} /> Email
-            </a>
-            <a href="https://github.com/Steven-ZN" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-medium hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">
-              <Github size={16} /> GitHub
-            </a>
-            <a href="#" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-medium hover:bg-slate-50 dark:border-slate-700 dark:hover:bg-slate-800">
-              <MapPin size={16} /> Union, NJ
-            </a>
-          </div>
-        </Card>
-      </Section>
 
-      <footer className="mx-auto max-w-6xl px-4 pb-12 pt-4 text-xs text-slate-500">
-        © {new Date().getFullYear()} EchoMind — Built with React & Tailwind.
-      </footer>
-    </div>
-  );
-}
+- name: Upload artifact
+uses: actions/upload-pages-artifact@v3
+with:
+path: _site
+
+
+deploy:
+needs: build
+runs-on: ubuntu-latest
+environment:
+name: github-pages
+url: ${{ steps.deployment.outputs.page_url }}
+steps:
+- name: Deploy to GitHub Pages
+id: deployment
+uses: actions/deploy-pages@v4
