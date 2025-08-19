@@ -15,15 +15,9 @@ locale: en-US
 author:
   name: "Nuojunxi (Steven) Zhang"
   avatar: "/images/avatar.jpg"
-  bio: "A CS undergraduate with computer vision research experience, currently working as a research assistant and seeking Ph.D. opportunities in the U.S."
+  bio: "A CS undergraduate with computer vision research experience, currently working as a research assistant and seeking Ph.D. opportunities in the U.S.<br><br>📧 Academic: zhangnu@kean.edu<br>📧 Personal: zhangnuojunxi@gmail.com"
   location: "Union, New Jersey, USA"
   links:
-    - label: "Academic: zhangnu@kean.edu"
-      icon: "fas fa-envelope"
-      url: "mailto:zhangnu@kean.edu"
-    - label: "Personal: zhangnuojunxi@gmail.com"
-      icon: "fas fa-envelope-open"
-      url: "mailto:zhangnuojunxi@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Steven-ZN"

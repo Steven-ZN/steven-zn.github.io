@@ -14,12 +14,12 @@ Research in <strong>Weakly Supervised Segmentation</strong>, <strong>Active Lear
 <div class="home-section research-highlights">
 <h2>Research Highlights</h2>
 <div class="research-item">
-<strong>Dual-Stage Active Learning (IEEE-BIBM 2025, under review)</strong><br>
-First-author paper on tumor segmentation with CAM filtering, HSV stabilization, and Mean Teacher consistency.
+<strong>NSF-Funded Research Assistant (Dec 2024–May 2025)</strong><br>
+Completed dual-stage active learning research resulting in first-author IEEE-BIBM 2025 submission on tumor segmentation with CAM filtering and Mean Teacher consistency.
 </div>
 <div class="research-item">
 <strong>NSF-Funded Research Assistant (June 2025–Present)</strong><br>
-Contributing to tumor segmentation research with algorithm development and manuscript preparation.
+Currently developing advanced tumor segmentation algorithms targeting a high-impact journal publication with novel weakly supervised learning approaches.
 </div>
 <div class="research-item">
 <strong>Medfusion Fake Image Generator (2024)</strong><br>
