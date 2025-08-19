@@ -6,13 +6,13 @@ author_profile: true
 classes: wide
 ---
 
-# 👋 Hi, I’m Steven Zhang
+
 Computer Science @ Kean University  
 Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs**.  
 
 ---
 
-## 🔬 Research Highlights
+## Research Highlights
 - **Dual-Stage Active Learning (IEEE-BIBM 2025, under review)**  
   First-author paper on tumor segmentation with CAM filtering, HSV stabilization, and Mean Teacher consistency.  
 - **NSF-Funded Research Assistant** (2025–present)  
@@ -22,17 +22,12 @@ Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs*
 
 ---
 
-## 💻 Projects
+##  Projects
 <div class="grid__wrapper">
   <div class="card">
     <h3><a href="/projects/#wsis">WSIS Framework</a></h3>
     <p>Dual-stage active learning for BUS ultrasound segmentation.</p>
     <span class="badge">PyTorch</span> <span class="badge">Medical Imaging</span>
-  </div>
-  <div class="card">
-    <h3><a href="/projects/#phdtracking">PhDTracking.com</a></h3>
-    <p>Faculty search & CRM system with scraping + Django backend.</p>
-    <span class="badge">Django</span> <span class="badge">Postgres</span>
   </div>
   <div class="card">
     <h3><a href="/projects/#diffusion">VAE + Diffusion</a></h3>
@@ -43,7 +38,7 @@ Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs*
 
 ---
 
-## 📜 Experience
+## Experience
 - **Research Assistant, Kean University (2025–Now)**  
   NSF-funded, tumor segmentation project.  
 - **Vision-AI Lab, WKU (2023–2024)**  
@@ -53,6 +48,6 @@ Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs*
 
 ---
 
-## 📫 Contact
-📧 [zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)  
-📍 Union, NJ | [GitHub](https://github.com/Steven-ZN) | [LinkedIn](https://linkedin.com/in/your-link)  
+## Contact
+[zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)  
+Union, NJ | [GitHub](https://github.com/Steven-ZN) | [LinkedIn](https://linkedin.com/in/your-link)  
