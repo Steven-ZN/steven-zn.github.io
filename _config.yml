@@ -1,17 +1,93 @@
-title: Steven ZN
-description: Personal website & CV
-url: "https://steven-zn.github.io"   # 你的网站域名
-baseurl: ""                           # 用户主页必须留空
-theme: minima                         # 先用官方主题，省事
-timezone: America/New_York
+# 站点基础
+title: "Steven Zhang"
+description: "CV / Weakly Supervised Segmentation • Active Learning • LLM"
+url: "https://steven-zn.github.io"
+baseurl: ""
 
-# 站点导航（minima 支持）
-minima:
-  skin: auto
-  social_links:
-    github: Steven-ZN
-    linkedin: YOUR-LINKEDIN-USERNAME
 
-# Markdown/高亮（可选）
-markdown: kramdown
+# 使用 Minimal Mistakes 主题（GitHub Pages 兼容）
+remote_theme: "mmistakes/minimal-mistakes"
+
+
+# 主题皮肤与外观（可换：default, air, neon, dark, contrast 等）
+skin: "air"
+
+
+# 作者信息 -> 用于 about 卡片与 SEO
+locale: zh-CN
+author:
+name: "Steven Zhang"
+avatar: "/images/avatar.jpg"
+bio: "CS @ Kean • CV/WSIS/AL • Building PhDTracking.com"
+location: "New Jersey, USA"
+links:
+- label: "GitHub"
+icon: "fab fa-github"
+url: "https://github.com/Steven-ZN"
+- label: "LinkedIn"
+icon: "fab fa-linkedin"
+url: "https://www.linkedin.com/in/your-link"
+- label: "Google Scholar"
+icon: "ai ai-google-scholar"
+url: "https://scholar.google.com/citations?user=YOURID"
+
+
+# 导航（指向 _data/navigation.yml）
+collections:
+pages:
+output: true
+permalink: /:categories/:title/
+
+
+# 插件（GitHub Pages 白名单）
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
+
+
+# SEO
+seo:
+type: "Person"
+name: "Steven Zhang"
+
+
+# 分页（博客）
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+
+# 代码高亮
 highlighter: rouge
+markdown: kramdown
+kramdown:
+input: GFM
+
+
+# 默认 Front Matter
+defaults:
+- scope:
+path: ""
+type: "posts"
+values:
+layout: single
+author_profile: true
+read_time: true
+toc: true
+toc_sticky: true
+- scope:
+path: "_pages"
+type: pages
+values:
+layout: single
+author_profile: true
+
+
+# Assets
+sass:
+sass_dir: _sass
+style: compressed
+
+
+# 站点图标（可后续补充）
+# favicon: /images/favicon.ico
