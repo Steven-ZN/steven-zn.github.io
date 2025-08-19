@@ -11,13 +11,16 @@ remote_theme: "mmistakes/minimal-mistakes"
 skin: "aqua"
 
 # 作者信息
-locale: zh-CN
+locale: en-US
 author:
-  name: "Steven Zhang"
+  name: "Nuojunxi (Steven) Zhang"
   avatar: "/images/avatar.jpg"
-  bio: "CS @ Kean • CV/WSIS/AL • Building PhDTracking.com"
-  location: "New Jersey, USA"
+  bio: "CS @ Kean University • AI Research • Medical Imaging"
+  location: "Union, New Jersey, USA"
   links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:zhangnuojunxi@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Steven-ZN"
