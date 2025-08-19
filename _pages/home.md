@@ -1,34 +1,58 @@
 ---
-layout: splash
+layout: single
 permalink: /
-title: "Steven Zhang"
+title: "Nuojunxi (Steven) Zhang"
 author_profile: true
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.3"
-  overlay_image: "/images/header-bg.jpg"   # 你可以换一张好看的图
-  actions:
-    - label: "View Projects"
-      url: "/projects/"
-    - label: "Publications"
-      url: "/publications/"
+classes: wide
 ---
-## About Me
-I'm **Nuojunxi (Steven) Zhang**, CS student @ Kean University.  
-Research in **Weakly Supervised Segmentation, Active Learning, and LLMs**.  
 
--  BS in Computer Science (Dean’s Honor List, GPA 3.91, 2024.9-2025.6):contentReference[oaicite:1]{index=1}  
-- First-author paper under review at **IEEE-BIBM 2025**:contentReference[oaicite:2]{index=2}  
-- NSF-funded Research Assistant working on **Medical Image Segmentation**:contentReference[oaicite:3]{index=3}
+# 👋 Hi, I’m Steven Zhang
+Computer Science @ Kean University  
+Research in **Weakly Supervised Segmentation**, **Active Learning**, and **LLMs**.  
 
 ---
 
-##  Latest Highlights
-- **[Segmenting What Matters: Dual-Stage Active Learning](#)** – first-author paper, under review @ IEEE-BIBM 2025  
-- **NSF-funded project on tumor segmentation**, Kean University (2025–Present)  
-- **Poster Presentation** – Medical Computer Vision for Parkinson’s Rehabilitation, WKU Research Day 2023  
+## 🔬 Research Highlights
+- **Dual-Stage Active Learning (IEEE-BIBM 2025, under review)**  
+  First-author paper on tumor segmentation with CAM filtering, HSV stabilization, and Mean Teacher consistency.  
+- **NSF-Funded Research Assistant** (2025–present)  
+  Developing ultrasound segmentation methods for journal publication.  
+- **Medfusion Fake Image Generator (2024)**  
+  Built synthetic medical image pipeline using **VAE + Diffusion** for weak supervision.  
 
 ---
 
-## Quick Links
-[Projects](/projects/) • [Publications](/publications/) • [Blog](/blog/) • [About](/about/) • [Contact](/contact/)
+## 💻 Projects
+<div class="grid__wrapper">
+  <div class="card">
+    <h3><a href="/projects/#wsis">WSIS Framework</a></h3>
+    <p>Dual-stage active learning for BUS ultrasound segmentation.</p>
+    <span class="badge">PyTorch</span> <span class="badge">Medical Imaging</span>
+  </div>
+  <div class="card">
+    <h3><a href="/projects/#phdtracking">PhDTracking.com</a></h3>
+    <p>Faculty search & CRM system with scraping + Django backend.</p>
+    <span class="badge">Django</span> <span class="badge">Postgres</span>
+  </div>
+  <div class="card">
+    <h3><a href="/projects/#diffusion">VAE + Diffusion</a></h3>
+    <p>Breast ultrasound synthesis experiments with conditional diffusion.</p>
+    <span class="badge">Generative AI</span>
+  </div>
+</div>
+
+---
+
+## 📜 Experience
+- **Research Assistant, Kean University (2025–Now)**  
+  NSF-funded, tumor segmentation project.  
+- **Vision-AI Lab, WKU (2023–2024)**  
+  Raw image denoising, Bayer pattern modeling.  
+- **Computer Club VP (2024)**  
+  Increased active membership by 30%.  
+
+---
+
+## 📫 Contact
+📧 [zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)  
+📍 Union, NJ | [GitHub](https://github.com/Steven-ZN) | [LinkedIn](https://linkedin.com/in/your-link)  
