@@ -8,7 +8,7 @@ baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
 
 # 主题皮肤与外观
-skin: "air"
+skin: "aqua"
 
 # 作者信息
 locale: zh-CN
