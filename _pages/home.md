@@ -72,16 +72,4 @@ Assisted faculty with event coordination and streamlined departmental scheduling
 </div>
 </div>
 
-<div class="home-section contact-info">
-<h2>Get In Touch</h2>
-<p>
-<span class="email-popup">
-  <a href="mailto:zhangnu@kean.edu">Email</a>
-  <div class="email-dropdown">
-    <a href="mailto:zhangnu@kean.edu">zhangnu@kean.edu (Academic)</a>
-    <a href="mailto:zhangnuojunxi@gmail.com">zhangnuojunxi@gmail.com (General)</a>
-  </div>
-</span> | 
-Union, NJ | <a href="https://github.com/Steven-ZN">GitHub</a> | <a href="https://linkedin.com/in/your-link">LinkedIn</a>
-</p>
-</div>  
+  
