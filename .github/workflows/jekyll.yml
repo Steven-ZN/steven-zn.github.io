@@ -1,68 +1,56 @@
-name: Build and Deploy Jekyll to GitHub Pages
-
+name: Build and Deploy Jekyll
 
 on:
-push:
-branches: ["main"]
-workflow_dispatch:
-
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 permissions:
-contents: read
-pages: write
-id-token: write
-
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-group: "pages"
-cancel-in-progress: false
-
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Checkout
-uses: actions/checkout@v4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
 
-- name: Setup Ruby
-uses: ruby/setup-ruby@v1
-with:
-ruby-version: '3.2'
-bundler-cache: true
+      - name: Install dependencies
+        run: |
+          echo 'source "https://rubygems.org"' > Gemfile
+          echo 'gem "jekyll", "~> 4.3.2"' >> Gemfile
+          echo 'gem "webrick"' >> Gemfile
+          echo 'gem "jekyll-feed"' >> Gemfile
+          echo 'gem "jekyll-sitemap"' >> Gemfile
+          echo 'gem "jekyll-seo-tag"' >> Gemfile
+          echo 'gem "jekyll-remote-theme"' >> Gemfile
+          bundle install
 
+      - name: Build site
+        run: bundle exec jekyll build --trace --verbose
 
-- name: Install dependencies
-run: |
-bundle init || true
-echo 'source "https://rubygems.org"' > Gemfile
-echo 'gem "jekyll"' >> Gemfile
-echo 'gem "webrick"' >> Gemfile
-echo 'gem "jekyll-feed"' >> Gemfile
-echo 'gem "jekyll-sitemap"' >> Gemfile
-echo 'gem "jekyll-seo-tag"' >> Gemfile
-echo 'gem "minimal-mistakes-jekyll"' >> Gemfile
-bundle install
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
 
-
-- name: Build site
-run: bundle exec jekyll build --trace --verbose
-
-
-- name: Upload artifact
-uses: actions/upload-pages-artifact@v3
-with:
-path: _site
-
-
-deploy:
-needs: build
-runs-on: ubuntu-latest
-environment:
-name: github-pages
-url: ${{ steps.deployment.outputs.page_url }}
-steps:
-- name: Deploy to GitHub Pages
-id: deployment
-uses: actions/deploy-pages@v4
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
