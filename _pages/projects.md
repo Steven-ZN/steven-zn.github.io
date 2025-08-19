@@ -7,7 +7,7 @@ author_profile: true
 toc: true
 ---
 
-Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning. Each project represents a unique contribution with open-source implementations focused on advancing artificial intelligence.
+Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning.
 
 ---
 
@@ -43,26 +43,26 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 
 <div class="project-card featured-project">
 
-<h3>EchoMind: True Personality Mirrors for LLMs</h3>
+<h3>MBTI-LLM: Personality-Controlled Text Generation</h3>
 
-<p><strong>Research Focus</strong>: Large Language Models, Memory Systems, Personality AI</p>
+<p><strong>Research Focus</strong>: Large Language Models, Personality Psychology, Human-AI Interaction</p>
 
-<p>EchoMind is a groundbreaking framework that creates consistent personality mirrors on open-source LLMs. The system combines three types of memory stores (episodic, procedural, belief) with advanced style adapters to achieve unprecedented personality consistency in AI conversations.</p>
+<p>Simulating human-like personality in LLMs using MBTI framework with sophisticated style control mechanisms.</p>
 
-<p><strong>Technical Architecture:</strong></p>
+<p><strong>Key Features:</strong></p>
 <ul>
-<li><strong>Memory Systems</strong>: Episodic, procedural, and belief memory integration</li>
-<li><strong>Style Adaptation</strong>: LoRA/Prefix tuning with classifier-guided generation</li>
-<li><strong>Consistency Engine</strong>: Real-time personality trait monitoring and adjustment</li>
-<li><strong>Performance</strong>: 94% personality coherence across extended conversations</li>
+<li>16 MBTI personality type simulation with 87% classification accuracy</li>
+<li>Advanced prompt engineering and response filtering for consistency</li>
+<li>Comprehensive evaluation framework with human preference studies</li>
+<li>78% user preference for personality-matched interactions</li>
 </ul>
 
-<p><strong>Applications</strong>: Character AI, Educational assistants, Therapeutic chatbots, Creative writing<br>
-<strong>Technologies</strong>: Transformers, LoRA, Vector Databases, Memory Architectures<br>
-<strong>Innovation</strong>: First comprehensive memory-based personality system for open-source LLMs</p>
+<p><strong>Applications</strong>: Psychology studies, Human-AI interaction research, Personalized content generation<br>
+<strong>Technologies</strong>: Transformers, PyTorch, Natural Language Processing<br>
+<strong>Innovation</strong>: First systematic MBTI-based personality modeling for language models</p>
 
 <div class="project-buttons">
-<a href="https://github.com/Steven-ZN/EchoMind" class="btn btn--primary btn--large">Explore on GitHub</a>
+<a href="https://github.com/Steven-ZN/MBTI-LLM" class="btn btn--primary btn--large">Explore on GitHub</a>
 </div>
 
 </div>
@@ -97,45 +97,9 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 
 ---
 
-## AI Research & Innovation
+## Additional Projects
 
 <div class="project-grid">
-
-<div class="project-card">
-<h3>MBTI-LLM: Personality-Controlled Text Generation</h3>
-
-<p>Simulating human-like personality in LLMs using MBTI framework with sophisticated style control mechanisms.</p>
-
-<p><strong>Key Features:</strong></p>
-<ul>
-<li>16 MBTI personality type simulation with 87% classification accuracy</li>
-<li>Advanced prompt engineering and response filtering for consistency</li>
-<li>Comprehensive evaluation framework with human preference studies</li>
-<li>78% user preference for personality-matched interactions</li>
-</ul>
-
-<p><strong>Applications</strong>: Psychology studies, Human-AI interaction research, Personalized content generation</p>
-
-<a href="https://github.com/Steven-ZN/MBTI-LLM" class="btn btn--info">View Project</a>
-</div>
-
-<div class="project-card">
-<h3>positronic-brain: AI Safety Through Code-Level Constraints</h3>
-
-<p>Experimental implementation of Asimov's Three Laws of Robotics within modern AI systems.</p>
-
-<p><strong>Innovation Focus:</strong></p>
-<ul>
-<li>Code-level representation of ethical constraints for LLMs</li>
-<li>Autonomous agent safety mechanisms by design</li>
-<li>Theoretical framework for AI behavior control</li>
-<li>Open research platform for AI safety exploration</li>
-</ul>
-
-<p><strong>Impact</strong>: Pioneering work in practical AI safety implementation for language models</p>
-
-<a href="https://github.com/Steven-ZN/positronic-brain" class="btn btn--info">View Project</a>
-</div>
 
 <div class="project-card">
 <h3>HandSense-360: Real-time Gesture Recognition</h3>
@@ -156,8 +120,6 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 </div>
 
 </div>
-
----
 
 ## AI Applications & Tools
 
@@ -227,9 +189,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 
 </div>
 
----
-
-## Machine Learning & Data Science Projects
+## Machine Learning & Data Science
 
 <div class="project-grid">
 
@@ -262,33 +222,6 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 <a href="#" class="btn btn--info">Private Repository</a>
 </div>
 
-<div class="project-card">
-<h3>Advanced Computer Vision Pipeline</h3>
-
-<p>End-to-end computer vision pipeline for medical image analysis with state-of-the-art deep learning architectures.</p>
-
-<p><strong>Pipeline Components:</strong></p>
-<ul>
-<li>Multi-stage image preprocessing and augmentation</li>
-<li>Custom CNN architectures for medical image classification</li>
-<li>Transfer learning with pre-trained models (ResNet, EfficientNet)</li>
-<li>Advanced data augmentation techniques for medical imaging</li>
-</ul>
-
-<p><strong>Technical Innovations:</strong></p>
-<ul>
-<li>Custom loss functions for imbalanced medical datasets</li>
-<li>Attention mechanisms for region-of-interest detection</li>
-<li>Multi-scale feature extraction and fusion</li>
-<li>Uncertainty quantification for clinical decision support</li>
-</ul>
-
-<p><strong>Research Impact</strong>: Applied to breast ultrasound analysis, achieving state-of-the-art performance on multiple benchmarks</p>
-
-<p><strong>Technologies</strong>: PyTorch, OpenCV, PIL, Albumentations, TensorBoard</p>
-
-<a href="https://github.com/Steven-ZN" class="btn btn--info">Related Work</a>
-</div>
 
 <div class="project-card">
 <h3>Natural Language Processing Research Suite</h3>

@@ -28,7 +28,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 头像完整显示不裁剪，修复远离变白问题 - 强化版本
 .author__avatar,
 .author__avatar img {
-  width: 167px !important;
+  width: 125px !important;
   height: auto !important;
   max-width: 250px !important;
   max-height: none !important;
@@ -81,7 +81,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 额外覆盖可能的父容器样式
 .sidebar .author__avatar,
 .sidebar .author__avatar img {
-  width: 167px !important;
+  width: 125px !important;
   height: auto !important;
 }
 
