@@ -47,7 +47,7 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 - First-author paper under review at IEEE-BIBM 2025, supervised by Prof. Kuan Huang
 - Appointed as research assistant under NSF funding, contributing to project design, experimentation, and publication
 
-### Research Associate — Medfusion Fake Image Generator
+### Research Volunteer — Medfusion Fake Image Generator
 **Kean University** | *Sept 2024 – Dec 2024*
 
 - Developed a synthetic medical image pipeline using Variational Autoencoders (VAE) and Diffusion Models to augment breast ultrasound datasets for weakly supervised segmentation
@@ -76,7 +76,7 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 **Status:** Under Review
 
 **Poster: Medical Computer Vision for Parkinson's Rehabilitation**  
-*Nuojunxi Zhang* (Presenter)  
+*Nuojunxi Zhang*  
 *Research Day – Wenzhou-Kean University*, April 2023
 
 ## Technical Skills
