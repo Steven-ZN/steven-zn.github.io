@@ -123,7 +123,7 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 
 - **Dean's Honor List** at Kean University (Sep 2024 – May 2025, GPA 3.91)
 - **Outstanding Presentation Award** at WKU Research Day 2023
-- **NSF Research Fellowship** recipient (2025)
+- **NSF-funded Research Assistant** (2025)
 - **First-author publication** submitted to IEEE-BIBM 2025
 - **30% increase** in Computer Club membership under leadership
 - Advanced from **Wenzhou-Kean University** to **Kean University** through joint program excellence
