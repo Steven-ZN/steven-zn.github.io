@@ -192,52 +192,15 @@ class WebsiteAnalytics {
     }
   }
 
-  // 发送数据到后端
+  // 只保存到本地存储
   async sendData(data) {
-    const methods = [
-      () => this.sendToGoogleSheets(data),
-      () => this.sendToFormSpree(data),
-      () => this.sendToLocalStorage(data)
-    ];
-
-    for (const method of methods) {
-      try {
-        await method();
-        break; // 成功发送后退出
-      } catch (error) {
-        console.log('发送方法失败，尝试下一个');
-      }
+    this.sendToLocalStorage(data);
+    
+    // 可选：每100次访问自动导出一次TXT备份
+    const existing = JSON.parse(localStorage.getItem('analytics_backup') || '[]');
+    if (existing.length % 100 === 0 && existing.length > 0) {
+      this.autoExportTXT();
     }
-  }
-
-  // 发送到Google Sheets
-  async sendToGoogleSheets(data) {
-    const response = await fetch(this.endpoint, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data)
-    });
-    return response;
-  }
-
-  // 发送到FormSpree
-  async sendToFormSpree(data) {
-    const formData = new FormData();
-    formData.append('analytics', JSON.stringify(data));
-    
-    const response = await fetch('https://formspree.io/f/xpzvzjbk', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    
-    if (!response.ok) throw new Error('FormSpree failed');
-    return response;
   }
 
   // 本地存储作为备份
@@ -246,14 +209,46 @@ class WebsiteAnalytics {
       const existing = JSON.parse(localStorage.getItem('analytics_backup') || '[]');
       existing.push(data);
       
-      // 只保留最近100条记录
-      if (existing.length > 100) {
-        existing.splice(0, existing.length - 100);
+      // 保留最近500条记录（增加容量）
+      if (existing.length > 500) {
+        existing.splice(0, existing.length - 500);
       }
       
       localStorage.setItem('analytics_backup', JSON.stringify(existing));
+      
+      // 同时保存到另一个键作为完整备份
+      this.saveToFullBackup(data);
     } catch (error) {
       console.log('本地存储失败');
+    }
+  }
+
+  // 保存完整备份（不限制数量）
+  saveToFullBackup(data) {
+    try {
+      const fullBackup = JSON.parse(localStorage.getItem('analytics_full_backup') || '[]');
+      fullBackup.push(data);
+      localStorage.setItem('analytics_full_backup', JSON.stringify(fullBackup));
+    } catch (error) {
+      console.log('完整备份保存失败');
+    }
+  }
+
+  // 导出所有数据的方法
+  exportAllData() {
+    try {
+      const fullData = JSON.parse(localStorage.getItem('analytics_full_backup') || '[]');
+      const recentData = JSON.parse(localStorage.getItem('analytics_backup') || '[]');
+      
+      // 合并并去重
+      const allData = [...fullData, ...recentData];
+      const uniqueData = allData.filter((item, index, self) => 
+        index === self.findIndex(t => t.visitId === item.visitId)
+      );
+      
+      return uniqueData.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    } catch (error) {
+      return [];
     }
   }
 
@@ -332,7 +327,55 @@ class WebsiteAnalytics {
       timestamp: new Date().toISOString()
     };
 
-    this.sendToFormSpree(data).catch(() => {});
+    this.sendToLocalStorage(data);
+  }
+
+  // 自动导出TXT文件
+  autoExportTXT() {
+    try {
+      const allData = this.exportAllData();
+      
+      let txtContent = '网站访问统计自动备份\n';
+      txtContent += '=' * 50 + '\n\n';
+      txtContent += `导出时间: ${new Date().toLocaleString('zh-CN')}\n`;
+      txtContent += `总访问次数: ${allData.length}\n\n`;
+      
+      txtContent += '详细访问记录:\n';
+      txtContent += '-' * 30 + '\n\n';
+      
+      allData.forEach((visit, index) => {
+        txtContent += `[${index + 1}] ${visit.type || '页面访问'}\n`;
+        txtContent += `时间: ${new Date(visit.timestamp).toLocaleString('zh-CN')}\n`;
+        txtContent += `IP地址: ${visit.ip || '未知'}\n`;
+        txtContent += `位置: ${visit.city || '未知'}, ${visit.country || '未知'}\n`;
+        txtContent += `页面: ${visit.url}\n`;
+        txtContent += `设备: ${visit.deviceType}\n`;
+        txtContent += `浏览器: ${visit.userAgent?.substring(0, 50)}...\n`;
+        if (visit.maxScrollPercent) {
+          txtContent += `滚动深度: ${visit.maxScrollPercent}%\n`;
+        }
+        if (visit.duration) {
+          txtContent += `停留时间: ${Math.round(visit.duration / 1000)}秒\n`;
+        }
+        txtContent += '\n' + '-' * 30 + '\n\n';
+      });
+      
+      // 创建并下载文件
+      const blob = new Blob([txtContent], { type: 'text/plain;charset=utf-8' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `auto-backup-${new Date().toISOString().split('T')[0]}.txt`;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+      
+      console.log('访问数据自动备份已保存');
+    } catch (error) {
+      console.log('自动备份失败:', error);
+    }
   }
 }
 
