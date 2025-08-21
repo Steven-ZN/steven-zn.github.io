@@ -6,8 +6,7 @@ author_profile: true
 classes: wide simple-home
 toc: true
 toc_sticky: true
-sidebar:
-  nav: "toc"
+toc_label: "On this page"
 ---
 
 **Computer Science @ Kean University** (Expected May 2026)  
