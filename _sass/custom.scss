@@ -116,19 +116,25 @@ pre {
   transform: rotate(-180deg);
 }
 
-// 整体字号调小1号
+// 整体字号设置为正常大小
 html {
-  font-size: 15px !important; // 从默认16px调小到15px
+  font-size: 17px !important; // 比标准16px稍大
 }
 
 body {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
 }
 
 .page__content {
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
 }
+
+// 标题字号也相应调整
+h1 { font-size: 1.8rem !important; }
+h2 { font-size: 1.5rem !important; }
+h3 { font-size: 1.3rem !important; }
+h4 { font-size: 1.15rem !important; }
 
 // 卡片网格
 .grid-cards {
