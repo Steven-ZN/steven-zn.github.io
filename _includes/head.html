@@ -88,49 +88,8 @@ function toggleDarkMode() {
 document.addEventListener('DOMContentLoaded', updateToggleButton);
 </script>
 
-<!-- 简化的本地访问统计 -->
-<script>
-// 简单的本地访问记录
-(function() {
-  'use strict';
-  
-  // 记录基本访问信息到本地
-  function recordVisit() {
-    try {
-      const visit = {
-        timestamp: new Date().toISOString(),
-        url: window.location.href,
-        referrer: document.referrer || 'direct',
-        userAgent: navigator.userAgent,
-        language: navigator.language,
-        viewport: window.innerWidth + 'x' + window.innerHeight
-      };
-      
-      const visits = JSON.parse(localStorage.getItem('simple_visits') || '[]');
-      visits.push(visit);
-      
-      // 保留最近1000条记录
-      if (visits.length > 1000) {
-        visits.splice(0, visits.length - 1000);
-      }
-      
-      localStorage.setItem('simple_visits', JSON.stringify(visits));
-    } catch (error) {
-      // 静默失败
-    }
-  }
-  
-  // 页面加载时记录
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', recordVisit);
-  } else {
-    recordVisit();
-  }
-})();
-</script>
-
-<!-- 主要的网站分析系统 -->
-<script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
+<!-- GitHub仓库访问统计 - 每次访问自动更新TXT文件 -->
+<script src="{{ '/assets/js/github-analytics.js' | relative_url }}" defer></script>
 
 
 {% if site.head_scripts %}
