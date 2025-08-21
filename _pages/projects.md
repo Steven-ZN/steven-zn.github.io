@@ -7,7 +7,7 @@ author_profile: true
 toc: true
 toc_sticky: true
 sidebar:
-  nav: "projects"
+  nav: "toc"
 ---
 
 Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning.

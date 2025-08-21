@@ -5,6 +5,9 @@ title: "Nuojunxi (Steven) Zhang"
 author_profile: true
 classes: wide simple-home
 toc: true
+toc_sticky: true
+sidebar:
+  nav: "toc"
 ---
 
 **Computer Science @ Kean University** (Expected May 2026)  
