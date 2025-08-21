@@ -1,18 +1,18 @@
 // Font Awesome icons support
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
-// 整体字号调小2号
+// 整体字号调小1号
 html {
-  font-size: 14px !important; // 从默认16px调小到14px
+  font-size: 15px !important; // 从默认16px调小到15px
 }
 
 body {
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
 }
 
 .page__content {
-  font-size: 0.85rem !important;
-  line-height: 1.5 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
 }
 
 // 卡片网格
