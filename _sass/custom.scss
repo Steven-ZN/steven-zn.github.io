@@ -1,6 +1,121 @@
 // Font Awesome icons support
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
+// Dark mode support
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --sidebar-bg: #f8f9fa;
+  --border-color: #e5e5e5;
+  --card-bg: #ffffff;
+  --link-color: #3498db;
+  --header-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --code-bg: #f8f8f8;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --sidebar-bg: #2d2d2d;
+  --border-color: #404040;
+  --card-bg: #2d2d2d;
+  --link-color: #64b5f6;
+  --header-bg: #252525;
+  --nav-bg: #2d2d2d;
+  --code-bg: #3a3a3a;
+  --shadow: rgba(0,0,0,0.3);
+}
+
+// Apply dark mode styles
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page,
+.page__content,
+.sidebar,
+.author__content {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.masthead,
+.greedy-nav,
+.site-title {
+  background-color: var(--header-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.toc,
+.toc__menu {
+  background-color: var(--sidebar-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.project-card,
+.card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-color) !important;
+  box-shadow: 0 2px 8px var(--shadow) !important;
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+code,
+pre {
+  background-color: var(--code-bg) !important;
+  color: var(--text-color) !important;
+}
+
+// Dark mode toggle button
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow);
+  font-size: 18px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dark-mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .toggle-icon.sun {
+  transform: rotate(180deg);
+}
+
+[data-theme="light"] .toggle-icon.moon {
+  transform: rotate(-180deg);
+}
+
 // 整体字号调小1号
 html {
   font-size: 15px !important; // 从默认16px调小到15px

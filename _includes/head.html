@@ -47,6 +47,47 @@
 
 <link href="{% if jekyll.environment == 'production' %}{{ '/assets/css/main.css' | absolute_url }}{% else %}{{ '/assets/css/main.css' | relative_url }}{% endif %}" rel="stylesheet">
 
+<!-- Dark Mode Toggle Button -->
+<div class="dark-mode-toggle" onclick="toggleDarkMode()">
+  <i class="fas fa-sun toggle-icon sun" id="sun-icon"></i>
+  <i class="fas fa-moon toggle-icon moon" id="moon-icon" style="display: none;"></i>
+</div>
+
+<!-- Dark Mode JavaScript -->
+<script>
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+// Update toggle button display
+function updateToggleButton() {
+  const sunIcon = document.getElementById('sun-icon');
+  const moonIcon = document.getElementById('moon-icon');
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  
+  if (currentTheme === 'dark') {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
+  } else {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  }
+}
+
+// Toggle dark mode function
+function toggleDarkMode() {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateToggleButton();
+}
+
+// Initialize button on page load
+document.addEventListener('DOMContentLoaded', updateToggleButton);
+</script>
+
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
     <script src="{{ script | relative_url }}"></script>
