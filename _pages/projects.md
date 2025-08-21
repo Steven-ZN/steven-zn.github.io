@@ -4,9 +4,13 @@ title: "Projects & Research"
 layout: single
 classes: wide projects-page
 author_profile: true
+sidebar:
+  - title: "On this page"
+    nav: "projects-toc"
 toc: true
 toc_sticky: true
 toc_label: "On this page"
+toc_icon: "list"
 ---
 
 Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning.
