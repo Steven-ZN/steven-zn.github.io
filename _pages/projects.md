@@ -162,25 +162,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
   </div>
 
   <div class="feature-item">
-    <h3>Natural Language Processing Research Suite</h3>
-    <p>Comprehensive NLP research platform exploring advanced language understanding and generation techniques.</p>
-    <p><strong>Research Areas:</strong></p>
-    <ul>
-      <li>Transformer-based architectures for domain-specific tasks</li>
-      <li>Fine-tuning strategies for limited-resource scenarios</li>
-      <li>Multi-modal learning combining text and visual information</li>
-      <li>Evaluation frameworks for language model performance</li>
-    </ul>
-    <p><strong>Technical Components:</strong></p>
-    <ul>
-      <li>Custom tokenization and preprocessing pipelines</li>
-      <li>Distributed training infrastructure for large models</li>
-      <li>Advanced evaluation metrics and benchmark implementations</li>
-      <li>Model compression and optimization techniques</li>
-    </ul>
-    <p><strong>Applications</strong>: Medical text analysis, Scientific literature processing, Conversational AI systems</p>
-    <p><strong>Technologies</strong>: Transformers, Hugging Face, PyTorch, NLTK, spaCy</p>
-    <p><a href="https://github.com/Steven-ZN" class="btn btn--info">Explore Research</a></p>
+    <!-- Empty space for balance -->
   </div>
 </div>
 
@@ -200,14 +182,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 - **Technologies**: Medical AI, LLMs, Computer vision, Machine learning
 - **Impact**: Projects used in academic research and real-world AI applications
 
-### Research Philosophy
-I believe in making AI research **accessible**, **reproducible**, and **beneficial** for society. All my projects include comprehensive documentation, clear implementation details, and extensive usage examples. My work spans from theoretical research to practical applications, always with a focus on real-world impact.
-
----
-
 ## Collaboration & Contact
-
-Interested in collaborating on any of these projects or discussing new research opportunities? I'm always excited to work with fellow researchers, developers, and innovators.
 
 **Research Interests**: Medical AI, Personality Modeling, Generative Models, Computer Vision  
 **Open to**: Research collaborations, Academic partnerships, Industry applications  
