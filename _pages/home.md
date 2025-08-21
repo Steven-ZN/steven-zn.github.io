@@ -126,6 +126,5 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 - **NSF-funded Research Assistant** (2025)
 - **First-author publication** submitted to IEEE-BIBM 2025
 - **30% increase** in Computer Club membership under leadership
-- Advanced from **Wenzhou-Kean University** to **Kean University** through joint program excellence
 
   
