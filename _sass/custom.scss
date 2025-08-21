@@ -277,6 +277,103 @@ transition: transform .2s ease, box-shadow .2s ease;
   backdrop-filter: none !important;
 }
 
+// 完全禁用整个author区域的hover效果
+.sidebar .author,
+.sidebar .author *,
+.sidebar .author__content,
+.sidebar .author__content *,
+.sidebar .author__avatar,
+.sidebar .author__avatar *,
+.sidebar .author__name,
+.sidebar .author__bio,
+.sidebar .author__urls,
+.sidebar .author__urls * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  background: none !important;
+  backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+// 禁用所有可能的hover、focus、active状态
+.sidebar .author:hover,
+.sidebar .author:focus,
+.sidebar .author:active,
+.sidebar .author:hover *,
+.sidebar .author:focus *,
+.sidebar .author:active *,
+.sidebar .author__content:hover,
+.sidebar .author__content:focus,
+.sidebar .author__content:active,
+.sidebar .author__content:hover *,
+.sidebar .author__content:focus *,
+.sidebar .author__content:active *,
+.sidebar .author__avatar:hover,
+.sidebar .author__avatar:focus,
+.sidebar .author__avatar:active,
+.sidebar .author__avatar:hover *,
+.sidebar .author__avatar:focus *,
+.sidebar .author__avatar:active *,
+.sidebar .author__name:hover,
+.sidebar .author__bio:hover,
+.sidebar .author__urls:hover,
+.sidebar .author__urls:hover * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  background: inherit !important;
+  backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+  box-shadow: inherit !important;
+  border: inherit !important;
+  color: inherit !important;
+}
+
+// 禁用整个sidebar的hover效果
+.sidebar:hover,
+.sidebar:hover *,
+.sidebar:hover .author,
+.sidebar:hover .author *,
+.sidebar:hover .author__content,
+.sidebar:hover .author__content *,
+.sidebar:hover .author__avatar,
+.sidebar:hover .author__avatar * {
+  transition: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  background: inherit !important;
+  backdrop-filter: none !important;
+}
+
+// 使用CSS重写来确保没有任何动画效果
+.sidebar * {
+  animation: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+}
+
+// 阻止任何可能的CSS变量变化
+.sidebar {
+  --author-hover-opacity: 1 !important;
+  --author-hover-filter: none !important;
+  --author-hover-transform: none !important;
+}
+
 // 邮箱复制优化 - 显示可选择的文本
 .author__urls .email-text {
   display: block;
