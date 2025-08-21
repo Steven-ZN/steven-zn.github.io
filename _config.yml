@@ -41,7 +41,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
-  - jekyll-include-cache  
+  - jekyll-include-cache
+
+# Font Awesome
+fontawesome:
+  version: "6.0.0"  
 
 # SEO
 seo:
