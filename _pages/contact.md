@@ -32,8 +32,6 @@ I'm particularly interested in collaborating on projects involving:
 
 **Research Collaborations:** Open to discussing research projects and paper collaborations
 
-**Speaking Engagements:** Available for talks on active learning and medical AI
-
 **Mentoring:** Happy to mentor undergraduate students interested in AI research
 
-**Industry Opportunities:** Seeking summer 2025 internships in AI/ML research
+**Industry Opportunities:** Seeking winter 2026 and summer 2026 internships in AI/ML research

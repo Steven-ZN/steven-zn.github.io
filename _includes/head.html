@@ -88,6 +88,137 @@ function toggleDarkMode() {
 document.addEventListener('DOMContentLoaded', updateToggleButton);
 </script>
 
+<!-- Visitor Analytics (Backend Data Collection) -->
+<script>
+(function() {
+  'use strict';
+  
+  // 收集访客数据
+  function collectVisitorData() {
+    const data = {
+      timestamp: new Date().toISOString(),
+      url: window.location.href,
+      referrer: document.referrer || 'direct',
+      userAgent: navigator.userAgent,
+      language: navigator.language,
+      screen: {
+        width: screen.width,
+        height: screen.height,
+        colorDepth: screen.colorDepth
+      },
+      viewport: {
+        width: window.innerWidth,
+        height: window.innerHeight
+      },
+      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      sessionId: getSessionId(),
+      pageTitle: document.title
+    };
+    
+    // 获取IP地址和地理位置信息
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(ipData => {
+        data.ip = ipData.ip;
+        data.city = ipData.city;
+        data.region = ipData.region;
+        data.country = ipData.country_name;
+        data.countryCode = ipData.country_code;
+        data.latitude = ipData.latitude;
+        data.longitude = ipData.longitude;
+        data.isp = ipData.org;
+        
+        // 发送数据到后端
+        sendAnalytics(data);
+      })
+      .catch(() => {
+        // 如果IP API失败，仍然发送基本数据
+        sendAnalytics(data);
+      });
+  }
+  
+  // 生成或获取会话ID
+  function getSessionId() {
+    let sessionId = sessionStorage.getItem('visitor_session_id');
+    if (!sessionId) {
+      sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      sessionStorage.setItem('visitor_session_id', sessionId);
+    }
+    return sessionId;
+  }
+  
+  // 发送分析数据
+  function sendAnalytics(data) {
+    // 使用GitHub Gist作为简单的数据存储（可选方案1）
+    // 或者使用Google Sheets API（可选方案2）
+    // 或者使用Firebase（可选方案3）
+    
+    // 方案1: 使用FormSpree等服务收集数据
+    const formData = new FormData();
+    formData.append('analytics_data', JSON.stringify(data));
+    
+    fetch('https://formspree.io/f/xpzvzjbk', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).catch(() => {
+      // 静默失败，不影响用户体验
+    });
+    
+    // 方案2: 使用Google Analytics替代品 - Plausible (更隐私友好)
+    if (window.plausible) {
+      window.plausible('pageview', {
+        props: {
+          country: data.country,
+          device: getDeviceType(),
+          session: data.sessionId.substr(0, 8)
+        }
+      });
+    }
+  }
+  
+  // 检测设备类型
+  function getDeviceType() {
+    const width = window.innerWidth;
+    if (width <= 768) return 'mobile';
+    if (width <= 1024) return 'tablet';
+    return 'desktop';
+  }
+  
+  // 页面加载完成后收集数据
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', collectVisitorData);
+  } else {
+    collectVisitorData();
+  }
+  
+  // 页面卸载时记录会话时长
+  let startTime = Date.now();
+  window.addEventListener('beforeunload', function() {
+    const sessionDuration = Date.now() - startTime;
+    if (sessionDuration > 1000) { // 只记录停留超过1秒的访问
+      navigator.sendBeacon && navigator.sendBeacon('https://formspree.io/f/xpzvzjbk', 
+        JSON.stringify({
+          type: 'session_end',
+          sessionId: getSessionId(),
+          duration: sessionDuration,
+          timestamp: new Date().toISOString()
+        })
+      );
+    }
+  });
+  
+})();
+</script>
+
+<!-- 主要的网站分析系统 -->
+<script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
+
+<!-- 可选：添加隐私友好的Plausible Analytics -->
+<script defer data-domain="steven-zn.github.io" src="https://plausible.io/js/script.js"></script>
+
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
     <script src="{{ script | relative_url }}"></script>
