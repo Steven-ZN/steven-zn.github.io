@@ -196,11 +196,8 @@ class WebsiteAnalytics {
   async sendData(data) {
     this.sendToLocalStorage(data);
     
-    // 可选：每100次访问自动导出一次TXT备份
-    const existing = JSON.parse(localStorage.getItem('analytics_backup') || '[]');
-    if (existing.length % 100 === 0 && existing.length > 0) {
-      this.autoExportTXT();
-    }
+    // 移除自动导出功能 - 只有管理员才能导出数据
+    // 数据只存储在浏览器本地，管理员通过 /admin/ 页面查看和导出
   }
 
   // 本地存储作为备份
