@@ -16,7 +16,7 @@ I'm always interested in discussing research opportunities, collaboration projec
 ## Social Links
 
 **GitHub:** [Steven-ZN](https://github.com/Steven-ZN)  
-**LinkedIn:** [Connect with me](https://linkedin.com/in/your-link)
+**LinkedIn:** [Connect with me](https://www.linkedin.com/in/steven-zn)
 
 ## Research Interests
 
