@@ -559,6 +559,233 @@ transition: transform .2s ease, box-shadow .2s ease;
   animation-play-state: running !important;
 }
 
+// 终极方案 - 强制覆盖所有可能的样式，包括链接
+.sidebar,
+.sidebar *,
+.sidebar a,
+.sidebar a *,
+.sidebar .author,
+.sidebar .author *,
+.sidebar .author a,
+.sidebar .author a *,
+.sidebar .author__content,
+.sidebar .author__content *,
+.sidebar .author__content a,
+.sidebar .author__content a *,
+.sidebar .author__avatar,
+.sidebar .author__avatar *,
+.sidebar .author__name,
+.sidebar .author__name *,
+.sidebar .author__name a,
+.sidebar .author__name a *,
+.sidebar .author__bio,
+.sidebar .author__bio *,
+.sidebar .author__bio a,
+.sidebar .author__bio a *,
+.sidebar .author__urls,
+.sidebar .author__urls *,
+.sidebar .author__urls a,
+.sidebar .author__urls a *,
+.sidebar .author__urls li,
+.sidebar .author__urls li *,
+.sidebar .author__urls li a,
+.sidebar .author__urls li a * {
+  // 强制禁用所有动画和过渡
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;
+  
+  // 禁用所有视觉效果
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  
+  // 强制保持当前颜色
+  color: inherit !important;
+  background: none !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+// 覆盖所有交互状态，确保没有任何变化
+.sidebar:hover,
+.sidebar:focus,
+.sidebar:active,
+.sidebar:visited,
+.sidebar *:hover,
+.sidebar *:focus,
+.sidebar *:active,
+.sidebar *:visited,
+.sidebar a:hover,
+.sidebar a:focus,
+.sidebar a:active,
+.sidebar a:visited,
+.sidebar .author:hover,
+.sidebar .author:focus,
+.sidebar .author:active,
+.sidebar .author:visited,
+.sidebar .author *:hover,
+.sidebar .author *:focus,
+.sidebar .author *:active,
+.sidebar .author *:visited,
+.sidebar .author a:hover,
+.sidebar .author a:focus,
+.sidebar .author a:active,
+.sidebar .author a:visited,
+.sidebar .author__content:hover,
+.sidebar .author__content:focus,
+.sidebar .author__content:active,
+.sidebar .author__content:visited,
+.sidebar .author__content *:hover,
+.sidebar .author__content *:focus,
+.sidebar .author__content *:active,
+.sidebar .author__content *:visited,
+.sidebar .author__content a:hover,
+.sidebar .author__content a:focus,
+.sidebar .author__content a:active,
+.sidebar .author__content a:visited,
+.sidebar .author__avatar:hover,
+.sidebar .author__avatar:focus,
+.sidebar .author__avatar:active,
+.sidebar .author__avatar:visited,
+.sidebar .author__avatar *:hover,
+.sidebar .author__avatar *:focus,
+.sidebar .author__avatar *:active,
+.sidebar .author__avatar *:visited,
+.sidebar .author__name:hover,
+.sidebar .author__name:focus,
+.sidebar .author__name:active,
+.sidebar .author__name:visited,
+.sidebar .author__name *:hover,
+.sidebar .author__name *:focus,
+.sidebar .author__name *:active,
+.sidebar .author__name *:visited,
+.sidebar .author__name a:hover,
+.sidebar .author__name a:focus,
+.sidebar .author__name a:active,
+.sidebar .author__name a:visited,
+.sidebar .author__bio:hover,
+.sidebar .author__bio:focus,
+.sidebar .author__bio:active,
+.sidebar .author__bio:visited,
+.sidebar .author__bio *:hover,
+.sidebar .author__bio *:focus,
+.sidebar .author__bio *:active,
+.sidebar .author__bio *:visited,
+.sidebar .author__bio a:hover,
+.sidebar .author__bio a:focus,
+.sidebar .author__bio a:active,
+.sidebar .author__bio a:visited,
+.sidebar .author__urls:hover,
+.sidebar .author__urls:focus,
+.sidebar .author__urls:active,
+.sidebar .author__urls:visited,
+.sidebar .author__urls *:hover,
+.sidebar .author__urls *:focus,
+.sidebar .author__urls *:active,
+.sidebar .author__urls *:visited,
+.sidebar .author__urls a:hover,
+.sidebar .author__urls a:focus,
+.sidebar .author__urls a:active,
+.sidebar .author__urls a:visited,
+.sidebar .author__urls li:hover,
+.sidebar .author__urls li:focus,
+.sidebar .author__urls li:active,
+.sidebar .author__urls li:visited,
+.sidebar .author__urls li *:hover,
+.sidebar .author__urls li *:focus,
+.sidebar .author__urls li *:active,
+.sidebar .author__urls li *:visited,
+.sidebar .author__urls li a:hover,
+.sidebar .author__urls li a:focus,
+.sidebar .author__urls li a:active,
+.sidebar .author__urls li a:visited {
+  // 强制禁用所有动画和过渡
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;
+  
+  // 禁用所有视觉效果
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  
+  // 强制保持原样
+  color: inherit !important;
+  background: inherit !important;
+  background-color: inherit !important;
+  text-decoration: inherit !important;
+  border: inherit !important;
+  outline: none !important;
+  box-shadow: inherit !important;
+  text-shadow: inherit !important;
+}
+
+// 特别处理链接颜色，确保不变
+.sidebar .author__urls a,
+.sidebar .author__urls a:hover,
+.sidebar .author__urls a:focus,
+.sidebar .author__urls a:active,
+.sidebar .author__urls a:visited {
+  color: var(--link-color) !important;
+  text-decoration: none !important;
+}
+
+// 暗色模式下的特殊处理
+[data-theme="dark"] .sidebar,
+[data-theme="dark"] .sidebar *,
+[data-theme="dark"] .sidebar a,
+[data-theme="dark"] .sidebar a:hover,
+[data-theme="dark"] .sidebar a:focus,
+[data-theme="dark"] .sidebar a:active,
+[data-theme="light"] .sidebar,
+[data-theme="light"] .sidebar *,
+[data-theme="light"] .sidebar a,
+[data-theme="light"] .sidebar a:hover,
+[data-theme="light"] .sidebar a:focus,
+[data-theme="light"] .sidebar a:active {
+  transition: none !important;
+  animation: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  backdrop-filter: none !important;
+  color: inherit !important;
+  background: inherit !important;
+  text-decoration: none !important;
+}
+
+// 全局禁用指针事件变化（如果需要的话）
+.sidebar .author__avatar,
+.sidebar .author__name,
+.sidebar .author__bio {
+  pointer-events: auto !important; // 保持可点击，但无视觉反馈
+}
+
 // 邮箱复制优化 - 显示可选择的文本
 .author__urls .email-text {
   display: block;
