@@ -3,14 +3,7 @@ layout: single
 permalink: /
 title: "Nuojunxi (Steven) Zhang"
 author_profile: true
-classes: wide simple-home
-sidebar:
-  - title: "On this page"
-    nav: "home-toc"
 toc: true
-toc_sticky: true
-toc_label: "On this page"
-toc_icon: "list"
 ---
 
 **Computer Science @ Kean University** (Expected May 2026)  
