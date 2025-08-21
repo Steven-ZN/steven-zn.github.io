@@ -374,6 +374,191 @@ transition: transform .2s ease, box-shadow .2s ease;
   --author-hover-transform: none !important;
 }
 
+// 超强力禁用 - 覆盖主题的所有可能样式
+.sidebar,
+.sidebar *,
+.author,
+.author *,
+.author__content,
+.author__content *,
+.author__avatar,
+.author__avatar *,
+.author__name,
+.author__name *,
+.author__bio,
+.author__bio *,
+.author__urls,
+.author__urls *,
+.author__urls-wrapper,
+.author__urls-wrapper * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -ms-filter: none !important;
+  -o-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+// 强制覆盖所有交互状态的样式
+.sidebar:hover,
+.sidebar:focus,
+.sidebar:active,
+.sidebar:hover *,
+.sidebar:focus *,
+.sidebar:active *,
+.author:hover,
+.author:focus,
+.author:active,
+.author:hover *,
+.author:focus *,
+.author:active *,
+.author__content:hover,
+.author__content:focus,
+.author__content:active,
+.author__content:hover *,
+.author__content:focus *,
+.author__content:active *,
+.author__avatar:hover,
+.author__avatar:focus,
+.author__avatar:active,
+.author__avatar:hover *,
+.author__avatar:focus *,
+.author__avatar:active *,
+.author__name:hover,
+.author__name:focus,
+.author__name:active,
+.author__name:hover *,
+.author__name:focus *,
+.author__name:active *,
+.author__bio:hover,
+.author__bio:focus,
+.author__bio:active,
+.author__bio:hover *,
+.author__bio:focus *,
+.author__bio:active *,
+.author__urls:hover,
+.author__urls:focus,
+.author__urls:active,
+.author__urls:hover *,
+.author__urls:focus *,
+.author__urls:active *,
+.author__urls-wrapper:hover,
+.author__urls-wrapper:focus,
+.author__urls-wrapper:active,
+.author__urls-wrapper:hover *,
+.author__urls-wrapper:focus *,
+.author__urls-wrapper:active * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  -ms-filter: none !important;
+  -o-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+  background: inherit !important;
+  background-color: inherit !important;
+  background-image: inherit !important;
+  color: inherit !important;
+  box-shadow: inherit !important;
+  border: inherit !important;
+  border-color: inherit !important;
+  text-shadow: inherit !important;
+}
+
+// 禁用任何伪元素的效果
+.sidebar::before,
+.sidebar::after,
+.sidebar *::before,
+.sidebar *::after,
+.author::before,
+.author::after,
+.author *::before,
+.author *::after {
+  transition: none !important;
+  animation: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  background: inherit !important;
+  color: inherit !important;
+}
+
+// 强制重置任何可能的主题变量
+:root {
+  --sidebar-hover-opacity: 1 !important;
+  --author-hover-opacity: 1 !important;
+  --avatar-hover-filter: none !important;
+  --sidebar-transition: none !important;
+}
+
+// 暗色模式下也确保没有效果
+[data-theme="dark"] .sidebar,
+[data-theme="dark"] .sidebar *,
+[data-theme="dark"] .author,
+[data-theme="dark"] .author *,
+[data-theme="light"] .sidebar,
+[data-theme="light"] .sidebar *,
+[data-theme="light"] .author,
+[data-theme="light"] .author * {
+  transition: none !important;
+  animation: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  backdrop-filter: none !important;
+}
+
+// 最后的保险 - 使用CSS的unset来重置所有可能的样式
+.sidebar, .sidebar *, .author, .author * {
+  transition-property: none !important;
+  transition-duration: 0s !important;
+  transition-timing-function: initial !important;
+  transition-delay: 0s !important;
+  animation-name: none !important;
+  animation-duration: 0s !important;
+  animation-timing-function: initial !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  animation-direction: normal !important;
+  animation-fill-mode: none !important;
+  animation-play-state: running !important;
+}
+
 // 邮箱复制优化 - 显示可选择的文本
 .author__urls .email-text {
   display: block;
