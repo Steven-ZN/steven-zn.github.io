@@ -163,9 +163,11 @@ transition: transform .2s ease, box-shadow .2s ease;
 // 页眉按钮更显眼
 .btn--primary { border-radius: .75rem; padding: .55rem 1rem; }
 
-// 头像完整显示不裁剪，修复远离变白问题 - 强化版本
+// 头像完整显示不裁剪，完全消除泛白效果 - 超强化版本
 .author__avatar,
-.author__avatar img {
+.author__avatar img,
+.author__avatar *,
+.author__avatar img * {
   width: 125px !important;
   height: auto !important;
   max-width: 250px !important;
@@ -188,18 +190,27 @@ transition: transform .2s ease, box-shadow .2s ease;
   background: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+  isolation: auto !important;
 }
 
-// 覆盖所有可能的悬停和焦点状态
+// 覆盖所有可能的交互状态
 .author__avatar:hover,
 .author__avatar:focus,
 .author__avatar:active,
+.author__avatar:visited,
 .author__avatar img:hover,
 .author__avatar img:focus,
 .author__avatar img:active,
+.author__avatar img:visited,
 .author__avatar:hover img,
 .author__avatar:focus img,
-.author__avatar:active img {
+.author__avatar:active img,
+.author__avatar:visited img,
+.author__avatar::before,
+.author__avatar::after,
+.author__avatar img::before,
+.author__avatar img::after {
   filter: none !important;
   transform: none !important;
   opacity: 1 !important;
@@ -214,23 +225,56 @@ transition: transform .2s ease, box-shadow .2s ease;
   background: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  mix-blend-mode: normal !important;
+  isolation: auto !important;
 }
 
 // 额外覆盖可能的父容器样式
 .sidebar .author__avatar,
-.sidebar .author__avatar img {
+.sidebar .author__avatar img,
+.author__content .author__avatar,
+.author__content .author__avatar img {
   width: 125px !important;
   height: auto !important;
 }
 
-// 防止任何父容器的悬停效果影响头像
+// 防止任何父容器、兄弟元素、伪元素的效果影响头像
 .sidebar:hover .author__avatar,
 .sidebar:hover .author__avatar img,
 .author__content:hover .author__avatar,
-.author__content:hover .author__avatar img {
+.author__content:hover .author__avatar img,
+.sidebar:focus .author__avatar,
+.sidebar:active .author__avatar,
+.author__urls:hover + .author__avatar,
+.author__urls:hover ~ .author__avatar,
+*:hover .author__avatar,
+*:focus .author__avatar,
+*:active .author__avatar {
   filter: none !important;
   opacity: 1 !important;
   transform: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+// 强制覆盖任何CSS动画和变换
+@keyframes * {
+  0%, 100% {
+    filter: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+// 覆盖暗色模式下的头像效果
+[data-theme="dark"] .author__avatar,
+[data-theme="dark"] .author__avatar img,
+[data-theme="light"] .author__avatar,
+[data-theme="light"] .author__avatar img {
+  filter: none !important;
+  opacity: 1 !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
 }
 
 // 邮箱复制优化 - 显示可选择的文本
@@ -283,8 +327,47 @@ transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .project-card .btn {
-  font-size: 0.8em;
-  padding: 0.4rem 0.8rem;
+  font-size: 0.9em;
+  padding: 0.6rem 1rem;
+  font-weight: 600 !important;
+}
+
+// GitHub按钮特殊样式优化
+.btn--primary {
+  background-color: #2196F3 !important;
+  color: #ffffff !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+.btn--primary:hover {
+  background-color: #1976D2 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+// 暗色模式下的按钮优化
+[data-theme="dark"] .btn--primary {
+  background-color: #1976D2 !important;
+  color: #ffffff !important;
+  border: 1px solid #42A5F5 !important;
+}
+
+[data-theme="dark"] .btn--primary:hover {
+  background-color: #1565C0 !important;
+  border-color: #2196F3 !important;
+}
+
+.btn--info {
+  background-color: #00BCD4 !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.btn--success {
+  background-color: #4CAF50 !important;
+  color: #ffffff !important;
+  border: none !important;
 }
 
 // 简化主页样式
