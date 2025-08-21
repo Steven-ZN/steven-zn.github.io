@@ -1,0 +1,52 @@
+name: Update Visitor Log
+
+on:
+  repository_dispatch:
+    types: [visitor_log]
+  
+  # 也可以通过webhook触发
+  workflow_dispatch:
+    inputs:
+      visitor_data:
+        description: 'Visitor data JSON'
+        required: false
+        default: '{}'
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Create visitor log entry
+        run: |
+          # 创建访问记录
+          echo "" >> visitor-log.txt
+          echo "访问时间: $(date '+%Y-%m-%d %H:%M:%S %Z')" >> visitor-log.txt
+          echo "访问页面: ${{ github.event.client_payload.url || 'Manual trigger' }}" >> visitor-log.txt
+          echo "来源: ${{ github.event.client_payload.referrer || 'direct' }}" >> visitor-log.txt
+          echo "设备信息: ${{ github.event.client_payload.screen || 'unknown' }}" >> visitor-log.txt
+          echo "浏览器: ${{ github.event.client_payload.userAgent || 'unknown' }}" | head -c 100 >> visitor-log.txt
+          echo "" >> visitor-log.txt
+          echo "IP地址: ${{ github.event.client_payload.ip || 'unknown' }}" >> visitor-log.txt
+          echo "位置: ${{ github.event.client_payload.city || 'unknown' }}, ${{ github.event.client_payload.country || 'unknown' }}" >> visitor-log.txt
+          echo "语言: ${{ github.event.client_payload.language || 'unknown' }}" >> visitor-log.txt
+          echo "时区: ${{ github.event.client_payload.timezone || 'unknown' }}" >> visitor-log.txt
+          echo "===============================================" >> visitor-log.txt
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "visitor-log@github.com"
+          git config --local user.name "Visitor Log Bot"
+          git add visitor-log.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Visitor log update - $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          fi

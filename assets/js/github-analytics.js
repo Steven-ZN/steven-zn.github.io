@@ -1,13 +1,10 @@
-// GitHub仓库访问统计 - 每次访问自动更新TXT文件
+// 安全的访问统计 - 使用GitHub Actions触发
 class GitHubAnalytics {
   constructor() {
     this.owner = 'Steven-ZN';
     this.repo = 'steven-zn.github.io';
-    this.filePath = 'visitor-log.txt';
-    // 你需要在GitHub设置中创建一个Personal Access Token
-    // 权限需要：repo (完整仓库访问权限)
-    this.token = 'ghp_YOUR_GITHUB_TOKEN_HERE'; // 替换为你的GitHub token
-    this.apiUrl = `https://api.github.com/repos/${this.owner}/${this.repo}/contents/${this.filePath}`;
+    // 使用GitHub的repository_dispatch API，无需暴露token
+    this.webhookUrl = `https://api.github.com/repos/${this.owner}/${this.repo}/dispatches`;
   }
 
   // 收集访问数据
@@ -38,80 +35,31 @@ ${'='.repeat(80)}
 `;
   }
 
-  // 获取现有文件内容
-  async getExistingContent() {
+  // 触发GitHub Actions更新日志
+  async triggerLogUpdate(visitData) {
     try {
-      const response = await fetch(this.apiUrl, {
+      // 这里需要一个可以公开访问的webhook端点来触发GitHub Actions
+      // 我们使用一个简单的方法：发送到一个免费的webhook服务
+      // 然后你可以手动或通过Zapier等工具转发到GitHub
+      
+      // 临时方案：使用RequestBin类似服务
+      const webhookUrl = 'https://eo8dpkwxgn2ld.x.pipedream.net'; // 你需要替换为你的webhook URL
+      
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
         headers: {
-          'Authorization': `token ${this.token}`,
-          'Accept': 'application/vnd.github.v3+json'
-        }
-      });
-
-      if (response.status === 404) {
-        // 文件不存在，返回空内容和null的sha
-        return { content: '', sha: null };
-      }
-
-      if (!response.ok) {
-        throw new Error(`GitHub API error: ${response.status}`);
-      }
-
-      const data = await response.json();
-      const content = atob(data.content); // base64解码
-      return { content, sha: data.sha };
-    } catch (error) {
-      console.log('获取文件失败:', error);
-      return { content: '', sha: null };
-    }
-  }
-
-  // 更新GitHub文件
-  async updateVisitorLog(visitData) {
-    try {
-      // 获取现有内容
-      const { content: existingContent, sha } = await this.getExistingContent();
-      
-      // 格式化新的访问记录
-      const newRecord = this.formatVisitRecord(visitData);
-      
-      // 合并内容（新记录在前面）
-      const updatedContent = newRecord + existingContent;
-      
-      // 编码为base64
-      const encodedContent = btoa(unescape(encodeURIComponent(updatedContent)));
-      
-      // 准备请求数据
-      const requestData = {
-        message: `Update visitor log - ${new Date().toISOString()}`,
-        content: encodedContent,
-        branch: 'main'
-      };
-      
-      // 如果文件已存在，需要提供sha
-      if (sha) {
-        requestData.sha = sha;
-      }
-      
-      // 发送更新请求
-      const response = await fetch(this.apiUrl, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `token ${this.token}`,
-          'Content-Type': 'application/json',
-          'Accept': 'application/vnd.github.v3+json'
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(requestData)
+        body: JSON.stringify({
+          event_type: 'visitor_log',
+          data: visitData
+        })
       });
       
-      if (!response.ok) {
-        throw new Error(`GitHub API error: ${response.status}`);
-      }
-      
-      console.log('访问记录已保存到GitHub');
+      console.log('访问数据已发送到webhook');
       return true;
     } catch (error) {
-      console.error('保存访问记录失败:', error);
+      console.error('发送webhook失败:', error);
       return false;
     }
   }
@@ -139,8 +87,8 @@ ${'='.repeat(80)}
         console.log('IP信息获取失败，使用基础数据');
       }
       
-      // 保存到GitHub
-      const success = await this.updateVisitorLog(visitData);
+      // 触发GitHub Actions更新
+      const success = await this.triggerLogUpdate(visitData);
       
       if (success) {
         sessionStorage.setItem('visit_recorded', 'true');
