@@ -24,7 +24,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
       <li>Mean Teacher framework adapted for medical imaging consistency</li>
       <li><strong>Performance</strong>: Achieved <strong>68.25% IoU</strong> and <strong>79.39% DSC</strong> on BUSI dataset</li>
     </ul>
-    <p><strong>Research Status</strong>: First-author paper under review at IEEE-BIBM 2025<br>
+    <p><strong>Research Status</strong>: First-author paper accepted at IEEE-BIBM 2025<br>
     <strong>Technologies</strong>: PyTorch, SAM, Computer Vision, Medical Imaging<br>
     <strong>Impact</strong>: Reduces annotation costs by up to 60% while maintaining clinical accuracy</p>
     <p><a href="https://github.com/Steven-ZN/DSAL-Net" class="btn btn--primary">Explore on GitHub</a></p>
@@ -178,7 +178,7 @@ Welcome to my AI research portfolio! Here you'll find detailed information about
 
 ### Open Source Contribution
 - **Total Repositories**: 12+ AI-focused projects
-- **Research Papers**: 1 first-author submission under review
+- **Research Papers**: 1 first-author submission accepted
 - **Technologies**: Medical AI, LLMs, Computer vision, Machine learning
 - **Impact**: Projects used in academic research and real-world AI applications
 

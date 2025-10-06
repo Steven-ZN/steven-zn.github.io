@@ -11,7 +11,7 @@ toc: true
 **Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**  
 *Nuojunxi Zhang* (First Author), Kuan Huang (Advisor)  
 *IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*  
-**Status:** Under Review
+**Status:** Accepted
 
 ---
 

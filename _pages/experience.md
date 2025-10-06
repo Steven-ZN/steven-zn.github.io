@@ -23,7 +23,7 @@ toc: true
 - Developed CAM filtering with HSV-based contour constraints and used SAM to generate refined pseudo labels from selected high-quality CAMs
 - Integrated a Mean Teacher segmentation model with iterative uncertainty-based structure
 - **Achieved 68.25% IoU and 79.39% DSC on BUSI dataset**
-- First-author paper under review at IEEE-BIBM 2025, supervised by Prof. Kuan Huang
+- First-author paper accepted at IEEE-BIBM 2025, supervised by Prof. Kuan Huang
 - Appointed as research assistant under NSF funding, contributing to project design, experimentation, and publication
 
 ### Research Associate — Medfusion Fake Image Generator
