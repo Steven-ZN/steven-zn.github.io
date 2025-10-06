@@ -16,10 +16,21 @@ I am a Computer Science undergraduate at **Kean University** (expected May 2026)
 
 My research interests lie at the intersection of **computer vision**, **weakly supervised learning**, and **healthcare AI applications**. I'm particularly passionate about developing efficient learning algorithms that can work with limited labeled data - a critical challenge in medical imaging.
 
+## Publications
+
+**Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**
+*Nuojunxi Zhang* (First Author), Kuan Huang (Advisor)
+*IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*
+**Status:** Accepted
+
+**Poster: Medical Computer Vision for Parkinson's Rehabilitation**
+*Nuojunxi Zhang*
+*Research Day – Wenzhou-Kean University*, April 2023
+
 ## Education
 
-**Bachelor of Science in Computer Science**  
-*Kean University* | Expected May 2026  
+**Bachelor of Science in Computer Science**
+*Kean University* | Expected May 2026
 - GPA: 3.91/4.0 for 2024-2025 academic year (Dean's Honor List)
 - Two years at Wenzhou-Kean University (2022-2024) as part of joint program
 
@@ -64,17 +75,6 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 - Earned the **Outstanding Presentation award** at WKU Research Day for demonstrating prototype results
 - Utilized computer vision and machine learning techniques for healthcare applications
 
-## Publications
-
-**Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**  
-*Nuojunxi Zhang* (First Author), Kuan Huang (Advisor)  
-*IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*  
-**Status:** Accepted
-
-**Poster: Medical Computer Vision for Parkinson's Rehabilitation**  
-*Nuojunxi Zhang*  
-*Research Day – Wenzhou-Kean University*, April 2023
-
 ## Technical Skills
 
 **Programming Languages:** Java, Python, C#, SQL, MATLAB
@@ -93,6 +93,46 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 
 **DSAL-Net** - Dual-stage active learning for tumor segmentation ([GitHub](https://github.com/Steven-ZN/DSAL-Net))  
 **Medfusion** - Medical image generation with VAE + Diffusion ([GitHub](https://github.com/Steven-ZN/Medfusion_Fake_Image))  
+**MBTI-LLM** - Personality-controlled text generation ([GitHub](https://github.com/Steven-ZN/MBTI-LLM))
+
+## Leadership Experience
+
+### Vice President — WKU Computer Club
+**Wenzhou-Kean University** | *Jan 2024 – Jun 2024*
+
+- Managed and planned club operations, overseeing departmental organization and project planning
+- Led strategic initiatives that increased active membership and project participation by **30%**
+- Organized technical workshops, coding competitions, and industry networking events
+- Coordinated with faculty and administration to enhance the computer science program
+
+## Professional Experience
+
+### College Assistant — School of Science and Technology
+**Wenzhou-Kean University** | *Aug 2022 – May 2024*
+
+- Assisted faculty with event promotion and day-to-day coordination of academic activities
+- Streamlined scheduling workflows, improving operational efficiency across departmental projects
+- Supported research administration and student academic services
+- Facilitated communication between students, faculty, and administration
+
+## Technical Skills
+
+**Programming Languages:** Java, Python, C#, SQL, MATLAB
+
+**ML/DL Frameworks:** PyTorch, TensorFlow, Scikit-learn, OpenCV, SAM (Segment Anything Model)
+
+**Tools & Technologies:** Git, Linux, Docker, CUDA, Jupyter Notebooks
+
+**Specialized Skills:** Medical Image Processing, Computer Vision, Active Learning, Weakly Supervised Learning
+
+**Creative Tools:** Adobe Premiere Pro, Photoshop, Audition
+
+**Software Engineering:** Object-Oriented Design, System Testing, Technical Writing
+
+## Key Projects
+
+**DSAL-Net** - Dual-stage active learning for tumor segmentation ([GitHub](https://github.com/Steven-ZN/DSAL-Net))
+**Medfusion** - Medical image generation with VAE + Diffusion ([GitHub](https://github.com/Steven-ZN/Medfusion_Fake_Image))
 **MBTI-LLM** - Personality-controlled text generation ([GitHub](https://github.com/Steven-ZN/MBTI-LLM))
 
 ## Leadership Experience
