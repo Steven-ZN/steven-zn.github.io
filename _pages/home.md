@@ -8,7 +8,7 @@ toc: true
 
 **Computer Science @ Kean University** (Expected May 2026)
 Research in Weakly Supervised Segmentation and Active Learning
-Dean's Honor List • 3.91 GPA
+Dean's Honor List • 3.91 GPA (2024-2025)
 
 ## Publications
 
