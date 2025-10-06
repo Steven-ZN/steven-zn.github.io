@@ -32,7 +32,7 @@ Dean's Honor List • 3.91 GPA
 
 **Bachelor of Science in Computer Science**
 *Kean University* | Expected May 2026
-- GPA: 3.91/4.0 (Dean's Honor List)
+- GPA: 3.91/4.0 for 2024-2025 academic year (Dean's Honor List)
 
 ## Technical Skills
 
