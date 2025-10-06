@@ -240,12 +240,6 @@ seo:
 favicon: /images/favicon.svg             # 网站图标路径
 ```
 
-**分页配置（用于博客功能）：**
-```yaml
-# 分页设置
-paginate: 6                              # 每页显示文章数
-paginate_path: "/blog/page:num/"         # 分页 URL 格式
-```
 
 **代码高亮和 Markdown 设置：**
 ```yaml
@@ -260,15 +254,6 @@ kramdown:
 ```yaml
 # 默认 Front Matter
 defaults:
-  - scope:
-      path: ""                           # 应用到所有文件
-      type: "posts"                      # 仅应用到文章类型
-    values:
-      layout: single                     # 使用 single 布局
-      author_profile: true               # 显示作者资料
-      read_time: true                    # 显示阅读时间
-      toc: true                          # 显示目录
-      toc_sticky: true                   # 粘性目录
   - scope:
       path: "_pages"                     # 应用到 _pages 目录
       type: pages                        # 页面类型
@@ -481,13 +466,6 @@ GitHub Pages does not support plugin-name
 - 移除 GitHub Pages 不支持的插件
 - 确保所有插件都在官方支持列表中
 
-**错误类型 4：图片或资源路径错误**
-```
-File not found: /images/example.jpg
-```
-- 验证图片文件确实存在
-- 检查路径大小写和拼写
-- 确保图片在正确的目录中
 
 ### 本地调试最佳实践
 
@@ -579,162 +557,6 @@ main:
     url: /new-page/
 ```
 
-### 博客功能集成
-
-**步骤 1：启用博客配置**
-在 `_config.yml` 中确保已配置：
-```yaml
-# 分页配置
-paginate: 6
-paginate_path: "/blog/page:num/"
-
-# 默认配置中确保文章类型的设置
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      toc: true
-      toc_sticky: true
-```
-
-**步骤 2：创建博客文章**
-```bash
-# 按照 Jekyll 命名规范创建文章
-# 格式：YYYY-MM-DD-title.md
-touch _posts/2025-10-06-my-first-post.md
-```
-
-**步骤 3：文章 Front Matter 配置**
-```yaml
----
-layout: single
-title: "我的第一篇博客文章"
-date: 2025-10-06 12:00:00 +0000
-categories: [技术]                    # 分类
-tags: [Jekyll, GitHub Pages]         # 标签
-author_profile: true
-read_time: true
-toc: true
-toc_sticky: true
-comments: true                       # 启用评论（需配置）
-excerpt: "这是文章的摘要内容"
----
-```
-
-**步骤 4：创建博客索引页面**
-在 `_pages/` 目录下创建 `blog.md`：
-```yaml
----
-layout: single
-title: "博客"
-permalink: /blog/
-author_profile: true
----
-
-## 最新文章
-
-{% for post in site.posts %}
-  <article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt }}</p>
-    <small>{{ post.date | date: "%Y年%m月%d日" }}</small>
-  </article>
-{% endfor %}
-```
-
-### 评论系统集成
-
-**Disqus 评论配置：**
-1. 在 Disqus 创建账户和站点
-2. 在 `_config.yml` 中添加：
-```yaml
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "your-site-shortname"
-```
-
-**Gitalk 评论配置：**
-1. 创建 GitHub OAuth App
-2. 在页面中添加 Gitalk 组件：
-```html
-<div id="gitalk-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script>
-const gitalk = new Gitalk({
-  clientID: 'your-client-id',
-  clientSecret: 'your-client-secret',
-  repo: 'your-repo',
-  owner: 'your-username',
-  admin: ['your-username'],
-  id: location.pathname,
-  distractionFreeMode: false
-});
-gitalk.render('gitalk-container');
-</script>
-```
-
-### 搜索功能实现
-
-**简单搜索实现：**
-1. 创建搜索页面 `_pages/search.md`：
-```yaml
----
-layout: single
-title: "搜索"
-permalink: /search/
-author_profile: true
----
-
-<input type="search" id="search-input" placeholder="搜索...">
-<div id="search-results"></div>
-
-<script>
-// 简单的客户端搜索实现
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-
-// 这里需要实现搜索逻辑
-</script>
-```
-
-2. 创建搜索数据文件 `search.json`：
-```json
----
-layout: null
----
-[
-  {% for post in site.posts %}
-    {
-      "title": {{ post.title | jsonify }},
-      "url": {{ post.url | jsonify }},
-      "content": {{ post.content | strip_html | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-]
-```
-
-### 图片优化和管理
-
-**图片优化最佳实践：**
-```bash
-# 1. 图片压缩
-# 使用工具如 ImageOptim、TinyPNG 等
-
-# 2. 响应式图片
-<img srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500w"
-     sizes="(max-width: 500px) 500px, (max-width: 1000px) 1000px, 1500px"
-     src="medium.jpg" alt="描述性文本">
-
-# 3. 懒加载图片
-<img src="placeholder.jpg" data-src="actual-image.jpg"
-     loading="lazy" alt="描述性文本">
-```
-
 ## 版本控制和协作
 
 ### Git 工作流程最佳实践
@@ -801,35 +623,6 @@ git merge upstream/main
 git push origin main
 ```
 
-## 性能优化建议
-
-### 网站速度优化
-
-**1. 图片优化：**
-- 使用 WebP 格式（支持情况允许时）
-- 实现响应式图片
-- 添加适当的 alt 文本提升 SEO
-
-**2. CSS 和 JavaScript 优化：**
-- 最小化 CSS 文件大小
-- 移除未使用的 CSS 规则
-- 异步加载非关键 JavaScript
-
-**3. 缓存策略：**
-```yaml
-# _config.yml 中配置
-plugins:
-  - jekyll-sitemap
-
-# 在 HTML 中添加缓存控制头
-# GitHub Pages 自动处理基本缓存
-```
-
-**4. SEO 优化：**
-- 完善页面标题和描述
-- 添加结构化数据
-- 优化图片 alt 文本
-- 确保移动端友好性
 
 ## 联系和支持
 
