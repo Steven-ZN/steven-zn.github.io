@@ -47,6 +47,9 @@
 
 <link href="{% if jekyll.environment == 'production' %}{{ '/assets/css/main.css' | absolute_url }}{% else %}{{ '/assets/css/main.css' | relative_url }}{% endif %}" rel="stylesheet">
 
+<!-- Custom CSS -->
+<link href="{% if jekyll.environment == 'production' %}{{ '/assets/css/custom.css' | absolute_url }}{% else %}{{ '/assets/css/custom.css' | relative_url }}{% endif %}" rel="stylesheet">
+
 <!-- Dark Mode Toggle Button -->
 <div class="dark-mode-toggle" onclick="toggleDarkMode()">
   <i class="fas fa-sun toggle-icon sun" id="sun-icon"></i>
