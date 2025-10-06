@@ -36,44 +36,11 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 
 ## Research Experience
 
-### Research Assistant — NSF-Funded Project on Tumor Segmentation
-**Kean University** | *June 2025 – Present*
+**NSF-Funded Research Assistant** - *Kean University* (2024-Present)
+Working under Prof. Kuan Huang on medical image segmentation projects, focusing on weakly supervised learning techniques for breast ultrasound analysis. Developed a dual-stage active learning framework achieving 68.25% IoU and 79.39% DSC on BUSI dataset, leading to a first-author publication accepted at IEEE-BIBM 2025.
 
-- Selected as NSF-funded research assistant under the supervision of Prof. Kuan Huang
-- Contributing to a journal-targeted study on medical image segmentation using ultrasound datasets
-- Responsibilities include algorithm development, experimental design, and manuscript preparation
-- Working on cutting-edge weakly supervised learning techniques for medical imaging applications
-
-### Research Assistant — Dual-Stage Active Learning Segmentation (NSF-Funded)
-**Kean University** | *Dec 2024 – May 2025*
-
-- Designed a dual-stage active learning framework to improve weakly supervised tumor segmentation using image-level labels in BUS ultrasound datasets
-- Developed CAM filtering with HSV-based contour constraints and used SAM to generate refined pseudo labels from selected high-quality CAMs
-- Integrated a Mean Teacher segmentation model with iterative uncertainty-based structure
-- **Achieved 68.25% IoU and 79.39% DSC on BUSI dataset**
-- First-author paper accepted at IEEE-BIBM 2025, supervised by Prof. Kuan Huang
-- Appointed as research assistant under NSF funding, contributing to project design, experimentation, and publication
-
-### Research Assistant — Medfusion Fake Image Generator
-**Kean University** | *Sept 2024 – Dec 2024*
-
-- Developed a synthetic medical image pipeline using Variational Autoencoders (VAE) and Diffusion Models to augment breast ultrasound datasets for weakly supervised segmentation
-- Training a latent VAE embedder and conditional diffusion model on BUSI dataset
-- Designed experiments using diffusion-generated images and weak labels to evaluate their impact on downstream segmentation performance
-
-### Research Assistant — Vision-AI Lab (SPF-Funded)
-**Wenzhou-Kean University** | *Sep 2023 – May 2024*
-
-- Joined Prof. Gupta's Vision-AI Lab to support projects in computer vision and medical imaging
-- Participated in a SPF-funded initiative focused on raw image denoising using Bayer pattern modeling
-- Worked on latent space extensions and codebase adaptation based on a prior CVPR 2022 Workshop project developed by a former lab member under the same advisor
-
-### Research Developer — Parkinson's Rehabilitation Interface
-**Wenzhou-Kean University** | *Feb 2023 – June 2023*
-
-- Developed a program that captures patients' hand movements and provides real-time feedback for rehabilitation assessment
-- Earned the **Outstanding Presentation award** at WKU Research Day for demonstrating prototype results
-- Utilized computer vision and machine learning techniques for healthcare applications
+**Medical Imaging Research** - *Wenzhou-Kean University* (2023-2024)
+Contributed to multiple projects including synthetic medical image generation using VAE and diffusion models, raw image denoising, and computer vision applications for healthcare rehabilitation systems.
 
 ## Technical Skills
 
