@@ -10,7 +10,7 @@ toc: true
 Research in Weakly Supervised Segmentation and Active Learning
 Dean's Honor List • 3.91 GPA (2024-2025)
 
-*This is a simplified overview. For detailed information, please visit the full CV above.*
+<small>see detail in above pages</small>
 
 ## Publications
 
