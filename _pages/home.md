@@ -7,14 +7,16 @@ toc: true
 ---
 
 **Computer Science @ Kean University** (Expected May 2026)
+
 Research in Weakly Supervised Segmentation and Active Learning
+
 Dean's Honor List • 3.91 GPA (2024-2025)
 
 ## Publications
 
 **Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**
 
-*Nuojunxi Zhang* (First Author), Kuan Huang (Advisor)
+*Nuojunxi Zhang, Meng Xu, Guanchao Tong, and Kuan Huang*
 
 *IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*
 
@@ -46,7 +48,10 @@ Dean's Honor List • 3.91 GPA (2024-2025)
 ## Technical Skills
 
 **ML/DL:** PyTorch, TensorFlow, SAM, OpenCV, Scikit-learn
+
 **Programming:** Python, Java, C#, MATLAB
+
 **Specialized:** Medical Image Processing, Computer Vision, Active Learning, Weakly Supervised Learning
+
 **Tools:** Git, Docker, CUDA, Linux
 
