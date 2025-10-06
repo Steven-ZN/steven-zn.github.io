@@ -115,52 +115,13 @@ My research interests lie at the intersection of **computer vision**, **weakly s
 - Supported research administration and student academic services
 - Facilitated communication between students, faculty, and administration
 
-## Technical Skills
-
-**Programming Languages:** Java, Python, C#, SQL, MATLAB
-
-**ML/DL Frameworks:** PyTorch, TensorFlow, Scikit-learn, OpenCV, SAM (Segment Anything Model)
-
-**Tools & Technologies:** Git, Linux, Docker, CUDA, Jupyter Notebooks
-
-**Specialized Skills:** Medical Image Processing, Computer Vision, Active Learning, Weakly Supervised Learning
-
-**Creative Tools:** Adobe Premiere Pro, Photoshop, Audition
-
-**Software Engineering:** Object-Oriented Design, System Testing, Technical Writing
-
-## Key Projects
-
-**DSAL-Net** - Dual-stage active learning for tumor segmentation ([GitHub](https://github.com/Steven-ZN/DSAL-Net))
-**Medfusion** - Medical image generation with VAE + Diffusion ([GitHub](https://github.com/Steven-ZN/Medfusion_Fake_Image))
-**MBTI-LLM** - Personality-controlled text generation ([GitHub](https://github.com/Steven-ZN/MBTI-LLM))
-
-## Leadership Experience
-
-### Vice President — WKU Computer Club
-**Wenzhou-Kean University** | *Jan 2024 – Jun 2024*
-
-- Managed and planned club operations, overseeing departmental organization and project planning
-- Led strategic initiatives that increased active membership and project participation by **30%**
-- Organized technical workshops, coding competitions, and industry networking events
-- Coordinated with faculty and administration to enhance the computer science program
-
-## Professional Experience
-
-### College Assistant — School of Science and Technology
-**Wenzhou-Kean University** | *Aug 2022 – May 2024*
-
-- Assisted faculty with event promotion and day-to-day coordination of academic activities
-- Streamlined scheduling workflows, improving operational efficiency across departmental projects
-- Supported research administration and student academic services
-- Facilitated communication between students, faculty, and administration
 
 ## Awards & Recognition
 
 - **Dean's Honor List** at Kean University (Sep 2024 – May 2025, GPA 3.91)
 - **Outstanding Presentation Award** at WKU Research Day 2023
 - **NSF-funded Research Assistant** (2025)
-- **First-author publication** submitted to IEEE-BIBM 2025
+- **First-author publication** accepted at IEEE-BIBM 2025
 - **30% increase** in Computer Club membership under leadership
 
   
