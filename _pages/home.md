@@ -10,8 +10,6 @@ toc: true
 Research in Weakly Supervised Segmentation and Active Learning
 Dean's Honor List • 3.91 GPA (2024-2025)
 
-<small>see detail in above pages</small>
-
 ## Publications
 
 **Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**
@@ -23,6 +21,8 @@ Dean's Honor List • 3.91 GPA (2024-2025)
 **Status:** Accepted
 
 ## Research Experience
+
+<small>see detail in above pages</small>
 
 **NSF-Funded Research Assistant** - *Kean University* (2024-Present)
 
