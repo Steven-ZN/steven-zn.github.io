@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /
-title: "Nuojunxi (Steven) Zhang"
+title: "Nuojunxi Zhang (Steven)"
 author_profile: true
 toc: true
 ---
