@@ -2,9 +2,9 @@
 # This Front Matter is required
 ---
 
-// 自定义样式文件
+// Custom styles
 
-/* 搜索浮动窗口 */
+/* Search floating window */
 .search-wrapper {
   position: fixed;
   top: 20px;
@@ -108,7 +108,7 @@
   margin-top: 4px;
 }
 
-/* 返回顶部按钮 */
+/* Back to top button */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -151,7 +151,7 @@
   color: #007bff;
 }
 
-/* 暗色模式样式 */
+/* Dark mode styles */
 [data-theme="dark"] .search-wrapper {
   background: rgba(30, 30, 30, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -215,7 +215,7 @@
   color: #64b5f6;
 }
 
-/* 搜索结果高亮样式 */
+/* Search result highlight styles */
 mark {
   background-color: #ffeb3b;
   color: #000;
@@ -229,7 +229,7 @@ mark {
   color: #000;
 }
 
-/* 加载动画 */
+/* Loading animation */
 .search-results.loading {
   display: flex;
   justify-content: center;
@@ -252,7 +252,7 @@ mark {
   100% { transform: rotate(360deg); }
 }
 
-/* 响应式设计 */
+/* Responsive design */
 @media (max-width: 768px) {
   .search-wrapper {
     right: 20px;
