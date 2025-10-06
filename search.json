@@ -1,0 +1,40 @@
+---
+layout: null
+---
+[
+  {
+    "title": "首页 - Nuojunxi Zhang (Steven)",
+    "url": "/",
+    "content": "Nuojunxi Zhang Steven Computer Science Kean University Research in Weakly Supervised Segmentation and Active Learning Dean's Honor List 3.91 GPA Publications Research Experience Education Technical Skills PyTorch TensorFlow SAM OpenCV Scikit-learn Python Java C# MATLAB Medical Image Processing Computer Vision Active Learning Weakly Supervised Learning Git Docker CUDA Linux",
+    "categories": ["home", "about", "cv"],
+    "excerpt": "Computer Science @ Kean University (Expected May 2026) Research in Weakly Supervised Segmentation and Active Learning Dean's Honor List • 3.91 GPA (2024-2025)"
+  },
+  {
+    "title": "项目与研究 - Projects & Research",
+    "url": "/projects/",
+    "content": "AI research portfolio medical imaging natural language processing computer vision machine learning DSAL-Net Dual-Stage Active Learning Medical Segmentation MBTI-LLM Personality-Controlled Text Generation Medfusion Advanced Medical Image Generation HandSense-360 Real-time Gesture Recognition DeepTeacher AI-Powered Learning Assistant DeepPlaylist Intelligent Music Classification MagicSub AI-Powered Subtitle Translation Diabetes Prediction Multi-Algorithm Comparison Study",
+    "categories": ["projects", "research", "ai", "machine learning"],
+    "excerpt": "Welcome to my AI research portfolio! Here you'll find detailed information about my research and development work in medical AI, natural language processing, computer vision, and machine learning."
+  },
+  {
+    "title": "出版物 - Publications",
+    "url": "/publications/",
+    "content": "Publications Conference Papers IEEE-BIBM 2025 Segmenting What Matters Dual-Stage Active Learning Framework Weakly Supervised Breast Ultrasound Segmentation Research Impact Future Work Medical Imaging Computer Vision Active Learning Healthcare Diagnostics Synthetic Data Generation",
+    "categories": ["publications", "papers", "research"],
+    "excerpt": "Conference papers and presentations on medical AI, weakly supervised learning, and active learning research."
+  },
+  {
+    "title": "经历 - Experience",
+    "url": "/experience/",
+    "content": "Research Experience NSF-Funded Research Assistant Kean University Medical Imaging Research Wenzhou-Kean University Education Computer Science Dean's Honor List Technical Skills ML DL Frameworks Programming Languages",
+    "categories": ["experience", "education", "research"],
+    "excerpt": "Detailed research experience and educational background in computer science and AI."
+  },
+  {
+    "title": "联系方式 - Contact",
+    "url": "/contact/",
+    "content": "Contact Information Email zhangnu@kean.edu zhangnuojunxi@gmail.com Social Media GitHub LinkedIn Union New Jersey USA Research Collaboration Academic Partnerships Industry Applications",
+    "categories": ["contact", "collaboration"],
+    "excerpt": "Get in touch for research collaborations, academic partnerships, or industry applications."
+  }
+]
