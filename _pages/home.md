@@ -8,6 +8,7 @@ toc: true
 
 
 **Computer Science @ Kean University** (Expected May 2026)
+
 Incoming Ph.D. Student in Computer Science & Engineering (AI) at the University of South Florida, starting Fall 2026
 
 Research in Weakly Supervised Segmentation and Active Learning
