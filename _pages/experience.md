@@ -16,7 +16,7 @@ Advisor: Prof. Yi Sheng
 - Studying detector response estimation for X-ray CT when flat-field calibration scans are unavailable, and characterizing where existing self-calibration methods break down on real scanner measurements
 - Developed a multi-scale response estimation scheme evaluated on the 2DeteCT experimental CT dataset, targeting response accuracy and ROI bias in the reconstructed volume
 - Running large-scale reconstruction and ablation sweeps across multi-GPU compute
-- First-author manuscript submitted to SPIE Medical Imaging 2027
+- First-author abstract under review at SPIE Medical Imaging 2027
 
 ### Research Assistant — NSF-Funded Ultrasound Segmentation
 **AI4Healthcare Lab, Kean University** | *Dec 2024 – Sept 2025*<br>

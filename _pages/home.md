@@ -24,7 +24,7 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 ## News
 
 - **Aug 2026** — Started my Ph.D. in Computer Science & Engineering at USF's Bellini College, working with Prof. Yi Sheng.
-- **Aug 2026** — Submitted *Estimating Detector Response Without Flat Fields: Its Failures and Solutions* to **SPIE Medical Imaging 2027**.
+- **Aug 2026** — Submitted an abstract, *Estimating Detector Response Without Flat Fields: Its Failures and Solutions*, to **SPIE Medical Imaging 2027**.
 - **May 2026** — Graduated with a B.S. in Computer Science from Kean University.
 - **Dec 2025** — *Segmenting What Matters* appeared at **IEEE BIBM 2025**.
 
@@ -36,7 +36,7 @@ IEEE International Conference on Bioinformatics and Biomedicine (**BIBM**), 2025
 
 **Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
 *Nuojunxi Zhang, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng*<br>
-**SPIE Medical Imaging 2027** — *under review*
+**SPIE Medical Imaging 2027** — *abstract under review*
 
 See the [full list of publications](/publications/).
 

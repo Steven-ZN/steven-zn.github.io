@@ -17,7 +17,7 @@ Selected research code and open-source tools. Most repositories live on [GitHub]
 Flat-field scans are the standard way to calibrate an X-ray detector, but they are not always available, current, or trustworthy. This project asks how much of the detector response can be recovered from the projection data itself — and, more importantly, where that recovery fails. Working on the 2DeteCT experimental dataset, I characterize the failure modes of existing self-calibration approaches on real measurements and develop a multi-scale response estimation scheme aimed at response accuracy and ROI bias in the reconstruction.
 
 **Stack:** Python, PyTorch, tomographic reconstruction toolchain, multi-GPU compute<br>
-**Status:** manuscript under review at SPIE Medical Imaging 2027
+**Status:** abstract under review at SPIE Medical Imaging 2027
 
 ### DSAL-Net — Dual-Stage Active Learning for Medical Segmentation
 *Weakly supervised learning · medical imaging · 2024 – 2025*

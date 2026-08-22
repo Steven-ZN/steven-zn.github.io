@@ -21,7 +21,7 @@ A dual-stage framework that turns image-level labels into usable pixel supervisi
 
 **Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
 **Nuojunxi Zhang**\*, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng<br>
-*SPIE Medical Imaging 2027* — submitted August 2026
+*SPIE Medical Imaging 2027* — abstract under review, submitted August 2026
 
 An analysis of when flat-field-free detector response estimation breaks down on real CT measurements, and a multi-scale response estimation scheme that restores accurate response recovery and reduces ROI bias in the reconstructed volume.
 
