@@ -24,6 +24,7 @@ I'm always glad to talk about medical imaging, reconstruction, and label-efficie
 - **Label-efficient medical segmentation** — weak supervision, active learning, and pseudo-label quality
 - **Foundation models in clinical imaging** — where SAM-style priors help and where they quietly mislead
 - **Synthetic data for medical AI** — diffusion-based augmentation and how to evaluate whether it actually helps
+- **LLMs and AI agents for research workflows** — literature triage, summarization pipelines, and where local multimodal models are already good enough
 
 ## Current Availability
 

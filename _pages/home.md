@@ -13,7 +13,7 @@ University of South Florida · Tampa, FL
 
 I am a first-year Ph.D. student at the University of South Florida, advised by **Prof. Yi Sheng**, and a Graduate Instructional Assistant for a course on incident response methods. I work on machine learning for medical imaging — currently on X-ray CT reconstruction and calibration, and on label-efficient segmentation of ultrasound.
 
-Before USF I received my **B.S. in Computer Science from Kean University** (May 2026), where I was an NSF-funded research assistant in Prof. Kuan Huang's AI4Healthcare Lab. My first-author paper on dual-stage active learning for breast ultrasound segmentation appeared at **IEEE BIBM 2025**.
+Before USF I received my **B.S. in Computer Science from Kean University** (May 2026), where I was an NSF-funded research assistant in Prof. Kuan Huang's AI4Healthcare Lab. My first-author paper on dual-stage active learning for breast ultrasound segmentation was published at **IEEE BIBM 2025**.
 
 ## Research Interests
 
@@ -27,7 +27,7 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 - **Aug 2026** — Started my Ph.D. in Computer Science & Engineering at USF's Bellini College, working with Prof. Yi Sheng.
 - **Aug 2026** — Submitted an abstract, *Estimating Detector Response Without Flat Fields: Its Failures and Solutions*, to **SPIE Medical Imaging 2027**.
 - **May 2026** — Graduated with a B.S. in Computer Science from Kean University.
-- **Dec 2025** — *Segmenting What Matters* appeared at **IEEE BIBM 2025**.
+- **Dec 2025** — *Segmenting What Matters* was published at **IEEE BIBM 2025**.
 
 ## Selected Publications
 
