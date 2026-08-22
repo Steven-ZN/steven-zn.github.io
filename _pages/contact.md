@@ -21,16 +21,14 @@ I welcome discussion on medical imaging, reconstruction, and label-efficient lea
 
 ## Topics I'd Like to Talk About
 
-- **CT reconstruction and calibration** — detector response, ring artifacts, and self-calibration from real measurements
-- **Label-efficient medical segmentation** — weak supervision, active learning, and pseudo-mask reliability
-- **Foundation models in clinical imaging** — how SAM-style priors transfer to clinical data under sparse supervision
-- **Synthetic data for medical AI** — diffusion-based augmentation and its measured effect on downstream performance
-- **LLMs and AI agents for research pipelines** — literature triage, summarization, and the practical deployment of local multimodal models
+- **CT reconstruction and calibration**: detector response, ring artifacts, and self-calibration from real measurements
+- **Label-efficient medical segmentation**: weak supervision, active learning, and pseudo-mask reliability
+- **Foundation models in clinical imaging**: how SAM-style priors transfer to clinical data under sparse supervision
+- **Synthetic data for medical AI**: diffusion-based augmentation and its measured effect on downstream performance
+- **LLMs and AI agents for research pipelines**: literature triage, summarization, and the practical deployment of local multimodal models
 
 ## Current Availability
 
-**Research collaborations:** Open to joint projects and paper collaborations, particularly in imaging physics and medical computer vision.
-
-**Reviewing:** Available to review for conferences and journals in medical image analysis.
+**Research collaborations:** Open to joint projects and paper collaborations, particularly in imaging physics, medical computer vision, and LLM-based agents.
 
 **Internships:** Seeking a summer 2027 research internship in medical imaging or machine learning.

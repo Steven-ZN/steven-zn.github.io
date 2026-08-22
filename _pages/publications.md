@@ -22,7 +22,7 @@ A dual-stage pipeline that derives pixel-level supervision from image-level anno
 
 **Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
 **Nuojunxi Zhang**\*, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng<br>
-*SPIE Medical Imaging 2027* — abstract under review, submitted August 2026
+*SPIE Medical Imaging 2027*. Abstract under review, submitted August 2026
 
 A multi-scale estimation scheme that recovers detector response directly from projection data when flat-field scans are unavailable, together with an analysis of the measurement conditions that govern its accuracy. The method improves response accuracy and mitigates ROI bias in the reconstructed volume.
 
@@ -36,7 +36,7 @@ A dual-branch activation-map-refinement design that stabilizes CAM estimation, c
 
 **Vision-Based Rehabilitation System for Parkinson's Patients** (poster)<br>
 Yifan Zhu, Lianjie Zhu, **Nuojunxi Zhang**<br>
-*Research Day, Wenzhou-Kean University*, April 2023 — **Best Oral Presentation Award**
+*Research Day, Wenzhou-Kean University*, April 2023. **Best Oral Presentation Award**
 
 ## Research Directions
 

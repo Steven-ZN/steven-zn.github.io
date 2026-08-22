@@ -17,6 +17,54 @@
 
 {% seo %}
 
+<!-- Person 结构化数据：让搜索引擎把"这个人 / 这个实验室 / 这位导师"关联起来。
+     注意：不要在注释里写 Liquid 标签，Liquid 不认 HTML 注释，会照样展开。 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nuojunxi Zhang",
+  "alternateName": ["Steven Zhang", "Nuojunxi (Steven) Zhang"],
+  "jobTitle": "Ph.D. Student in Computer Science and Engineering",
+  "url": "https://steven-zn.github.io",
+  "image": "https://steven-zn.github.io/images/avatar.jpg",
+  "email": "mailto:nuojunxi@usf.edu",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of South Florida",
+    "url": "https://www.usf.edu",
+    "department": {
+      "@type": "Organization",
+      "name": "Bellini College of Artificial Intelligence, Cybersecurity and Computing"
+    }
+  },
+  "memberOf": {
+    "@type": "ResearchOrganization",
+    "name": "YES Lab",
+    "url": "https://eaho-research-lab.github.io/Homepage/index.html"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Kean University"
+  },
+  "knowsAbout": [
+    "Medical image analysis",
+    "Computed tomography reconstruction",
+    "Detector calibration",
+    "Weakly supervised segmentation",
+    "Active learning",
+    "Computer vision",
+    "Vision-language models",
+    "Large language model agents"
+  ],
+  "sameAs": [
+    "https://github.com/Steven-ZN",
+    "https://www.linkedin.com/in/steven-zn",
+    "https://eaho-research-lab.github.io/Homepage/index.html"
+  ]
+}
+</script>
+
 <link href="{% if jekyll.environment == 'production' %}{{ '/assets/css/main.css' | absolute_url }}{% else %}{{ '/assets/css/main.css' | relative_url }}{% endif %}" rel="stylesheet">
 
 <!-- Dark Mode Toggle Button -->

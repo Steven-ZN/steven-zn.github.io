@@ -10,7 +10,7 @@ description: "Research, teaching, and leadership experience of Nuojunxi (Steven)
 
 ## Research Experience
 
-### Graduate Research Assistant — CT Reconstruction and Calibration
+### Graduate Research Assistant: CT Reconstruction and Calibration
 **YES Lab, University of South Florida** | Bellini College of AI, Cybersecurity and Computing | *Aug 2026 – Present*<br>
 Advisor: Prof. Yi Sheng
 
@@ -19,7 +19,7 @@ Advisor: Prof. Yi Sheng
 - Running large-scale reconstruction and ablation sweeps across multi-GPU compute
 - First-author abstract under review at SPIE Medical Imaging 2027
 
-### Research Assistant — NSF-Funded Ultrasound Segmentation
+### Research Assistant: NSF-Funded Ultrasound Segmentation
 **AI4Healthcare Lab, Kean University** | *Dec 2024 – Sept 2025*<br>
 Advisor: Prof. Kuan Huang
 
@@ -29,21 +29,21 @@ Advisor: Prof. Kuan Huang
 - First-author paper accepted at IEEE BIBM 2025 (19.8% acceptance rate)
 - Continued into a journal-targeted extension on dual-branch activation-map refinement, currently under review
 
-### Research Participant — Medfusion Synthetic Ultrasound Generation
+### Research Participant: Medfusion Synthetic Ultrasound Generation
 **Kean University** | *Sept 2024 – Dec 2024*
 
 - Built a synthetic medical image pipeline using variational autoencoders and diffusion models to augment breast ultrasound data for weakly supervised segmentation
 - Trained a latent VAE embedder and a conditional diffusion model on BUSI at 512×512 resolution
 - Designed experiments pairing diffusion-generated images with weak labels to measure their effect on downstream segmentation
 
-### Research Assistant — Vision-AI Lab (SPF-Funded)
+### Research Assistant: Vision-AI Lab (SPF-Funded)
 **Wenzhou-Kean University** | *Sept 2023 – May 2024*<br>
 Advisor: Prof. Gupta
 
 - Contributed to an SPF-funded project on raw image denoising via Bayer pattern modeling
 - Extended the latent space and adapted the codebase of a prior CVPR 2022 Workshop project from the same lab
 
-### Research Assistant — Parkinson's Rehabilitation Interface
+### Research Assistant: Parkinson's Rehabilitation Interface
 **Wenzhou-Kean University** | *Feb 2023 – June 2023*
 
 - Built an OpenCV + MediaPipe system that captures patients' hand movements and returns real-time feedback for rehabilitation assessment
@@ -53,7 +53,7 @@ Advisor: Prof. Gupta
 
 ## Teaching
 
-### Graduate Instructional Assistant — Incident Response
+### Graduate Instructional Assistant: Incident Response
 **Bellini College of AI, Cybersecurity and Computing, University of South Florida** | *Aug 2026 – Present*
 
 - Instructional assistant for a course on incident response methods
@@ -63,14 +63,14 @@ Advisor: Prof. Gupta
 
 ## Leadership & Service
 
-### Vice President — Computer Club
+### Vice President: Computer Club
 **Wenzhou-Kean University** | *Jan 2024 – June 2024*
 
 - Managed club operations, departmental organization, and project planning
 - Led initiatives that increased active membership and project participation by **30%**
 - Organized technical workshops, coding competitions, and networking events
 
-### College Assistant — College of Science, Mathematics and Technology
+### College Assistant: College of Science, Mathematics and Technology
 **Wenzhou-Kean University** | *Aug 2022 – May 2024*
 
 - Supported faculty with event promotion and day-to-day coordination of academic activities

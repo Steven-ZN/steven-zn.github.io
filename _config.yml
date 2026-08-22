@@ -1,6 +1,6 @@
 # 站点基础
 title: "Steven Zhang"
-description: "Ph.D. student in Computer Science & Engineering at the University of South Florida. Medical imaging, computer vision, vision-language models, and LLM-based agents."
+description: "Nuojunxi (Steven) Zhang, Ph.D. student in the YES Lab at the University of South Florida, advised by Prof. Yi Sheng. Medical imaging, CT reconstruction, computer vision, vision-language models, and LLM-based agents."
 url: "https://steven-zn.github.io"
 baseurl: ""
 
@@ -21,6 +21,9 @@ author:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:nuojunxi@usf.edu"
+    - label: "YES Lab"
+      icon: "fas fa-flask"
+      url: "https://eaho-research-lab.github.io/Homepage/index.html"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Steven-ZN"
@@ -89,5 +92,6 @@ sass:
   style: compressed
  
 # 站点图标
+og_image: /images/avatar.jpg
 favicon: /images/favicon.svg
 # Force rebuild 2026-08-22
