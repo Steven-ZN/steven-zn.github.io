@@ -11,7 +11,7 @@ description: "Research, teaching, and leadership experience of Nuojunxi (Steven)
 ## Research Experience
 
 ### Graduate Research Assistant — CT Reconstruction and Calibration
-**University of South Florida**, Bellini College of AI, Cybersecurity and Computing | *Aug 2026 – Present*<br>
+**YES Lab, University of South Florida** | Bellini College of AI, Cybersecurity and Computing | *Aug 2026 – Present*<br>
 Advisor: Prof. Yi Sheng
 
 - Studying detector response estimation for X-ray CT when flat-field calibration scans are unavailable, and characterizing where existing self-calibration methods break down on real scanner measurements

@@ -12,7 +12,7 @@ description: "Nuojunxi (Steven) Zhang is a Ph.D. student in Computer Science & E
 Bellini College of Artificial Intelligence, Cybersecurity and Computing<br>
 University of South Florida · Tampa, FL
 
-I am a first-year Ph.D. student at the University of South Florida, advised by **Prof. Yi Sheng**, and a Graduate Instructional Assistant for a course on incident response methods. I develop machine learning methods for medical imaging, currently focusing on X-ray CT reconstruction and calibration and on label-efficient segmentation of ultrasound. My broader interests extend to computer vision, vision-language models, and LLM-based agents.
+I am a first-year Ph.D. student at the University of South Florida, advised by **Prof. Yi Sheng** in the **YES Lab**, and a Graduate Instructional Assistant for a course on incident response methods. I develop machine learning methods for medical imaging, currently focusing on X-ray CT reconstruction and calibration and on label-efficient segmentation of ultrasound. My broader interests extend to computer vision, vision-language models, and LLM-based agents.
 
 Before USF I received my **B.S. in Computer Science from Kean University** (May 2026), where I was an NSF-funded research assistant in Prof. Kuan Huang's AI4Healthcare Lab. My first-author paper on dual-stage active learning for breast ultrasound segmentation was published at **IEEE BIBM 2025**.
 
