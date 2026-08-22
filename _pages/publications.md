@@ -8,7 +8,7 @@ toc_label: "Contents"
 description: "Publications and manuscripts under review by Nuojunxi (Steven) Zhang, covering medical image segmentation and CT reconstruction and calibration."
 ---
 
-\* denotes first author. A full CV is available [here]({{ "/assets/documents/Nuojunxi_Zhang_CV.pdf" | relative_url }}).
+\* denotes first author. See also my [Google Scholar profile](https://scholar.google.com/citations?user=gb2Ny6kAAAAJ). A full CV is available [here]({{ "/assets/documents/Nuojunxi_Zhang_CV.pdf" | relative_url }}).
 
 ## Conference Papers
 
