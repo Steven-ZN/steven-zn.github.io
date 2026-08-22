@@ -17,9 +17,10 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 
 ## Research Interests
 
-- **CT reconstruction and calibration** — estimating detector response without flat fields, ring-artifact correction, and understanding when self-calibration methods fail on real scanner data
-- **Label-efficient medical image segmentation** — weakly supervised learning, active learning, and pseudo-label refinement from image-level annotations
-- **Foundation models for medical imaging** — adapting general-purpose segmentation models such as SAM to clinical data under sparse supervision
+- **Medical imaging** — CT reconstruction and calibration (estimating detector response without flat fields, ring-artifact correction), ultrasound tumor segmentation, and synthetic medical image generation
+- **Computer vision** — weakly supervised and active learning, CAM-based segmentation, and pseudo-label refinement from image-level annotations
+- **Vision-language models** — adapting general-purpose vision and segmentation models such as SAM, and multimodal LLMs, to clinical data under sparse supervision
+- **LLMs and AI agents** — retrieval and summarization pipelines for scientific literature, and local multimodal assistants for research workflows
 
 ## News
 
