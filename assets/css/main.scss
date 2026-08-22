@@ -2,11 +2,28 @@
 # 该 Front Matter 不能删
 ---
 
+// ── USF 品牌色 ────────────────────────────────────────────────
+// USF Green #006747。
+// 覆盖必须夹在 skin 与主题之间：skin 里是普通赋值，主题的 _variables.scss
+// 用 !default 重新声明，因此最后一次普通赋值（即这里）胜出。
+$usf-green:        #006747;
+$usf-green-dark:   #00523a;  // hover / 按下态
+$usf-green-mid:    #008a5e;  // 次级按钮
+$usf-green-light:  #59c09f;  // 暗色模式专用：#006747 在 #1a1a1a 上仅 2.5:1，不达标
 
 // 载入主题核心样式
 @import "minimal-mistakes/skins/air"; // 与 _config.yml 的 skin 对应
-@import "minimal-mistakes";
 
+// 主题变量覆盖（必须在 minimal-mistakes 之前）
+$primary-color:             $usf-green;
+$link-color:                $usf-green;
+$link-color-hover:          $usf-green-dark;
+$link-color-visited:        $usf-green;
+$masthead-link-color:       $usf-green;
+$masthead-link-color-hover: $usf-green-dark;
+$active-color:              $usf-green;
+
+@import "minimal-mistakes";
 
 // 自定义增强（避免风格过于单调）
 @import "custom";

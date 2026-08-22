@@ -8,7 +8,7 @@
   --sidebar-bg: #f8f9fa;
   --border-color: #e5e5e5;
   --card-bg: #ffffff;
-  --link-color: #3498db;
+  --link-color: #006747;   // USF Green
   --header-bg: #ffffff;
   --nav-bg: #ffffff;
   --code-bg: #f8f8f8;
@@ -21,7 +21,7 @@
   --sidebar-bg: #2d2d2d;
   --border-color: #404040;
   --card-bg: #2d2d2d;
-  --link-color: #64b5f6;
+  --link-color: #59c09f;   // USF Green 亮化版：#006747 在深底上仅 2.5:1
   --header-bg: #252525;
   --nav-bg: #2d2d2d;
   --code-bg: #3a3a3a;
@@ -843,38 +843,38 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 // GitHub按钮特殊样式优化
 .btn--primary {
-  background-color: #2196F3 !important;
+  background-color: #006747 !important;
   color: #ffffff !important;
   border: none !important;
   text-decoration: none !important;
 }
 
 .btn--primary:hover {
-  background-color: #1976D2 !important;
+  background-color: #00523a !important;
   color: #ffffff !important;
   transform: translateY(-1px);
 }
 
 // 暗色模式下的按钮优化
 [data-theme="dark"] .btn--primary {
-  background-color: #1976D2 !important;
+  background-color: #008a5e !important;
   color: #ffffff !important;
-  border: 1px solid #42A5F5 !important;
+  border: 1px solid #59c09f !important;
 }
 
 [data-theme="dark"] .btn--primary:hover {
-  background-color: #1565C0 !important;
-  border-color: #2196F3 !important;
+  background-color: #006747 !important;
+  border-color: #59c09f !important;
 }
 
 .btn--info {
-  background-color: #00BCD4 !important;
+  background-color: #00523a !important;
   color: #ffffff !important;
   border: none !important;
 }
 
 .btn--success {
-  background-color: #4CAF50 !important;
+  background-color: #008a5e !important;
   color: #ffffff !important;
   border: none !important;
 }
@@ -888,7 +888,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 .simple-home h2 {
   font-size: 1.1em;
   margin: 1.2rem 0 0.6rem 0;
-  color: #2c3e50;
+  color: #006747;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 0.3rem;
 }
@@ -903,7 +903,7 @@ transition: transform .2s ease, box-shadow .2s ease;
 
 // 联系信息样式
 .contact-info {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #006747 0%, #00523a 100%);
   color: white;
   padding: 1.5rem;
   border-radius: 12px;
@@ -991,7 +991,7 @@ nav.pagination {
 }
 
 .featured-project {
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #006747;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
 
