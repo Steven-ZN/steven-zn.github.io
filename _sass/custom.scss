@@ -1018,3 +1018,38 @@ nav.pagination {
   border-radius: 8px;
   border-left: 3px solid #6c757d;
 }
+
+
+// ── 页脚：USF 绿底 ──────────────────────────────────────────────
+// 这里的 !important 是必须的：本文件前面有全局的
+//   a { color: var(--link-color) !important; }
+// 若不覆盖，页脚链接会变成绿字压在绿底上，等于看不见。
+.page__footer {
+  background-color: #006747 !important;
+  color: #ffffff !important;
+}
+
+.page__footer a,
+.page__footer a:hover,
+.page__footer a:focus,
+.page__footer a:visited {
+  color: #ffffff !important;
+}
+
+.page__footer a:hover {
+  text-decoration: underline !important;
+}
+
+.page__footer .fas,
+.page__footer .fab,
+.page__footer .far,
+.page__footer .fal,
+.page__footer .svg-inline--fa {
+  color: #ffffff !important;
+}
+
+// 暗色模式下压暗一档，避免绿底在深色页面上过跳
+[data-theme="dark"] .page__footer {
+  background-color: #00523a !important;
+  color: #ffffff !important;
+}
