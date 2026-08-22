@@ -43,7 +43,7 @@ See the [full list of publications](/publications/).
 
 ## Education
 
-**Ph.D., Computer Science & Engineering** — University of South Florida<br>
+**Ph.D. Student, Computer Science & Engineering** — University of South Florida<br>
 *Aug 2026 – present* · Bellini College of AI, Cybersecurity and Computing<br>
 Advisor: Prof. Yi Sheng
 
