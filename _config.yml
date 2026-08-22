@@ -15,7 +15,7 @@ locale: en-US
 author:
   name: "Nuojunxi (Steven) Zhang"
   avatar: "/images/avatar.jpg"
-  bio: "Ph.D. student in Computer Science & Engineering at USF's Bellini College. Medical imaging: CT reconstruction &amp; calibration, label-efficient segmentation.<br><br>nuojunxi@usf.edu"
+  bio: "Ph.D. student in Computer Science &amp; Engineering at USF's Bellini College. Medical imaging, computer vision, vision-language models, and LLM-based agents.<br><br>nuojunxi@usf.edu"
   location: "Tampa, Florida, USA"
   links:
     - label: "Email"

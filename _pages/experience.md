@@ -5,6 +5,7 @@ permalink: /experience/
 author_profile: true
 toc: true
 toc_label: "Contents"
+description: "Research, teaching, and leadership experience of Nuojunxi (Steven) Zhang at the University of South Florida, Kean University, and Wenzhou-Kean University."
 ---
 
 ## Research Experience
@@ -73,7 +74,7 @@ Advisor: Prof. Gupta
 **Wenzhou-Kean University** | *Aug 2022 – May 2024*
 
 - Supported faculty with event promotion and day-to-day coordination of academic activities
-- Streamlined scheduling workflows across departmental projects
+- Streamlined scheduling processes across departmental projects
 
 ---
 
@@ -81,9 +82,11 @@ Advisor: Prof. Gupta
 
 **Programming Languages:** Python, Java, C#, SQL, MATLAB
 
-**ML / DL Frameworks:** PyTorch, TensorFlow, scikit-learn, OpenCV, Hugging Face, SAM
+**ML / DL Frameworks:** PyTorch, TensorFlow, Hugging Face Transformers, Diffusers, scikit-learn, OpenCV, SAM
 
 **Imaging & Reconstruction:** CT physics and calibration, tomographic reconstruction, medical image processing
+
+**Language & Multimodal Models:** Vision-language models, LLM inference and local deployment, retrieval and summarization pipelines
 
 **Infrastructure:** Linux, Git, Docker, CUDA, multi-GPU training
 

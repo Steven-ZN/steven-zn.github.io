@@ -1,38 +1,10 @@
 <meta charset="utf-8">
 
-{% if site.seo_title %}
-  <title>{{ site.seo_title }}</title>
-{% elsif page.title %}
-  <title>{{ page.title }} - {{ site.title }}</title>
-{% else %}
-  <title>{{ site.title }}</title>
-{% endif %}
-
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<!-- 标题 / description / Open Graph 全部由下方的 jekyll-seo-tag 生成。
+     不要在这里再手写一份，否则 title 和 meta 会重复输出，且 & 会被二次转义。
+     注意：注释里也不能写 Liquid 标签，Liquid 不认 HTML 注释，照样会展开。 -->
 
 <meta name="author" content="{{ site.author.name | default: site.author }}">
-
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:locale" content="{{ site.locale | replace: '-', '_' | default: 'en_US' }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:url" content="{{ canonical_url }}">
-
-{% if site.social.name %}
-  <meta property="og:image" content="{% if page.header.image %}{{ page.header.image | absolute_url }}{% else %}{{ site.og_image | absolute_url }}{% endif %}">
-{% endif %}
-
-{% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-{% endif %}
-
-{% if og_image %}
-  <meta property="og:image" content="{{ og_image }}">
-{% endif %}
-
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-{% endif %}
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

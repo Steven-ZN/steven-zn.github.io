@@ -5,6 +5,7 @@ layout: single
 author_profile: true
 toc: true
 toc_label: "Contents"
+description: "Research code and open-source projects by Nuojunxi (Steven) Zhang in medical imaging, computer vision, and LLM tooling."
 ---
 
 Selected research code and open-source tools. Most repositories live on [GitHub](https://github.com/Steven-ZN).
@@ -14,7 +15,7 @@ Selected research code and open-source tools. Most repositories live on [GitHub]
 ### Detector Response Estimation Without Flat Fields
 *CT reconstruction · calibration · 2026 – present*
 
-Flat-field scans are the standard way to calibrate an X-ray detector, but they are not always available, current, or trustworthy. This project asks how much of the detector response can be recovered from the projection data itself — and, more importantly, where that recovery fails. Working on the 2DeteCT experimental dataset, I characterize the failure modes of existing self-calibration approaches on real measurements and develop a multi-scale response estimation scheme aimed at response accuracy and ROI bias in the reconstruction.
+Flat-field scans are the standard means of calibrating an X-ray detector, but they are not always available or current. This project develops a multi-scale scheme that estimates the detector response directly from projection data, and characterizes the measurement conditions that govern estimation accuracy. Evaluated on the 2DeteCT experimental dataset, the method targets response accuracy and ROI bias in the reconstruction.
 
 **Stack:** Python, PyTorch, tomographic reconstruction toolchain, multi-GPU compute<br>
 **Status:** abstract under review at SPIE Medical Imaging 2027
@@ -22,7 +23,7 @@ Flat-field scans are the standard way to calibrate an X-ray detector, but they a
 ### DSAL-Net — Dual-Stage Active Learning for Medical Segmentation
 *Weakly supervised learning · medical imaging · 2024 – 2025*
 
-DSAL-Net attacks the annotation bottleneck in breast ultrasound segmentation: instead of pixel masks, it starts from image-level labels and builds usable supervision in two stages. CAM candidates are stabilized with HSV-based contour constraints, the surviving high-quality ones are refined into pseudo labels by SAM, and a Mean Teacher segmenter consumes them under iterative uncertainty-based sampling.
+DSAL-Net addresses the annotation bottleneck in breast ultrasound segmentation by deriving pixel-level supervision from image-level labels in two coordinated stages. CAM candidates are stabilized with HSV-based contour constraints, the retained high-reliability subset is refined into pseudo masks by SAM, and a Mean Teacher segmenter is trained on them under iterative uncertainty-based sampling.
 
 - **68.25% IoU** and **79.39% DSC** on BUSI
 - Published as first author at IEEE BIBM 2025
@@ -34,7 +35,7 @@ DSAL-Net attacks the annotation bottleneck in breast ultrasound segmentation: in
 ### Medfusion — Synthetic Breast Ultrasound Generation
 *Diffusion models · VAE · medical imaging · 2024*
 
-Extended the open-source Medfusion framework with pathology-aware training so that generated ultrasound images contain realistic, tumor-inclusive structure rather than plausible-looking noise. Trains a latent VAE embedder plus a conditional diffusion model at 512×512, with distributed training and configurable sampling for downstream augmentation experiments.
+Extends the open-source Medfusion framework with pathology-aware training, so that generated ultrasound images preserve tumor-inclusive anatomical structure. The pipeline trains a latent VAE embedder together with a conditional diffusion model at 512×512, with distributed training and configurable sampling for downstream augmentation experiments.
 
 **Stack:** Diffusion models, VAE, PyTorch<br>
 [Repository](https://github.com/Steven-ZN/Medfusion_Fake_Image)

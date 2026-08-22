@@ -3,9 +3,10 @@ permalink: /contact/
 title: "Contact"
 layout: single
 author_profile: true
+description: "How to reach Nuojunxi (Steven) Zhang, Ph.D. student in Computer Science & Engineering at the University of South Florida."
 ---
 
-I'm always glad to talk about medical imaging, reconstruction, and label-efficient learning — whether that's a possible collaboration, a question about one of my papers, or just a conversation about the field.
+I welcome discussion on medical imaging, reconstruction, and label-efficient learning, whether as a potential collaboration, a question about one of my papers, or an exchange of ideas within the field.
 
 ## Get In Touch
 
@@ -20,11 +21,11 @@ I'm always glad to talk about medical imaging, reconstruction, and label-efficie
 
 ## Topics I'd Like to Talk About
 
-- **CT reconstruction and calibration** — detector response, ring artifacts, and what self-calibration can and cannot recover from real measurements
-- **Label-efficient medical segmentation** — weak supervision, active learning, and pseudo-label quality
-- **Foundation models in clinical imaging** — where SAM-style priors help and where they quietly mislead
-- **Synthetic data for medical AI** — diffusion-based augmentation and how to evaluate whether it actually helps
-- **LLMs and AI agents for research workflows** — literature triage, summarization pipelines, and where local multimodal models are already good enough
+- **CT reconstruction and calibration** — detector response, ring artifacts, and self-calibration from real measurements
+- **Label-efficient medical segmentation** — weak supervision, active learning, and pseudo-mask reliability
+- **Foundation models in clinical imaging** — how SAM-style priors transfer to clinical data under sparse supervision
+- **Synthetic data for medical AI** — diffusion-based augmentation and its measured effect on downstream performance
+- **LLMs and AI agents for research pipelines** — literature triage, summarization, and the practical deployment of local multimodal models
 
 ## Current Availability
 
