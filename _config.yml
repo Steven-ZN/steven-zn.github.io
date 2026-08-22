@@ -1,6 +1,6 @@
 # 站点基础
 title: "Steven Zhang"
-description: "CV / Weakly Supervised Segmentation • Active Learning • LLM"
+description: "Ph.D. student in Computer Science & Engineering at the University of South Florida. Medical imaging, CT reconstruction and calibration, label-efficient segmentation."
 url: "https://steven-zn.github.io"
 baseurl: ""
 
@@ -8,16 +8,19 @@ baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
 
 # 主题皮肤与外观
-skin: "aqua"
+skin: "air"   # 必须与 assets/css/main.scss 里 @import 的 skin 保持一致
 
 # 作者信息
 locale: en-US
 author:
   name: "Nuojunxi (Steven) Zhang"
   avatar: "/images/avatar.jpg"
-  bio: "A CS undergraduate with computer vision research experience, currently working as a research assistant and seeking Ph.D. opportunities in the U.S.<br><br>zhangnu@kean.edu<br>zhangnuojunxi@gmail.com"
-  location: "Union, New Jersey, USA"
+  bio: "Ph.D. student in Computer Science & Engineering at USF's Bellini College. Medical imaging: CT reconstruction &amp; calibration, label-efficient segmentation.<br><br>nuojunxi@usf.edu"
+  location: "Tampa, Florida, USA"
   links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:nuojunxi@usf.edu"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Steven-ZN"
@@ -26,7 +29,7 @@ author:
       url: "https://www.linkedin.com/in/steven-zn"
     - label: "Download CV"
       icon: "fas fa-download" 
-      url: "/assets/documents/Nuojunxi Zhang_CV.pdf"
+      url: "/assets/documents/Nuojunxi_Zhang_CV.pdf"
       target: "_blank"
 
 # 导航
@@ -87,4 +90,4 @@ sass:
  
 # 站点图标
 favicon: /images/favicon.svg
-# Force rebuild 2025年08月19日 18:50:15
+# Force rebuild 2026-08-22

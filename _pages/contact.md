@@ -5,33 +5,30 @@ layout: single
 author_profile: true
 ---
 
-I'm always interested in discussing research opportunities, collaboration projects, or just chatting about AI and machine learning. Feel free to reach out!
+I'm always glad to talk about medical imaging, reconstruction, and label-efficient learning — whether that's a possible collaboration, a question about one of my papers, or just a conversation about the field.
 
 ## Get In Touch
 
-**Email:** [zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)  
-**University Email:** [zhangnu@kean.edu](mailto:zhangnu@kean.edu)  
-**Location:** Union, New Jersey, USA
+**Email:** [nuojunxi@usf.edu](mailto:nuojunxi@usf.edu)<br>
+**Personal:** [zhangnuojunxi@gmail.com](mailto:zhangnuojunxi@gmail.com)<br>
+**Office:** Bellini College of AI, Cybersecurity and Computing, University of South Florida, Tampa, FL
 
-## Social Links
+## Elsewhere
 
-**GitHub:** [Steven-ZN](https://github.com/Steven-ZN)  
-**LinkedIn:** [Connect with me](https://www.linkedin.com/in/steven-zn)
+**GitHub:** [Steven-ZN](https://github.com/Steven-ZN)<br>
+**LinkedIn:** [steven-zn](https://www.linkedin.com/in/steven-zn)
 
-## Research Interests
+## Topics I'd Like to Talk About
 
-I'm particularly interested in collaborating on projects involving:
-
-- **Medical Image Segmentation** - Especially weakly supervised approaches
-- **Active Learning** - Reducing annotation costs in machine learning
-- **Computer Vision for Healthcare** - Applications in diagnosis and treatment
-- **Large Language Models** - Memory systems and personality modeling
-- **Synthetic Data Generation** - Using diffusion models for data augmentation
+- **CT reconstruction and calibration** — detector response, ring artifacts, and what self-calibration can and cannot recover from real measurements
+- **Label-efficient medical segmentation** — weak supervision, active learning, and pseudo-label quality
+- **Foundation models in clinical imaging** — where SAM-style priors help and where they quietly mislead
+- **Synthetic data for medical AI** — diffusion-based augmentation and how to evaluate whether it actually helps
 
 ## Current Availability
 
-**Research Collaborations:** Open to discussing research projects and paper collaborations
+**Research collaborations:** Open to joint projects and paper collaborations, particularly in imaging physics and medical computer vision.
 
-**Mentoring:** Happy to mentor undergraduate students interested in AI research
+**Reviewing:** Available to review for conferences and journals in medical image analysis.
 
-**Industry Opportunities:** Seeking winter 2026 and summer 2026 internships in AI/ML research
+**Internships:** Seeking a summer 2027 research internship in medical imaging or machine learning.

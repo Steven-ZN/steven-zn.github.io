@@ -1,61 +1,61 @@
 ---
 layout: single
 permalink: /
-title: "Nuojunxi Zhang (Steven)"
+title: "Nuojunxi (Steven) Zhang"
 author_profile: true
 toc: true
+toc_label: "On this page"
 ---
 
+**Ph.D. Student in Computer Science & Engineering**<br>
+Bellini College of Artificial Intelligence, Cybersecurity and Computing<br>
+University of South Florida · Tampa, FL
 
-**Computer Science @ Kean University** (Expected May 2026)
+I am a first-year Ph.D. student at the University of South Florida, advised by **Prof. Yi Sheng**, and a Graduate Instructional Assistant for a course on incident response methods. I work on machine learning for medical imaging — currently on X-ray CT reconstruction and calibration, and on label-efficient segmentation of ultrasound.
 
-Incoming Ph.D. Student in Computer Science & Engineering (AI) at the University of South Florida, starting Fall 2026
+Before USF I received my **B.S. in Computer Science from Kean University** (May 2026), where I was an NSF-funded research assistant in Prof. Kuan Huang's AI4Healthcare Lab. My first-author paper on dual-stage active learning for breast ultrasound segmentation appeared at **IEEE BIBM 2025**.
 
-Research in Weakly Supervised Segmentation and Active Learning
+## Research Interests
 
-Dean's Honor List • GPA: 3.92 / 4.00 (Aug 2024 – Dec 2025, 3 semesters)
+- **CT reconstruction and calibration** — estimating detector response without flat fields, ring-artifact correction, and understanding when self-calibration methods fail on real scanner data
+- **Label-efficient medical image segmentation** — weakly supervised learning, active learning, and pseudo-label refinement from image-level annotations
+- **Foundation models for medical imaging** — adapting general-purpose segmentation models such as SAM to clinical data under sparse supervision
 
+## News
 
-## Publications
+- **Aug 2026** — Started my Ph.D. in Computer Science & Engineering at USF's Bellini College, working with Prof. Yi Sheng.
+- **Aug 2026** — Submitted *Estimating Detector Response Without Flat Fields: Its Failures and Solutions* to **SPIE Medical Imaging 2027**.
+- **May 2026** — Graduated with a B.S. in Computer Science from Kean University.
+- **Dec 2025** — *Segmenting What Matters* appeared at **IEEE BIBM 2025**.
 
-**Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**
+## Selected Publications
 
-*Nuojunxi Zhang, Meng Xu, Guanchao Tong, and Kuan Huang*
+**Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**<br>
+*Nuojunxi Zhang, Meng Xu, Guanchao Tong, Kuan Huang*<br>
+IEEE International Conference on Bioinformatics and Biomedicine (**BIBM**), 2025
 
-*IEEE International Conference on Bioinformatics and Biomedicine (IEEE-BIBM 2025)*
+**Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
+*Nuojunxi Zhang, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng*<br>
+**SPIE Medical Imaging 2027** — *under review*
 
-**Status:** Accepted
-
-## Research Experience
-
-<small>see detail in above pages</small>
-
-**NSF-Funded Research Assistant** - *Kean University* (2024-Present)
-
-- Developed dual-stage active learning framework for weakly supervised tumor segmentation using breast ultrasound datasets
-- **Achieved 68.25% IoU and 79.39% DSC on BUSI dataset** with SAM-enhanced pseudo labels
-- First-author paper accepted at IEEE-BIBM 2025 under Prof. Kuan Huang supervision
-
-**Medical Imaging Research** - *Wenzhou-Kean University* (2023-2024)
-
-- Synthetic medical image generation using VAE and diffusion models for data augmentation
-- Computer vision applications for healthcare rehabilitation systems
+See the [full list of publications](/publications/).
 
 ## Education
 
-**Bachelor of Science in Computer Science**
+**Ph.D., Computer Science & Engineering** — University of South Florida<br>
+*Aug 2026 – present* · Bellini College of AI, Cybersecurity and Computing<br>
+Advisor: Prof. Yi Sheng
 
-*Kean University* | Expected May 2026
-
-- GPA: 3.91/4.0 for 2024-2025 academic year (Dean's Honor List)
+**B.S., Computer Science** — Kean University<br>
+*Sept 2022 – May 2026* · Dean's Honor List<br>
+First two years completed at Wenzhou-Kean University (2022–2024)
 
 ## Technical Skills
 
-**ML/DL:** PyTorch, TensorFlow, SAM, OpenCV, Scikit-learn
+**ML / DL:** PyTorch, TensorFlow, SAM, OpenCV, scikit-learn, Hugging Face
 
-**Programming:** Python, Java, C#, MATLAB
+**Programming:** Python, Java, C#, MATLAB, SQL
 
-**Specialized:** Medical Image Processing, Computer Vision, Active Learning, Weakly Supervised Learning
+**Domains:** Medical image reconstruction, CT physics and calibration, computer vision, weakly supervised and active learning
 
-**Tools:** Git, Docker, CUDA, Linux
-
+**Infrastructure:** Linux, Git, Docker, CUDA
