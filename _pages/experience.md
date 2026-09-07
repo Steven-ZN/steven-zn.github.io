@@ -61,16 +61,12 @@ Advisor: Prof. Gupta
 
 ---
 
-## Professional Service
+## Service & Leadership
 
 ### Reviewer, *Pattern Recognition* (Elsevier)
 *2026*
 
-- Reviewed a submission for *Pattern Recognition*; the review is recorded on my [ORCID profile](https://orcid.org/0009-0006-9952-8690)
-
----
-
-## Leadership & Service
+- Reviewed a submission for *Pattern Recognition*; the record is on my [ORCID profile](https://orcid.org/0009-0006-9952-8690)
 
 ### Vice President: Computer Club
 **Wenzhou-Kean University** | *Jan 2024 – June 2024*
