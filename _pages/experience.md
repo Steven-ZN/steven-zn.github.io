@@ -61,6 +61,15 @@ Advisor: Prof. Gupta
 
 ---
 
+## Professional Service
+
+### Reviewer, *Pattern Recognition* (Elsevier)
+*2026*
+
+- Reviewed a submission for *Pattern Recognition*; the review is recorded on my [ORCID profile](https://orcid.org/0009-0006-9952-8690)
+
+---
+
 ## Leadership & Service
 
 ### Vice President: Computer Club
