@@ -46,8 +46,7 @@ See the [full list of publications](/publications/).
 
 **Ph.D. Student, Computer Science & Engineering**<br>
 University of South Florida<br>
-*Aug 2026 – Present* · Bellini College of AI, Cybersecurity and Computing<br>
-Advisor: Prof. Yi Sheng
+*Aug 2026 – Present* · Bellini College of AI, Cybersecurity and Computing
 
 **B.S., Computer Science**<br>
 Kean University<br>
