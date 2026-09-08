@@ -101,7 +101,6 @@ Advisor: Prof. Gupta
 
 ## Honors & Awards
 
-- **Dean's Honor List**, Kean University
 - **NSF-funded Research Assistantship**, Kean University (2025)
 - **Outstanding Presentation Award**, WKU Research Day (2023)
 - **First-author publication** at IEEE BIBM 2025 (19.8% acceptance rate)
