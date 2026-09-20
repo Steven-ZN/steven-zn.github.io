@@ -25,7 +25,7 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 
 ## News
 
-- **Aug 2026**: Started my Ph.D. in Computer Science & Engineering at USF's Bellini College, working with Prof. Yi Sheng.
+- **Aug 2026**: Started my Ph.D. in Computer Science & Engineering in the YES Lab at USF's Bellini College.
 - **Aug 2026**: Submitted an abstract, *Estimating Detector Response Without Flat Fields: Its Failures and Solutions*, to **SPIE Medical Imaging 2027**.
 - **May 2026**: Graduated with a B.S. in Computer Science from Kean University.
 - **Dec 2025**: *Segmenting What Matters* was published at **IEEE BIBM 2025**.
