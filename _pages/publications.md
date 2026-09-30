@@ -20,6 +20,12 @@ A dual-stage pipeline that derives pixel-level supervision from image-level anno
 
 ## Under Review
 
+**HistFFC: Historical Flat-Field Priors for CT Ring Artifact Correction**<br>
+**Nuojunxi Zhang**\*, Ahmed Lamidi, Xin Qian, Yi Sheng<br>
+*IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2027*. Under review, submitted September 2026
+
+A history-informed initialization for subspace-based flat-field correction. HistFFC derives the initial coefficient state and the coefficient-space search directions from the scanner's historical flat-field measurements. On public CT datasets, it requires 4.3–4.8× fewer objective evaluations while maintaining comparable image quality and ring suppression.
+
 **Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
 **Nuojunxi Zhang**\*, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng<br>
 *SPIE Medical Imaging 2027*. Abstract under review, submitted August 2026

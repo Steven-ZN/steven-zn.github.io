@@ -25,6 +25,7 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 
 ## News
 
+- **Sep 2026**: Submitted *HistFFC: Historical Flat-Field Priors for CT Ring Artifact Correction* to **IEEE ICASSP 2027**.
 - **Aug 2026**: Started my Ph.D. in Computer Science & Engineering in the YES Lab at USF's Bellini College.
 - **Aug 2026**: Submitted an abstract, *Estimating Detector Response Without Flat Fields: Its Failures and Solutions*, to **SPIE Medical Imaging 2027**.
 - **May 2026**: Graduated with a B.S. in Computer Science from Kean University.
@@ -35,6 +36,10 @@ Before USF I received my **B.S. in Computer Science from Kean University** (May 
 **Segmenting What Matters: A Dual-Stage Active Learning Framework for Weakly Supervised Breast Ultrasound Segmentation**<br>
 *Nuojunxi Zhang, Meng Xu, Guanchao Tong, Kuan Huang*<br>
 IEEE International Conference on Bioinformatics and Biomedicine (**BIBM**), 2025
+
+**HistFFC: Historical Flat-Field Priors for CT Ring Artifact Correction**<br>
+*Nuojunxi Zhang, Ahmed Lamidi, Xin Qian, Yi Sheng*<br>
+**IEEE ICASSP 2027**, *under review*
 
 **Estimating Detector Response Without Flat Fields: Its Failures and Solutions**<br>
 *Nuojunxi Zhang, Ahmed Lamidi, Boyang Li, Xin Qian, Yi Sheng*<br>
